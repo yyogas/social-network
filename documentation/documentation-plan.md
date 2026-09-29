@@ -22,7 +22,7 @@ La documentation doit permettre à une personne extérieure aux conversations de
 - `installation/`, `operations/`, `hosting/` et `delivery/` : procédures reproductibles, exploitation, estimations et livraison ; propriétaires 14, 17, 18, 20 et 21 selon le contenu.
 - `teams/` : responsabilités, ordres de travail et format des échanges ; 00 coordonne, 17 maintient la lisibilité et les liens.
 
-L’index canonique `documentation/documentation-index.md` est un livrable spécialisé attendu de 17 ; ce plan décrit la couverture et le travail restant, sans se substituer à cet index. La spécification `documentation/product/mvp-specification.md` est attendue de 01 ; les documents produit de cadrage préparés au HQ alimentent sa rédaction sans la remplacer. Ces deux chemins sont des cibles et ne désignent pas des fichiers déjà livrés.
+L'[index canonique](documentation-index.md) est fourni par 17 comme contribution spécialisée v0.1 proposée, avec références de révision, propriétaires, lacunes et preuves. Ce plan décrit la couverture et le travail restant, sans se substituer à cet index. La spécification `documentation/product/mvp-specification.md` est attendue de 01 ; les documents produit de cadrage préparés au HQ alimentent sa rédaction sans la remplacer. Ce dernier chemin reste une cible absente de la référence examinée par l'index. La présence de l'index dans une PR ne prouve ni réception HQ ni approbation métier.
 
 17 ne choisit pas la stack, les permissions ou les durées de conservation à la place de leurs propriétaires. Chaque équipe entretient son contenu ; 17 vérifie sa structure, son intégration et sa traçabilité.
 
