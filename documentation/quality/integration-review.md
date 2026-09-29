@@ -1,5 +1,20 @@
 # Revue indépendante d'intégration — Fondation / M0
 
+## État actualisé — intégration documentaire, v0.3
+
+Complément factuel de 21, 29 septembre 2026, après intégration des fondations dans `main` au SHA `71d7fd16be174381b7d937182979cdf7225cecb9`. [Revue du correctif et preuves intégrées](foundation-fix-review.md), PR #26/#25/#1/#2 fusionnées.
+
+- **FIND-21-01/03/04 : corrigés et vérifiés**, selon les révisions et résultats détaillés dans ce rapport du correctif ; 24 tests du dépôt et CI finale de fondation réussis.
+- **FIND-21-02 : OUVERT**. L'intégration manuelle transitoire a été autorisée par le porteur ; les protections durables et reviewers restent à arbitrer avec HQ/14/20. Aucune protection ni permission changée.
+- **FIND-21-05 : OUVERT**, maintenance checkout suivie séparément ; aucune vulnérabilité déduite de l'avertissement.
+- Les contributions #3–24 font l'objet d'une revue d'intégration documentaire de leurs deltas et d'une CI sur main corrigé. Leur intégration ne ratifie ni MVP, stack, politique juridique, rétention ni permissions ; aucun test applicatif ou déploiement n'est revendiqué.
+
+La revue indépendante du complément est assurée par un second agent distinct de son auteur, sans l'assimiler à un reviewer humain ou à une validation des équipes 18/20. Les références définitives de synchronisation et de CI seront consignées après exécution dans la PR #19 et le bilan HQ #24.
+
+## Archive — revue initiale v0.2 aux SHA ci-dessous
+
+Les verdicts CHANGES REQUIRED/BLOCKED, inventaires et demandes qui suivent décrivent la référence initiale. Ils sont conservés pour audit et ne remplacent pas l'état actualisé ci-dessus.
+
 ## Identification et statut
 
 | Champ | Valeur |
