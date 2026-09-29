@@ -1,5 +1,19 @@
 # Validation de la campagne documentaire M0
 
+## Complément d'intégration — 29 septembre 2026
+
+La fondation corrigée et l'avis indépendant ont été intégrés dans main par #1, commit `01bf86b55c0b4b39964ce987c86850b719a7b55a`. Cette PR #2 cible désormais main. Le porteur a autorisé la séquence #26/#25/#1/#2 après avis favorable d'un second agent, avec SHA/CI contrôlés et sans suppression de branche.
+
+Le delta documentaire original de #2, head `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957`, a reçu cet avis favorable : 34 FEAT, 21 mandats et 31 critères AC uniques ; les propositions produit et tests PLANNED demeurent inchangés. L'avis complet est versionné dans main : [rapport indépendant](https://github.com/yyogas/social-network/blob/01bf86b55c0b4b39964ce987c86850b719a7b55a/documentation/quality/foundation-fix-review.md).
+
+La composition locale fondation corrigée + coordination a passé 46 fichiers et 24 tests. Le [run push de la fondation 36631066344](https://github.com/yyogas/social-network/actions/runs/36631066344) est completed/success au commit main précité. Ces résultats ne sont pas présentés comme la CI du futur merge de #2.
+
+Le changement de base seul n'a pas produit de nouveau run PR au moment du contrôle. Ce complément documentaire conserve les preuves initiales ci-dessous et déclenche une vérification de la nouvelle composition. Le nouveau head, le merge synthétique effectivement testé, le run/job, les résultats et le SHA de fusion seront consignés dans le corps de #2 et le bilan HQ après exécution.
+
+FIND-21-02 (protections permanentes) et FIND-21-05 (maintenance checkout) restent ouverts. L'intégration documentaire ne ratifie ni le MVP, ni la stack, ni les permissions produit.
+
+## Preuve historique de préparation
+
 Date : 29 septembre 2026. Portée : documents préparés au HQ pour les 21 discussions. Environnement local : Linux, Python 3.12.14. Base distante : `8590a095d76965880e94614328a8eafbe09b93cb`, PR nº 1. La nouvelle PR cible sa branche de travail afin de séparer les changements ; elle dépend de sa revue et de sa fusion ultérieure. Les SHA publiés et résultats de CI sont attachés à la nouvelle PR.
 
 ## Vérifications reproductibles
