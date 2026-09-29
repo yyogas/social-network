@@ -44,6 +44,7 @@ La CI actuelle vérifie le dépôt documentaire et les tests de son validateur. 
 
 ## Construire le produit — campagne M0
 
+- [Index canonique : propriétaires, versions, preuves et documents manquants](documentation/documentation-index.md)
 - [Plan documentaire et couverture](documentation/documentation-plan.md)
 - [Vision et principes produit](documentation/product/product-vision.md)
 - [Catalogue des fonctionnalités proposées](documentation/product/feature-catalog.md)
@@ -53,4 +54,4 @@ La CI actuelle vérifie le dépôt documentaire et les tests de son validateur. 
 - [Pilotage, questions et réception des livrables](documentation/project-governance/coordination-board.md)
 - [Roadmap globale proposée](documentation/project-governance/global-roadmap.md)
 
-Ces documents sont préparés par le HQ pour les revues spécialisées. Ils n'attestent pas de l'approbation des fonctionnalités ni de l'exécution des travaux par les autres discussions.
+La vision, le catalogue, les parcours et les mandats sont préparés par le HQ pour les revues spécialisées. L'index est une contribution de 17 — Documentation. Leur publication n'atteste pas de l'approbation des fonctionnalités ni de l'exécution des travaux par les autres discussions.
