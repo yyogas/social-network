@@ -51,6 +51,25 @@ class RepositoryValidationTests(unittest.TestCase):
     def test_ambiguous_name_is_rejected(self):
         self.assertTrue(any('Ambiguous name' in e for e in self.check_files({'documentation/final2.md': '# Draft'})))
 
+    def test_existing_untracked_file_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'README.md').write_text('[Draft](draft.md)')
+            (root / 'draft.md').write_text('# Untracked')
+            errors = MODULE.inspect(root, ['README.md'], require_layout=False)
+            self.assertTrue(any('not tracked' in e for e in errors))
+
+    def test_directory_link_requires_tracked_descendant(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'README.md').write_text('[Docs](documentation/)')
+            (root / 'documentation').mkdir()
+            (root / 'documentation' / 'guide.md').write_text('# Guide')
+            errors = MODULE.inspect(root, ['README.md'], require_layout=False)
+            self.assertTrue(any('no tracked content' in e for e in errors))
+            self.assertEqual([], MODULE.inspect(root, ['README.md', 'documentation/guide.md'],
+                                                require_layout=False))
+
     def test_missing_layout_is_rejected(self):
         with tempfile.TemporaryDirectory() as folder:
             self.assertTrue(any('Missing required file' in e for e in MODULE.inspect(Path(folder), [])))

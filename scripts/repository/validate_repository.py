@@ -25,6 +25,7 @@ PRIVATE_KEY = re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH |DSA |ENCRYPTED )?PRIV
 def inspect(root: Path, paths: list[str], require_layout: bool = True) -> list[str]:
     root = root.resolve()
     errors = []
+    tracked = {(root / name).resolve() for name in paths}
     if require_layout:
         errors.extend(f'Missing required file: {p}' for p in sorted(REQUIRED - set(paths)))
     for name in paths:
@@ -67,6 +68,11 @@ def inspect(root: Path, paths: list[str], require_layout: bool = True) -> list[s
                 errors.append(f'Link escapes repository: {name} -> {target}')
             elif not destination.exists():
                 errors.append(f'Broken local link: {name} -> {target}')
+            elif destination.is_dir():
+                if not any(destination in item.parents for item in tracked):
+                    errors.append(f'Link directory has no tracked content: {name} -> {target}')
+            elif destination not in tracked:
+                errors.append(f'Link target is not tracked: {name} -> {target}')
     return errors
 
 

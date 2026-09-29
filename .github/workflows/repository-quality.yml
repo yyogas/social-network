@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified 2026-09-29
         with:
           persist-credentials: false
+          fetch-depth: 0
       - name: Runtime
         run: python3 --version
       - name: Validate repository
@@ -24,4 +25,4 @@ jobs:
       - name: Test validator behavior
         run: python3 -m unittest discover -s tests/repository -p 'test_*.py' -v
       - name: Verify whitespace
-        run: git show --format= --check HEAD
+        run: python3 scripts/repository/check_whitespace.py
