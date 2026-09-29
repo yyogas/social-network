@@ -215,7 +215,7 @@ Pour la reprise, les propositions 24 h/8 h et 1 h/4 h doivent être rapprochées
 
 Les lots suivants sont un séquencement candidat, pas une nouvelle roadmap approuvée. Des travaux documentaires indépendants peuvent continuer immédiatement ; le démarrage du code d'un lot exige ses contrats et une autorisation de réalisation suffisants.
 
-Les ordres 0–4 ci-dessous regroupent les travaux ; les identifiants L0–L7 de [20](../delivery/implementation-readiness.md) restent la référence des lots. Le complément [préparation contractuelle L1 v0.3](../quality/first-lot-contract-readiness.md) rapproche les onze API candidates et les besoins Web, précise huit demandes avec propriétaires et réutilise les tests existants. Il détaille désormais le candidat d'identité courante GAP-L1-03 et huit sous-cas S03a–h ; ses contrats restent à compléter et à approuver par leurs propriétaires. DIR-012 actualise les entrées de cohorte et de langues des options A/C sans les approuver.
+Les ordres 0–4 ci-dessous regroupent les travaux ; les identifiants L0–L7 de [20](../delivery/implementation-readiness.md) restent la référence des lots. Le complément [préparation contractuelle L1 v0.4](../quality/first-lot-contract-readiness.md) rapproche les onze API candidates et les besoins Web, précise huit demandes avec propriétaires et réutilise les tests existants. Il détaille les candidats identité courante GAP-L1-03 et cycle de session GAP-L1-04, dont pertes de réponse, révocation et cookies tardifs, avec sous-cas S03a–h/S04a–h ; ses contrats restent à compléter et à approuver par leurs propriétaires. DIR-012 actualise les entrées de cohorte et de langues des options A/C sans les approuver.
 
 | Ordre | Livrable borné | Condition d'entrée | Preuve de sortie / limite |
 | --- | --- | --- | --- |
@@ -284,7 +284,7 @@ La base de départ a été reconstruite à partir des fichiers versionnés et so
 Contrôles de publication à consigner avec leur résultat effectif dans la PR : `python3 scripts/repository/validate_repository.py`, `git diff --cached --check`, puis workflow Repository quality au SHA publié, avec job et checkout réellement testés. Aucun nouveau test applicatif, audit juridique, benchmark ou exercice d'exploitation n'est exécuté par ce dossier.
 
 1. **Décisions prises / à valider :** synthèse locale et organisation du dossier ; positionnement universel DIR-012 confirmé ; B1 reste proposé ; A/C et les autres arbitrages de pilote restent ouverts.
-2. **Livrables :** présent dossier v0.4, comparaison internationale IP1–IP3 au §2D, complément L1 v0.3 et liens depuis l'index, le statut et la coordination ; mise à jour de la PR #27 existante sur la branche HQ, distincte du bilan #24 déjà fusionné.
+2. **Livrables :** présent dossier v0.4, comparaison internationale IP1–IP3 au §2D, complément L1 v0.4 et liens depuis l'index, le statut et la coordination ; mise à jour de la PR #27 existante sur la branche HQ, distincte du bilan #24 déjà fusionné.
 3. **Tests :** résultats du delta et de la CI dans la PR ; historiques séparés de l'exécution présente, aucun PASS applicatif.
 4. **Questions :** public/admission, groupes, langues/surface puis données, architecture et capacité selon SYN-001..007.
 5. **Dépendances :** demandes ciblées du §7, toutes À TRANSMETTRE tant qu'aucun envoi n'est établi.
