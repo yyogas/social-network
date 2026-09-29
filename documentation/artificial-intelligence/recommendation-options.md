@@ -93,7 +93,7 @@ UX 02/05 : accès clavier au mode chronologique, état annoncé au lecteur d'éc
 
 Préconditions : activation approuvée, politique d'âge, taxonomie, finalités, données et budgets évalués. Aucun suivi implicite activé par ce document.
 
-- **Profil** : déclarer langues/sujets autorisés → enregistrer une version → montrer l'effet. Les contrôles explicites priment sur les signaux inférés. Aucune déduction d'origine, religion ou opinion depuis la communauté kabyle, les langues, lieux ou abonnements.
+- **Profil** : déclarer langues/sujets autorisés → enregistrer une version → montrer l'effet. Les contrôles explicites priment sur les signaux inférés. Aucune déduction d'origine, religion ou opinion depuis une communauté, un périmètre marketing, les langues, lieux ou abonnements.
 - **Pourquoi** : ouvrir la commande sur une suggestion → afficher le motif réellement enregistré au classement, sa provenance autorisée, et les commandes de correction. Pas d'explication générative inventée ; pas de révélation de liens privés d'un tiers.
 - **Réduire / exclure** : « réduire » diminue le poids ; « ne plus recommander ce sujet » est un filtre impératif des recommandations futures. Cette exclusion ne promet pas la disparition de mentions dans tout le texte ni dans le fil suivi ; l'étendue est expliquée. Taxonomie versionnée ; un alias ne doit pas contourner l'exclusion.
 - **Désactiver** : passer au mode non personnalisé ; aucune poursuite cachée de collecte dédiée à la personnalisation selon le contrat Privacy ; retrouver le fil suivi.

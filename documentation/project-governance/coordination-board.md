@@ -1,5 +1,7 @@
 # Pilotage des 21 équipes — Fondation / M0
 
+**Orientation actualisée — 30 septembre 2026 :** [DIR-012](decision-register.md) confirme le public universel et les priorités marketing ; le ciblage initial DIR-002 est remplacé. Transmissions ciblées 01/19/16/15/09/10 et dépendances L1 dans le registre, toutes **À TRANSMETTRE**. OPEN-001/004 portent désormais sur les modalités effectives de pilote, sans remettre en attente le positionnement décidé par le porteur.
+
 Date : 29 septembre 2026. Responsable : 00 MASTER. Instruction source : « fait travailler toute les discussions, et bien construire la documentation, les grandes lignes, les fonctionnalités ».
 
 ## Intégration constatée — complément de 21

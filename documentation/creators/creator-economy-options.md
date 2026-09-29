@@ -49,7 +49,7 @@ Les sous-options de FEAT-031 ne reçoivent pas de nouveaux FEAT : Produit décid
 | FEAT-031, options | Créateur : tips et événements payants | Qualification de produit, fraude, délivrance et annulation instruites séparément | Phase 3 / P2 | Paiements et droits/restitutions réconciliés |
 | FEAT-030/031 | Créateur/marque : partenariat et partage publicitaire | Règles de transparence, mesure et inventaire éligible validés avec 11/15/09 | Phase 3 / P2 | Revenu calculable et contenu sponsorisé identifiable |
 | FEAT-031, extension à examiner | Vendeur : marketplace de biens/services | Nouveau contrat vendeur, logistique et litiges ; périmètre distinct à créer par 01 | Long terme / P3 | Fourniture et remboursement prouvables |
-| FEAT-032 + FEAT-031 | Créateur international : recevoir son revenu | Matrice pays/devise/canal/support validée, pas d'ouverture déduite de la diaspora | International / P1 pour l'ouverture concernée | Flux et support validés pour chaque marché ouvert |
+| FEAT-032 + FEAT-031 | Créateur international : recevoir son revenu | Matrice pays/devise/canal/support validée, pas d'ouverture déduite du public universel ou des priorités marketing | International / P1 pour l'ouverture concernée | Flux et support validés pour chaque marché ouvert |
 
 ### Parcours P1 — Publier et construire une audience gratuite
 

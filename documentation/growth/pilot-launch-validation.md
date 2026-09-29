@@ -1,5 +1,7 @@
 # Vérification documentaire du plan Growth
 
+**Portée historique :** contrôles de la contribution Growth v0.2 à la révision ci-dessous. Le delta de positionnement DIR-012 du 30 septembre 2026 produit la v0.3 du plan ; les résultats et le hash ci-dessous ne lui sont pas attribués. Ses contrôles courants sont consignés dans la PR #27.
+
 Date : 29 septembre 2026. Propriétaire : 19 — Growth. Statut : contrôles documentaires locaux exécutés et réussis ; revue indépendante attendue. Aucun test applicatif.
 
 Référence source : dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957, PR #2. Les 42 fichiers de cet instantané ont été récupérés avec le connecteur GitHub et leurs SHA de blob ont été recalculés localement : 42 identiques, aucun écart. Le commit de préparation local est distinct du commit distant et n'est pas poussé.

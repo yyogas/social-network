@@ -1,6 +1,6 @@
 # Social Network
 
-Plateforme sociale internationale en phase **Fondation / M0**. La société porteuse est basée en France. Le premier public envisagé est la communauté kabyle et sa diaspora ; l'ouverture à d'autres publics est un objectif du produit.
+Plateforme sociale internationale en phase **Fondation / M0**. La société porteuse est basée en France. Le réseau s'adresse à tout le monde, partout sur la planète, y compris au peuple kabyle. Son positionnement est universel dès sa conception. Les priorités marketing et leur distinction avec l'ouverture effective sont consignées dans la [vision produit](documentation/product/product-vision.md) et la décision DIR-012 du [registre HQ](documentation/project-governance/decision-register.md).
 
 ## État vérifié
 

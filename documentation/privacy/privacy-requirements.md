@@ -1,5 +1,7 @@
 # Exigences Juridique / Privacy / RGPD — M0
 
+**Delta de positionnement — 30 septembre 2026 :** [DIR-012](../project-governance/decision-register.md) remplace l'ancienne audience de départ par un public universel et des priorités marketing mondiales. Correction documentaire par 21 sur instruction du porteur ; aucune nouvelle analyse juridique, validation pays ou modification de règles de données. L'option France/adultes de 15 ci-dessous reste une proposition à réexaminer.
+
 ## 1. Identification et statut
 
 | Champ | Valeur |
@@ -7,7 +9,7 @@
 | Objectif | Définir les exigences de données, de droits et de confidentialité du candidat pilote ; fournir les arbitrages au HQ avant implémentation |
 | Propriétaire | 15 — Juridique / Privacy / RGPD ; aucun avocat, DPO ou reviewer humain désigné à ce jour dans les entrées reçues |
 | Destinataires | HQ, 01/02/03/04/05/06/08/09/10/13/14/16/17/18 ; 07/11/12 pour les extensions |
-| Date / révision | 29 septembre 2026 ; v0.2, consolidation des deux brouillons Privacy v0.1 |
+| Date / révision | 30 septembre 2026 ; v0.3, delta de positionnement DIR-012 sur la consolidation Privacy v0.2 |
 | Référence Git | PR #2, branche `documentation/m0-team-coordination`, SHA `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957` |
 | Mandat | M0-TEAM-15 et réponse à INT-0005 ; modèle de livrable spécialisé |
 | Statut | PROPOSÉ — revue spécialisée et arbitrages HQ attendus ; aucune conformité générale proclamée |
@@ -160,7 +162,7 @@ Couverture différée des anciennes catégories : D05 messages → FEAT-024 ; D0
 
 ### 5.2 Point sensible propre au projet
 
-La vision communautaire kabyle est CONFIRMÉE comme orientation documentaire, pas comme attribut d'origine de chaque utilisateur. Analyse 15 : communautés, textes et affinités pourraient révéler origine ethnique, opinions ou croyances ; leur qualification dépend du traitement. L'article 9 impose un examen distinct de l'article 6 pour les catégories particulières. Une publication accessible ne donne pas une autorisation générale de profilage. Source S1.
+Le positionnement universel est CONFIRMÉ par DIR-012 ; les priorités marketing géographiques ne constituent pas des attributs d'origine à attribuer aux utilisateurs. Analyse 15 : communautés, textes et affinités pourraient révéler origine ethnique, opinions ou croyances ; leur qualification dépend du traitement. L'article 9 impose un examen distinct de l'article 6 pour les catégories particulières. Une publication accessible ne donne pas une autorisation générale de profilage. Source S1.
 
 Proposition P0 : aucun champ obligatoire d'ethnicité, aucune inférence depuis langue/nom/relations ni segment ads/analytics ethnique. Traitement des données sensibles volontairement publiées et données d'infractions dans les signalements à examiner avec avocat (LEGAL-01/07). Ne pas censurer automatiquement toute discussion culturelle : limiter les usages et contrôler la nécessité. À transmettre à 01/07/09/11/13/HQ avant schéma ou instrumentation.
 
@@ -217,7 +219,7 @@ Mineurs : la CNIL distingue le consentement aux traitements en ligne, avec accom
 | Solution candidate | Pilote France adultes, sous revue des cas transfrontières et moyens d'assurance d'âge | FEAT-004/016 et PRIV-M0-01–12 dans critères d'ouverture ; instrumentation minimale qualifiée |
 | Alternatives | Plusieurs pays adultes ; mineurs avec protections dédiées ; aucune rejetée officiellement | Réduire fonctionnalités/mesure pour réduire les traitements ; aucune option de suppression de façade recommandée |
 | Dépendances | Avis LEGAL-02/06, public cible 01/19, support/modération 09/10/16 | Flux 03/04/08/13/14, textes/rétention 15, tests 18 |
-| Risques/mesures | Exclusion d'une partie de la diaspora et contournement ; expliquer périmètre, vérifier contrôles proportionnés | Surcoût purge/exports ; architecture simple et inventaire exhaustif des stores |
+| Risques/mesures | Couverture réduite par rapport au public mondial et contournement ; expliquer périmètre, vérifier contrôles proportionnés | Surcoût purge/exports ; architecture simple et inventaire exhaustif des stores |
 | Impact business | Recrutement restreint, apprentissage plus limité ; coût juridique/support réduit comme hypothèse non chiffrée | Coût initial droits/modération, réduction du risque de perte de confiance |
 | Impact technique | Politiques versionnées, assurance d'âge, voie de contestation ; pas de stack fixée | Contrats d'accès, suppression et restauration transverses, événements minimisés |
 | Priorité/réexamen | P0 avant inscription ; réexaminer à chaque pays/public nouveau | P0 avant lot concerné ; réexaminer à nouveau store/fournisseur/finalité |
@@ -232,7 +234,7 @@ Mineurs : la CNIL distingue le consentement aux traitements en ligne, avec accom
 | C15-01 | Brouillon pilote v0.1 groupait live avec Phase 2 ; catalogue FEAT-033 = Long terme | Alignement de ce livrable sur classement proposé HQ ; 01/HQ arbitre, aucun engagement nouveau |
 | C15-02 | Référentiel v0.1 nommait ClickHouse en D07 sans décision de stack reçue | Retirer cette présupposition ici ; emplacement analytics logique ; 03/HQ propriétaire du choix |
 | C15-03 | Valeurs 30 j/90 j/12 mois/7 j des brouillons pourraient être interprétées comme délais légaux | Durées candidates seulement, paramètres production bloqués sans justification ; 15/14/09/13 |
-| C15-04 | France adultes proposé par 15 vs audience diaspora de la vision | Arbitrage DEC-0001 ; différence de périmètre proposée, pas décision contradictoire déjà approuvée |
+| C15-04 | France adultes proposé par 15 vs public universel et priorités marketing DIR-012 | Arbitrage DEC-0001 ; différence de périmètre proposée, pas décision contradictoire déjà approuvée |
 | C15-05 | Portabilité avancée FEAT-034 différée | Ne pas différer les droits légaux de FEAT-016 ; 01/04/18 |
 | C15-06 | Pays UE/EEE groupés trop largement dans premier référentiel | Pas d'extension automatique du DSA à tout pays EEE sans qualification ; revue marché par marché |
 
@@ -328,7 +330,7 @@ Consultation datée du **29 septembre 2026**. Les analyses produit sont des prop
 ## 12. Compte rendu et informations HQ
 
 1. **Décisions prises / à valider** : consolidation locale, conservation PRIV-M0-01–12 et liens FEAT/J ; aucune décision structurante adoptée. DEC-0001/0002 et LEGAL-01–07 ouverts.
-2. **Livrable** : ce fichier v0.2, réponse M0-TEAM-15/INT-0005 ; publication par branche/PR, référence exacte et preuves dans le compte rendu de PR. Le README Privacy pointe sur cette proposition ; aucun registre HQ n'est modifié pour prétendre une réception.
+2. **Livrable** : ce fichier v0.3, delta DIR-012 sur la réponse M0-TEAM-15/INT-0005 ; publication par branche/PR, référence exacte et preuves dans le compte rendu de PR. Le README Privacy pointe sur cette proposition ; aucun avis spécialisé supplémentaire n'est prétendu.
 3. **Tests** : 18 scénarios applicatifs PLANNED, aucun exécuté. Contrôles documentaires réellement exécutés rapportés séparément avec commandes, environnement et SHA ; ils ne prouvent pas conformité ou fonctionnement.
 4. **Questions** : âge/pays/MVP (HQ/01), bases et durées (15/avocat/métiers), flux et suppression (03/04/08/14), mesure (13), recours (09/10).
 5. **Dépendances** : H15-01–11, toutes à transmettre et sans accord présumé ; blocages limités au lot concerné.

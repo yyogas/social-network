@@ -2,7 +2,7 @@
 
 ## Préparation des arbitrages — 30 septembre 2026
 
-Le [dossier d’arbitrage pilote/MVP](m0-mvp-arbitration.md) prépare trois choix HQ : public/admission, suivi ou communautés, surface/langues. Il est **PROPOSÉ**, sans décision de scope, stack, données ou permissions adoptée. Base relue : `main` à `ba26729aa10dc497338a960ae78ba904a72216b2`, 26 PR fusionnées et aucune ouverte avant cette nouvelle proposition ; [preuves finales #24](https://github.com/yyogas/social-network/pull/24). Les demandes ciblées restent À TRANSMETTRE.
+Le [dossier d’arbitrage pilote/MVP](m0-mvp-arbitration.md) prépare trois choix HQ : public/admission, suivi ou communautés, surface/langues. **DIR-012 confirme le public universel et les priorités marketing sur instruction du porteur du 30 septembre 2026** ; le périmètre pilote, la stack, les données et les permissions restent à arbitrer. Les recommandations par défaut France/français sont retirées pour réexamen dans ce cadre mondial. Base relue : `main` à `ba26729aa10dc497338a960ae78ba904a72216b2`, 26 PR fusionnées et aucune ouverte avant cette nouvelle proposition ; [preuves finales #24](https://github.com/yyogas/social-network/pull/24). Les demandes ciblées restent À TRANSMETTRE.
 
 ## État courant — consolidation documentaire v0.2
 
@@ -14,7 +14,7 @@ FIND-21-01/03/04 sont corrigés et vérifiés dans la fondation ; FIND-21-02 (pr
 
 ## Archive — préparation et réception initiale DIR-009/010/011
 
-Les états « collecter », « en revue », « à recevoir » et « corrections avant intégration » ci-dessous sont historiques. Consulter l'état courant et les preuves de fusion, sans réattribuer les anciennes preuves à de nouveaux SHA.
+Les états « collecter », « en revue », « à recevoir » et « corrections avant intégration » ci-dessous sont historiques. L'ancienne audience de départ est remplacée par DIR-012 ; sa mention dans cette archive ne porte aucune orientation active. Consulter l'état courant et les preuves de fusion, sans réattribuer les anciennes preuves à de nouveaux SHA.
 
 **Date :** 29 septembre 2026
 **Phase :** Fondation / M0

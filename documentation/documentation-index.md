@@ -64,9 +64,9 @@ Les références ci-dessous complètent les sources de la v0.1 conservées dans 
 
 ## Dossier transversal proposé après consolidation
 
-[Dossier d’arbitrage pilote/MVP v0.2](project-governance/m0-mvp-arbitration.md), préparé par 21 le 30 septembre 2026 : options pour DEC-0001/0002, périmètre candidat, dépendances et gates. **PROPOSÉ — À ARBITRER**, sans modification des phases ou contrats propriétaires approuvés. Les 21 réponses reçues restent les sources de domaine ; ce dossier n’ajoute pas une équipe.
+[Dossier d’arbitrage pilote/MVP v0.3](project-governance/m0-mvp-arbitration.md), préparé par 21 le 30 septembre 2026 : options pour DEC-0001/0002, périmètre candidat, dépendances et gates. **DIR-012 CONFIRMÉ pour le positionnement universel et le marketing ; pilote/MVP À ARBITRER**, sans modification des phases ou contrats propriétaires approuvés. Les 21 réponses reçues restent les sources de domaine ; ce dossier n’ajoute pas une équipe.
 
-[Préparation contractuelle du lot L1 v0.1](quality/first-lot-contract-readiness.md) : rapprochement compte/session/profil, onze API candidates, huit demandes ciblées et scénarios reliés aux tests existants. **PROPOSÉ — L1 BLOQUÉ POUR CODE** ; aucun résultat applicatif ni choix structurant approuvé.
+[Préparation contractuelle du lot L1 v0.2](quality/first-lot-contract-readiness.md) : rapprochement compte/session/profil, onze API candidates, huit demandes ciblées et scénarios reliés aux tests existants. **PROPOSÉ — L1 BLOQUÉ POUR CODE** ; aucun résultat applicatif ni contrat L1 approuvé ; entrée de positionnement DIR-012 actualisée.
 
 ## Archive — index v0.1 sur son instantané initial
 

@@ -1,16 +1,26 @@
 # Vision produit et cadre du pilote
 
-Date : 29 septembre 2026. Version : 0.1. Statut : **PROPOSITION HQ — REVUE SPÉCIALISÉE NON REÇUE**.
+Date : 30 septembre 2026. Version : 0.2. Statut : **POSITIONNEMENT DIR-012 CONFIRMÉ PAR LE PORTEUR ; MVP ET CONTRATS EN PROPOSITION**. Delta de positionnement intégré par 21, sans nouvelle validation spécialisée.
 
 Propriétaire attendu : 01 Produit. Ce document prépare son travail ; il ne constitue ni sa réponse ni une approbation du périmètre, de la roadmap ou des permissions.
 
 ## 1. Ce que le porteur du projet a confirmé
 
 - Société basée en France.
-- Audience de départ : communauté kabyle et diaspora, notamment en France, Algérie, Canada, États-Unis, Belgique, Allemagne, Suisse et Royaume-Uni. Cette liste d'audience ne vaut pas décision de lancement simultané dans ces pays.
-- Ambition : réseau social universel, moderne, positif, respectueux de la vie privée et économiquement viable, ouvert ensuite à d'autres régions et publics.
+- Public : tout le monde, partout sur la planète, y compris le peuple kabyle. Le ciblage de départ d'une seule communauté est remplacé par DIR-012, instruction du porteur du 30 septembre 2026.
+- Ambition : réseau social universel dès sa conception, moderne, positif, respectueux de la vie privée et économiquement viable.
 - Principes : contrôle utilisateur, respect du temps, communautés fortes, rémunération des créateurs, publicité transparente et outils professionnels.
 - GitHub conserve les spécifications, décisions, code et preuves. Une idée n'est pas une décision approuvée.
+
+### Priorités marketing confirmées — DIR-012
+
+| Périmètre | Priorités communiquées par le porteur |
+| --- | --- |
+| Pays | États-Unis, Canada, Inde, France, Allemagne, Royaume-Uni, Japon, Chine, Brésil, Argentine, Colombie, Mexique, Algérie, Maroc, Afrique du Sud, Espagne et Australie |
+| Régions ou ensembles | Kabylie, monde arabe et Asie |
+| Portée générale | Toute la planète ; aucune exclusion des pays et publics non cités |
+
+Ces priorités orientent la préparation marketing ; elles ne fixent ni ordre de lancement, ni budget, ni pays ouverts, ni langues disponibles. Kabylie, monde arabe et Asie ne sont pas assimilés à des pays ou à des attributs individuels. Les segments de recherche sont fondés sur les usages et centres d'intérêt. [Décision et transmissions DIR-012](../project-governance/decision-register.md).
 
 ## 2. Promesse proposée à tester
 
@@ -22,7 +32,7 @@ Le pilote doit vérifier qu'un petit groupe trouve une utilité récurrente à p
 
 | Public | Besoin à confirmer par entretien | Parcours proposé | Équipe responsable |
 | --- | --- | --- | --- |
-| Membre de la communauté ou diaspora | Maintenir des liens et découvrir des échanges pertinents malgré la distance | Profil, abonnements, fil, publication | 01 + 19 |
+| Personne souhaitant suivre ses proches, des créateurs ou ses centres d'intérêt | Maintenir des liens et découvrir des échanges pertinents malgré la distance | Profil, abonnements, fil, publication | 01 + 19 |
 | Animateur associatif ou communautaire | Faire vivre un espace et modérer les échanges | Communauté candidate, règles, signalement | 01 + 09 + 19 |
 | Créateur | Construire une audience, comprendre sa diffusion et obtenir une rémunération claire | Publication au pilote ; outils et revenus dans des phases ultérieures | 12 + 13 |
 | Lecteur occasionnel | Comprendre rapidement l'intérêt du service sans pression à rester | Fil lisible, repère de lecture, notifications maîtrisées | 02 + 01 |

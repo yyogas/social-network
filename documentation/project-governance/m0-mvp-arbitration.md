@@ -4,16 +4,18 @@
 
 | Champ | Valeur |
 | --- | --- |
-| Référence / version | SN-INT-M0-ARB-001 — v0.2 |
+| Référence / version | SN-INT-M0-ARB-001 — v0.3 |
 | Date | 30 septembre 2026, Europe/Paris |
 | Auteur | 21 — Intégration / Code Review ; préparation du dossier, sans substitution aux propriétaires |
 | Autorité attendue | 00 — MASTER / HQ avec 01 Produit, 09 Safety, 15 Privacy et les propriétaires des arbitrages concernés |
 | Demande | Poursuivre après consolidation des 21 contributions ; rendre les décisions suivantes concrètes et traçables |
 | Base examinée | `main` au SHA `ba26729aa10dc497338a960ae78ba904a72216b2`, arbre `1da7b576c427cff1a45924f446cb4f94404ae58b` |
-| Statut | **PROPOSÉ — À ARBITRER** ; aucune décision structurante approuvée par ce document |
+| Statut | **DIR-012 CONFIRMÉ par le porteur** pour le public universel/marketing ; modalités du pilote et MVP **PROPOSÉS — À ARBITRER** |
 | Priorité / classe | Préparation MVP, P0 ; phases futures conservées dans le tableau de périmètre |
 | Portée | Options de pilote, contrat de portée candidat, dépendances et ordre de réalisation conditionnel |
 | Limites | Pas de nouvelle validation juridique, choix de stack/fournisseur, permission définitive, coût ou calendrier engagé |
+
+**Actualisation du 30 septembre 2026 :** [DIR-012](decision-register.md) remplace le ciblage communautaire initial et confirme le public universel, peuple kabyle inclus, avec les priorités marketing listées dans la [vision](../product/product-vision.md). A1 et C1 ne sont plus recommandés par défaut ; ils restent des options non approuvées à comparer dans ce nouveau cadre. Le choix de groupes FEAT-020 reste distinct.
 
 Les repères de ce dossier sont locaux. **DEC-0001 et DEC-0002 restent des décisions attendues**, à rédiger et inscrire par HQ après arbitrage explicite. Les dossiers SYN-001..007, FEAT et critères existants sont réutilisés. La publication ou la fusion de cette proposition ne constitue pas leur approbation.
 
@@ -36,12 +38,12 @@ Lecture ciblée des sections de recommandations et interfaces, sans nouvel audit
 
 ### A — Public et accès au pilote : préparation de DEC-0001 / SYN-002
 
-**Recommandation PROPOSÉE :** préparer un pilote sur invitation, destiné aux adultes en France, auprès du segment de personnes suivant des proches ou créateurs décrit par Produit. Le ciblage communautaire n'introduit aucun champ obligatoire d'origine ni une déduction d'origine à partir de la langue. Un lien d'invitation ne prouve ni âge, ni résidence, ni droit de lire un contenu.
+**Positionnement CONFIRMÉ — DIR-012 :** réseau pour tout le monde, peuple kabyle inclus. Les priorités marketing mondiales sont des entrées de recherche et de préparation ; elles ne définissent pas encore le périmètre disponible du pilote. **Travail PROPOSÉ :** comparer les options ci-dessous avec des segments d'usage et besoins communs. Aucun champ d'origine ni déduction d'origine depuis la langue n'est introduit. Un lien d'invitation ne prouve ni âge, ni résidence, ni droit de lire un contenu.
 
 | Option | Bénéfice attendu | Coût / risque / condition |
 | --- | --- | --- |
-| A1 — Pilote France adultes, sur invitation — recommandé pour examen | Périmètre opérationnel et recrutement bornés ; reprend la proposition Privacy et l'option d'accès fermé de Growth | Cohorte non représentative ; admission/âge, personnes hors cible et cas transfrontières à instruire avec 15/14 ; seuil, méthode et données d'admissibilité à contractualiser |
-| A2 — Pilote dans plusieurs pays | Observe plus directement la diversité de la diaspora | Requiert pour chaque pays les avis, textes, support et modération adaptés ; charge et délais non chiffrés |
+| A1 — Pilote France adultes, sur invitation — option antérieure, à réexaminer | Périmètre opérationnel et recrutement bornés ; reprend la proposition Privacy et l'option d'accès fermé de Growth | Cohorte non représentative ; admission/âge, personnes hors cible et cas transfrontières à instruire avec 15/14 ; seuil, méthode et données d'admissibilité à contractualiser |
+| A2 — Pilote dans plusieurs pays | Observe plusieurs usages et marchés prioritaires du public mondial | Requiert pour chaque pays les avis, textes, support et modération adaptés ; charge et délais non chiffrés |
 | A3 — Ouverture publique dès le départ | Accès plus large et moins de traitement des invitations | Capacité d'anti-abus, support, coûts et procédure d'arrêt à démontrer ; pas de plafond ou de budget reçu |
 
 **Autorité / entrée indispensable :** HQ avec 01/15/16/19, avis 09/10/14. Attendu : fiche cohorte sans données personnelles dans Git, pays effectivement servis, critère d'âge du pilote, admission, traitement de l'âge inconnu et des exclusions contestées. La proposition « adultes » n'est ni une analyse du droit applicable ni une preuve d'exclusion technique des mineurs.
@@ -63,15 +65,15 @@ Lecture ciblée des sections de recommandations et interfaces, sans nouvel audit
 
 ### C — Surface et langues : DEC-0001/0002, SYN-002/003
 
-**Recommandation PROPOSÉE :** une interface **web responsive** pour le pilote ; interface française si la compréhension de tous les parcours critiques est démontrée pour la cohorte, avec contenus français/kabyles et capacité humaine correspondante. L'option bilingue français/kabyle doit être retenue ou le pilote différé si le français ne suffit pas et que les moyens nécessaires sont disponibles ou à constituer.
+**Surface PROPOSÉE :** web responsive pour le pilote. **Langues À ARBITRER :** comparer les besoins des cohortes issues des marchés prioritaires DIR-012 avec les moyens de traduction, support et modération. La recommandation antérieure français puis français/kabyle est retirée comme défaut ; aucune langue principale n'est décidée par ce changement de positionnement.
 
 | Option | Intérêt | Condition / alternative |
 | --- | --- | --- |
-| C1 — Web responsive, interface française — recommandation conditionnelle | Une surface et moins de chaînes à qualifier | 01/19 démontrent la compréhension ; 09/10 couvrent les contenus et recours ; 02/16/18 vérifient les parcours, Unicode et accessibilité |
-| C2 — Web responsive, interfaces française et kabyle | Réduit l'exclusion linguistique | Glossaire, relecteurs, textes sensibles, QA et support à fournir ; la disponibilité réelle prime sur une traduction annoncée |
-| C3 — Natif mobile et/ou quatre langues dès pilote | Couverture plus large des usages | Besoin, budget, compétences et maintenance à démontrer ; FEAT-025 reste Phase 2 candidate, extension linguistique selon FEAT-032 |
+| C1 — Web responsive, une langue d'interface à choisir | Une surface et moins de chaînes à qualifier ; français/anglais sont des exemples à comparer | 01/19 démontrent la compréhension ; 09/10 couvrent les contenus et recours ; 02/16/18 vérifient les parcours, Unicode et accessibilité |
+| C2 — Web responsive, plusieurs langues sélectionnées | Sert des cohortes complémentaires sans paire linguistique prédéfinie | Glossaires, relecteurs, textes sensibles, QA et support pour chaque langue ; périmètre à arbitrer |
+| C3 — Natif mobile et/ou large couverture linguistique dès pilote | Couverture plus large des usages | Besoin, budget, compétences et maintenance à démontrer ; FEAT-025 reste Phase 2 candidate, extension linguistique selon FEAT-032 |
 
-Une interface française ne signifie ni interdiction du kabyle dans les contenus ni capacité universelle de modération. Un texte dans une langue non couverte reste soumis au parcours de réception/escalade défini par 09/10/16 ; aucune modération réussie n'est simulée. Installation PWA, notifications push et synchronisation offline ne sont pas incluses automatiquement.
+Les contenus de toutes les langues, dont le kabyle, sont inclus dans la conception du socle Unicode ; compréhension, traduction et capacité de modération restent à démontrer pour la disponibilité annoncée. Un texte dans une langue non couverte suit le parcours de réception/escalade de 09/10/16, sans modération réussie simulée. Installation PWA, notifications push et synchronisation offline ne sont pas incluses automatiquement.
 
 ## 3. Périmètre candidat complet et phases
 
@@ -151,7 +153,7 @@ Pour la reprise, les propositions 24 h/8 h et 1 h/4 h doivent être rapprochées
 
 Les lots suivants sont un séquencement candidat, pas une nouvelle roadmap approuvée. Des travaux documentaires indépendants peuvent continuer immédiatement ; le démarrage du code d'un lot exige ses contrats et une autorisation de réalisation suffisants.
 
-Les ordres 0–4 ci-dessous regroupent les travaux ; les identifiants L0–L7 de [20](../delivery/implementation-readiness.md) restent la référence des lots. Le complément [préparation contractuelle L1 v0.1](../quality/first-lot-contract-readiness.md) rapproche les onze API candidates et les besoins Web, précise huit demandes avec propriétaires et réutilise les tests existants. Il ne change pas les options A/B/C ni leur statut.
+Les ordres 0–4 ci-dessous regroupent les travaux ; les identifiants L0–L7 de [20](../delivery/implementation-readiness.md) restent la référence des lots. Le complément [préparation contractuelle L1 v0.2](../quality/first-lot-contract-readiness.md) rapproche les onze API candidates et les besoins Web, précise huit demandes avec propriétaires et réutilise les tests existants. Ses contrats restent à compléter ; DIR-012 actualise les entrées de cohorte et de langues des options A/C sans les approuver.
 
 | Ordre | Livrable borné | Condition d'entrée | Preuve de sortie / limite |
 | --- | --- | --- | --- |
@@ -185,7 +187,7 @@ Tous les messages de ce tableau sont **À TRANSMETTRE** ; publication GitHub ne 
 | Suivi existant / destinataires | Question ciblée et livrable attendu | Bloquant pour | Portée de lecture |
 | --- | --- | --- | --- |
 | SYN-001 ; HQ/01/19/09/10 | B1 suffit-il au besoin central ? Avis oui/non motivé, alternative B2 et coût humain ; proposition DEC-0002 | Scope et contrats de groupes ; pas le dossier présent | §2B et fiche Produit/Growth correspondante |
-| SYN-002 ; HQ/15/16/19/01, avis 09/10/14 | A1/C1 sont-ils admissibles et compréhensibles ? Fiche cohorte, couverture des contenus/langues, âge/admission et réserves | Inscription et ouverture ; pas rédaction des options | §2A/C et propositions existantes Privacy/International |
+| SYN-002 ; HQ/15/16/19/01, avis 09/10/14 | Quels pays, cohortes et langues sont préparables après DIR-012, sans présélection A1/C1 ? Fiche cohorte, couverture des contenus/langues, âge/admission et réserves | Inscription et ouverture ; pas rédaction des options | §2A/C et propositions existantes Privacy/International |
 | SYN-003 ; 03/04/05/06/14/20 | Quel premier lot et quelle option d'architecture/stack répondent au pilote retenu ? Dossier ADR avec compétences, opérations et coût | Code du lot concerné | §4 Architecture et §5 ; ADR-0301..0307 candidats existants |
 | SYN-004 ; 13/07/15 | Quelles mesures justifient quelles données et durées ? Tableau unique ; sort de M12 explicitement décidé | Instrumentation concernée | §4 Données et divergence documentée |
 | SYN-005 ; HQ/14/03 | Quel budget et quels objectifs RPO/RTO ? Scénarios comparables, perte acceptable, preuve de restauration attendue | Exploitation et ouverture | §4 Reprise et options d'hébergement existantes |
@@ -201,10 +203,11 @@ Cycle proposé du dossier : PROPOSÉ → AVIS CIBLÉS REÇUS → PRÊT À ARBITR
 
 | Trace à enregistrer par HQ | Valeur actuelle |
 | --- | --- |
-| Option A1/A2/A3 et conditions ; pays/âge/admission | NON DÉCIDÉ |
+| Public / priorités marketing DIR-012 | CONFIRMÉS par le porteur le 30 septembre 2026 ; ancien ciblage DIR-002 remplacé |
+| Option A1/A2/A3 et conditions ; pays/âge/admission effectivement disponibles | NON DÉCIDÉ ; recommandations antérieures à réexaminer |
 | Option B1/B2 et traitement de FEAT-020/J07 | NON DÉCIDÉ |
 | Option C1/C2/C3, langues réellement couvertes | NON DÉCIDÉ |
-| Autorité, date, avis propriétaires, réserves, SHA du dossier décidé | NON REÇUS |
+| Autorité et date de positionnement ; avis sur ouverture/contrats | Portée DIR-012 : porteur, 30 septembre 2026 ; avis spécialisés d'ouverture et contrats NON REÇUS |
 | Décisions DEC-0001/0002 et deltas au registre/catalogue/roadmap/QA | À PRODUIRE APRÈS ARBITRAGE |
 | GO de réalisation d'un premier lot / GO de lancement | NON REÇUS ; deux autorisations de portée distincte |
 
@@ -218,8 +221,8 @@ La base de départ a été reconstruite à partir des fichiers versionnés et so
 
 Contrôles de publication à consigner avec leur résultat effectif dans la PR : `python3 scripts/repository/validate_repository.py`, `git diff --cached --check`, puis workflow Repository quality au SHA publié, avec job et checkout réellement testés. Aucun nouveau test applicatif, audit juridique, benchmark ou exercice d'exploitation n'est exécuté par ce dossier.
 
-1. **Décisions prises / à valider :** synthèse locale et organisation du dossier ; A1/B1/C1 conditionnel recommandés, arbitrages structurants ouverts.
-2. **Livrables :** présent dossier v0.2, complément L1 v0.1 et liens depuis l'index, le statut et la coordination ; mise à jour de la PR #27 existante sur la branche HQ, distincte du bilan #24 déjà fusionné.
+1. **Décisions prises / à valider :** synthèse locale et organisation du dossier ; positionnement universel DIR-012 confirmé ; B1 reste proposé ; A/C et les autres arbitrages de pilote restent ouverts.
+2. **Livrables :** présent dossier v0.3, complément L1 v0.2 et liens depuis l'index, le statut et la coordination ; mise à jour de la PR #27 existante sur la branche HQ, distincte du bilan #24 déjà fusionné.
 3. **Tests :** résultats du delta et de la CI dans la PR ; historiques séparés de l'exécution présente, aucun PASS applicatif.
 4. **Questions :** public/admission, groupes, langues/surface puis données, architecture et capacité selon SYN-001..007.
 5. **Dépendances :** demandes ciblées du §7, toutes À TRANSMETTRE tant qu'aucun envoi n'est établi.

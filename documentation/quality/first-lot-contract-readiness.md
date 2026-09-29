@@ -1,10 +1,12 @@
 # Préparation contractuelle du lot L1 — compte, session et profil
 
+**Entrée actualisée — 30 septembre 2026 :** [DIR-012](../project-governance/decision-register.md) confirme une audience universelle et des priorités marketing mondiales. Les pays servis, langues et règles d'admission restent ouverts ; les GAP applicables à ces paramètres doivent reprendre cette entrée. Aucune origine utilisateur n'est déduite d'un marché marketing.
+
 ## 1. Identification et verdict
 
 | Champ | Valeur |
 | --- | --- |
-| Référence / version | SN-INT-M0-L1-001 — v0.1 ; repères GAP-L1 et S locaux, sans réserver de DEC/ADR/API/TEST global |
+| Référence / version | SN-INT-M0-L1-001 — v0.2 ; repères GAP-L1 et S locaux, sans réserver de DEC/ADR/API/TEST global |
 | Date | 30 septembre 2026, Europe/Paris |
 | Propriétaire | 21 — Intégration / Code Review |
 | Destinataires | HQ, 03/04/05/09/14/15/18/20 ; 02/08/10/16 selon les dépendances ci-dessous |
@@ -138,9 +140,9 @@ Sortie documentaire attendue : chaque GAP applicable a une réponse versionnée 
 | Preuve Git assimilée à une approbation métier | Autorité et sécurité non vérifiées ; conserver statuts et signatures ; FIND-21-02 ouvert, FIND-21-05 séparé ; HQ/14/20 |
 
 1. **Décisions/verdicts :** rapprochement local des sources et conservation des IDs de 20 ; L1 non prêt pour code. Méthode d'identité, permissions, données, architecture et portée restent à valider par leurs propriétaires et HQ.
-2. **Livrables GitHub :** cette v0.1 et lien depuis le dossier d'arbitrage v0.2, publiables dans la [PR #27 existante](https://github.com/yyogas/social-network/pull/27). Aucun besoin de branche supplémentaire. Le SHA de publication et ses preuves sont consignés dans le corps de cette PR.
+2. **Livrables GitHub :** cette v0.2 et lien depuis le dossier d'arbitrage v0.3, publiables dans la [PR #27 existante](https://github.com/yyogas/social-network/pull/27). Aucun besoin de branche supplémentaire. Le SHA de publication et ses preuves sont consignés dans le corps de cette PR.
 3. **Tests exécutés :** contrôles documentaires locaux et CI à consigner après exécution dans la PR avec commandes/SHA/job ; cette pièce n'annonce aucun PASS futur. Aucun test applicatif exécuté dans cette revue.
-4. **Questions ouvertes :** réponses exactes GAP-L1-01 à 08 ; les trois options A/B/C du dossier HQ restent sans arbitrage explicite dans les entrées examinées.
+4. **Questions ouvertes :** réponses exactes GAP-L1-01 à 08 ; DIR-012 confirme le positionnement ; les choix de cohorte, pays ouverts, langues, âge et fonctionnalités A/B/C restent à arbitrer.
 5. **Dépendances :** tableau §4, demandes À TRANSMETTRE ; avis 04/05/14 prioritaires pour identité/reprise, puis 09/15 pour droits et données, 18 pour oracles, 03/20/HQ pour gate de réalisation.
 6. **Risques :** tableau ci-dessus ; absence de preuve runtime et de revue spécialisée approbative, sans nouveau défaut logiciel démontré.
 7. **Prochaines étapes / HQ :** arbitrer A/B/C et obtenir les avis nécessaires ; faire répondre aux seuls GAP applicables ; joindre schémas et exemples versionnés, puis revue des producteurs/consommateurs ; HQ autorise L1 après ses gates. Préparer ensuite implémentation et tests sur ce contrat. Aucune fusion, suppression de branche ou autorisation de lancement n'est demandée implicitement par ce document.

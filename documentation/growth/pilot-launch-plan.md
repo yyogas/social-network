@@ -1,10 +1,12 @@
 # Plan de lancement pilote — Growth / M0
 
+**Delta DIR-012 — 30 septembre 2026 :** positionnement universel et priorités marketing confirmés par le porteur, intégrés par 21. Les propositions opérationnelles de 19 restent à examiner ; aucune campagne, aucun contact ni recrutement lancé. Les contrôles du rapport de v0.2 restent historiques.
+
 ## Identification et statut
 
 | Champ | Valeur |
 | --- | --- |
-| Référence | GROWTH-M0-001, révision 0.2 ; première proposition destinée à GitHub, issue du brouillon conversationnel v0.1 |
+| Référence | GROWTH-M0-001, révision 0.3 ; delta de positionnement sur la contribution 0.2 |
 | Objectif | Préparer un pilote utile et soutenable, comparer les options de recrutement et fournir des critères de suspension ou d'élargissement |
 | Propriétaire | 19 — Growth / Lancement / Communauté ; aucun responsable humain ou compte reviewer confirmé |
 | Destinataires | 00, 01, 02, 03, 04, 05, 09, 10, 12, 13, 14, 15, 16, 17, 18 et 21 selon les demandes ciblées de ce document |
@@ -32,7 +34,7 @@ Les IDs REQ-1901 à REQ-1911, INT-1901 à INT-1909, RISK-1901 à RISK-1906 et TE
 | Nature | Élément et preuve / limite |
 | --- | --- |
 | CONFIRMÉ | Mandat documentaire reçu de l'utilisateur ; propriétaire 19 et chemin du livrable confirmés par M0-TEAM-19 |
-| CONFIRMÉ | Première audience kabyle et diaspora : DIR-002 et vision §1. Correction de v0.1, qui demandait inutilement de reconfirmer cette orientation générale |
+| CONFIRMÉ | Public universel, peuple kabyle inclus, et priorités marketing : DIR-012 remplace DIR-002 sur instruction du porteur du 30 septembre 2026 |
 | CONFIRMÉ | Pays, langues, âge, visibilité, communautés et MVP restent à arbitrer : OPEN-001/003/004/007, DEC-0001/0002 encore attendues |
 | PROPOSÉ | Scénarios 40 puis 100 participants, recrutement manuel, seuils, calendrier, règles Growth, permissions et données ci-dessous |
 | À VÉRIFIER | Besoin récurrent, disponibilité des animateurs, adhésion des créateurs sans rémunération, capacité opérationnelle, faisabilité de la mesure et coûts réels |
@@ -57,7 +59,15 @@ Growth prépare les premiers interlocuteurs et contenus, accompagne l'accueil, r
 
 Les médias et entrepreneurs sont des relais possibles, pas des pages professionnelles promises au MVP. Un événement peut être évoqué dans une publication autorisée ; aucune billetterie, inscription native à un événement ou fonction de calendrier n'est induite. Aucun scraping de membres, import de carnet d'adresses ou sélection automatique par origine n'est proposé.
 
-Protocole de recherche candidat : 8 entretiens, 4 par segment, après autorisation spécifique et modalités validées par 15. Questions : dernier besoin concret ; solution actuelle ; moment où un petit réseau serait utile ; raison de revenir ; audience acceptable ; langues d'aide nécessaires ; difficultés de connexion ; raisons d'arrêter. Les notes sont synthétisées en besoins et objections sans coordonnées, origine déduite ni verbatim identifiant dans Git. Cet échantillon sert à découvrir des problèmes, pas à représenter toute la diaspora.
+Protocole de recherche candidat : 8 entretiens, 4 par segment, après autorisation spécifique et modalités validées par 15. Questions : dernier besoin concret ; solution actuelle ; moment où un petit réseau serait utile ; raison de revenir ; audience acceptable ; langues d'aide nécessaires ; difficultés de connexion ; raisons d'arrêter. Les notes sont synthétisées en besoins et objections sans coordonnées, origine déduite ni verbatim identifiant dans Git. Cet échantillon sert à découvrir des problèmes, pas à représenter toute la population mondiale ou tous les marchés prioritaires.
+
+### Priorités marketing reçues — distinctes du lancement
+
+**CONFIRMÉ :** pays prioritaires : États-Unis, Canada, Inde, France, Allemagne, Royaume-Uni, Japon, Chine, Brésil, Argentine, Colombie, Mexique, Algérie, Maroc, Afrique du Sud, Espagne et Australie. Régions ou ensembles prioritaires : Kabylie, monde arabe et Asie. La portée reste mondiale, y compris les publics non cités ; aucun classement entre ces priorités n'est imposé. Source : [DIR-012](../project-governance/decision-register.md).
+
+**PROPOSÉ pour 19/01/16 :** préparer pour chaque marché étudié une fiche besoin/segment d'usage, canaux contextuels ou partenaires volontaires, langues à qualifier, messages, hypothèse de coût et mesure de résultat. Comparer ces fiches avant de proposer vagues et budgets au HQ. Ne pas inférer une origine depuis une langue, un lieu, un abonnement ou une région marketing. L'acquisition marketing du réseau n'active pas la fonctionnalité de publicité intégrée FEAT-030.
+
+**À VÉRIFIER / NON REÇU :** taille et besoins des segments, disponibilité du service, localisation, support/modération, avis pays, moyens et calendrier. Cette liste autorise la préparation documentaire ; les campagnes, dépenses et contacts exigent leur autorisation propre. La cohorte ne reste pas implicitement limitée à la France ou à un groupe culturel.
 
 ### 1.3 Comparaison structurante à soumettre à DEC-0002 / OPEN-003
 
@@ -258,7 +268,7 @@ Les paliers désignent des inscriptions cumulées ; ils ne déterminent pas le n
 | 10 000 | Ambassadeurs encadrés, calendrier éditorial, partage externe et contenu public utile si retenus | Acquisition de membres qui reviennent via plusieurs relais ; aucune dépendance excessive à une seule personnalité |
 | 100 000 | Extension par villes/intérêts, outils créateurs et découverte selon phases approuvées | Qualité et coûts acceptables dans chaque nouveau cercle ; capacités techniques testées par 14/18 |
 | 1 million | Organisation Growth et opérations par marché ; expériences mesurées | Gouvernance de données, revues locales, budgets et résilience démontrés |
-| 10 millions | Expansion vers d'autres publics et régions selon décision universelle du produit | Chaque marché démontre une utilité, une viabilité et une capacité locale ; aucun marché total extrapolé depuis la seule diaspora |
+| 10 millions | Accroître la disponibilité et la capacité dans le cadre du public universel DIR-012 | Chaque marché démontre une utilité, une viabilité et une capacité locale ; aucun marché total extrapolé depuis une seule cohorte |
 
 Boucle publique future : contenu autorisé → partage → lecture permise → inscription choisie → échange → nouvelle contribution. Si les pages anonymes ne sont pas retenues au MVP, cette boucle reste différée ; le pilote utilise des relais et admissions encadrés. Le SEO de contenus publics dépend de cette décision et ne justifie pas de rendre des profils ou contenus privés indexables. L'invitation ne déclenche ni abonnement, ni notifications marketing, ni récompense automatique.
 
@@ -337,7 +347,7 @@ Les choix d'instrumentation/traitements de FEAT-019 restent des propositions 13/
 
 | Références | Écart / impact | Proposition de résolution et propriétaire |
 | --- | --- | --- |
-| Brouillon conversationnel v0.1 vs DIR-002 / vision §1 | Audience kabyle/diaspora inutilement remise en attente ; confusion entre orientation et périmètre ouvert | Corrigé localement dans cette v0.2 ; 00/17 conservent DIR-002, seuls pays et segment pilote restent ouverts |
+| Orientation historique DIR-002 remplacée par DIR-012 | Le premier ciblage communautaire ne représente plus le mandat ; risque de conserver un recrutement fondé sur cette ancienne entrée | Correction de positionnement v0.3 par 21 ; 01/19 proposent des segments d'usage, 16/15 qualifient disponibilité/langues ; périmètre pilote encore ouvert |
 | Brouillon Growth v0.1 et tableau §2 du registre HQ vs FEAT-020 / J07 | Communautés présentées comme base naturelle alors que l'inclusion reste à arbitrer ; risque de développer des rôles non validés | Option A/B explicite ; 00/01/17 ajouteront la mention conditionnelle au résumé du registre s'ils la retiennent ; aucun changement du registre par Growth |
 | Ancienne boucle publique/invitations vs catalogue FEAT-001/004/018 | Pas de contrat reçu pour pages publiques, liens d'admission, aperçus ou attribution ; promesse implicite de fonctionnalités | REQ-1903/1904 et I1/I2 ; 01 décide couverture ou nouvel ID. Différer la boucle publique si non retenue sans bloquer le pilote interne |
 
@@ -355,7 +365,7 @@ Les choix d'instrumentation/traitements de FEAT-019 restent des propositions 13/
 ## 11. Compte rendu de fin d'étape
 
 1. **Décisions prises / à valider.** Décision locale : produire ce plan au chemin M0-TEAM-19 et réutiliser v0.1 avec correction de la cible confirmée. Option A, S1/S2, données, seuils et permissions restent PROPOSÉS. DEC-0001/0002 sont attendues du HQ ; aucun budget ou droit nouveau n'est approuvé.
-2. **Livrables / références GitHub.** Ce plan v0.2, son index de domaine et le rapport de vérification ; source PR #2 au SHA dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957. La PR de contribution fournit les références effectives de publication et les commits de preuve ; sa création ne vaut ni fusion ni approbation spécialisée.
+2. **Livrables / références GitHub.** Ce plan v0.3 avec delta DIR-012, son index de domaine et le rapport de vérification historique v0.2 ; source initiale PR #2 au SHA dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957. La PR courante fournit les références effectives de publication et les commits de preuve ; sa création ne vaut ni fusion ni approbation spécialisée.
 3. **Tests.** Voir le rapport documentaire pour les commandes réellement exécutées et leur portée. Les 18 scénarios ci-dessus sont PLANNED ; aucun test applicatif, entretien ni campagne exécuté par cette contribution.
 4. **Questions ouvertes.** HQ/01 : option A/B et segment ; 15/16 : pays/âge/langues/collecte ; 09/10/14 : capacité ; 13 : métriques ; HQ : budget et responsables humains. Les effets bloquants sont limités aux opérations indiquées dans INT-1901 à INT-1909.
 5. **Dépendances.** Demandes ciblées ci-dessus À TRANSMETTRE ; aucun avis spécialisé ni réception inter-discussions affirmé. Le tableau de coordination reste tenu par HQ.

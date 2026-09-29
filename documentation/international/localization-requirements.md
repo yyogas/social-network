@@ -1,5 +1,7 @@
 # Exigences de localisation — Fondation M0
 
+**Delta DIR-012 — 30 septembre 2026 :** correction de positionnement intégrée par 21 sur instruction du porteur. Le public est universel ; les marchés marketing et langues ci-dessous ne sont pas des ouvertures ou traductions approuvées. Les exigences spécialisées restent proposées ; le rapport de validation v0.2 conserve sa portée historique.
+
 ## Identification et statut
 
 | Champ | Valeur |
@@ -7,7 +9,7 @@
 | Objectif | Rendre FEAT-021 spécifiable et testable pour le pilote ; préparer FEAT-032 sans ouvrir de marché par défaut |
 | Propriétaire | 16 — International / Localisation ; aucun reviewer humain désigné |
 | Destinataires | HQ, 01, 02, 03, 04, 05, 06, 09, 10, 13, 14, 15, 17, 18, 19 |
-| Date / version | 29 septembre 2026 / v0.2 ; première contribution de l'équipe 16 au dépôt |
+| Date / version | 30 septembre 2026 / v0.3 ; delta DIR-012 sur la contribution de 16 v0.2 |
 | Référence Git | PR [#2](https://github.com/yyogas/social-network/pull/2), branche `documentation/m0-team-coordination`, commit `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957` |
 | Entrées | [Mandat M0-TEAM-16](../teams/work-orders.md), [modèle](../teams/deliverable-template.md), [plan](../documentation-plan.md), [vision](../product/product-vision.md), [catalogue](../product/feature-catalog.md), [parcours J01–J07](../product/user-journeys.md), [registre HQ](../project-governance/decision-register.md), [gouvernance](../governance.md) |
 | Travail réutilisé | Cadrage de cette discussion du 29 septembre 2026, livrable `SOCIAL-NETWORK-INTERNATIONAL-M0-v0.1.md` ; pas de SHA Git antérieur attribué à cette pièce |
@@ -23,29 +25,24 @@ Les identifiants FEAT existants sont conservés. REQ-1601–REQ-1613, AC-1601–
 
 | Nature | Éléments et portée |
 | --- | --- |
-| CONFIRMÉ | DIR-001 : société basée en France ; DIR-002 : audience initiale kabyle et diaspora ; DIR-003 : ambition universelle. Le mandat direct de l'équipe impose la séparation pays légal / résidence / communauté / origine / langues. Le noyau pilote reste une hypothèse. |
-| PROPOSÉ | Petit nombre de combinaisons pays/langues ; interface française candidate ; kabyle en écriture latine comme priorité de qualification linguistique ; prise en charge technique de contenus Unicode et mixtes dès le pilote. Aucun classement n'autorise l'implémentation. |
-| À VÉRIFIER | Compréhension du français dans la cohorte ; besoins d'interface kabyle/anglaise/arabe ; choix d'écriture ; couverture des polices et technologies d'assistance ; capacités humaines et analyse pays de 15. |
-| NON REÇU | DEC-0001/DEC-0002 approuvées, pays ouverts, âge d'accès, glossaire kabyle validé, relecteurs, horaires de support/modération, contrats 04, permissions 14/15, implémentation et tests applicatifs. |
+| CONFIRMÉ | DIR-001 : société basée en France ; DIR-012 remplace DIR-002 : public universel, peuple kabyle inclus, et priorités marketing mondiales ; DIR-003 précisé. Le mandat direct de l'équipe impose la séparation pays légal / résidence / communauté / origine / langues. Le noyau pilote reste une hypothèse. |
+| PROPOSÉ | Combinaisons pays/langues à comparer avec les priorités marketing ; aucune langue principale ou paire français/kabyle présélectionnée ; prise en charge technique de contenus Unicode et mixtes dès le pilote. Aucun classement n'autorise l'implémentation. |
+| À VÉRIFIER | Compréhension des langues candidates dans les cohortes ; besoins d'interface et de support des marchés prioritaires ; choix d'écriture ; couverture des polices et technologies d'assistance ; capacités humaines et analyse pays de 15. |
+| NON REÇU | DEC-0001/DEC-0002 approuvées, pays ouverts, âge d'accès, glossaires validés des langues retenues, relecteurs, horaires de support/modération, contrats 04, permissions 14/15, implémentation et tests applicatifs. |
 
 Contribution indispensable : garantir la compréhension des actions et des droits dans le périmètre retenu, préserver les textes et identités linguistiques, et fournir à HQ les conditions d'ouverture réellement démontrables. Une langue lisible techniquement n'est pas une interface traduite ni une capacité de modération opérationnelle.
 
 ## 2. Pays de recrutement et disponibilité effective
 
-Tous les pays suivants sont des audiences candidates ; aucune ouverture simultanée n'est validée. Une association ou campagne située dans un pays ne détermine pas le pays de résidence de chaque personne recrutée.
+Les priorités marketing ci-dessous sont **CONFIRMÉES par DIR-012**. La disponibilité effective et les langues d'interface restent **NON DÉCIDÉES**. Une campagne dans une région ne prouve ni résidence, ni origine, ni langue individuelle.
 
-| Audience / pays | Référence | Langues à investiguer, sans inférence individuelle | Ouverture effective et avis local |
-| --- | --- | --- | --- |
-| Kabylie ; pays de résidence éventuel : Algérie | DIR-002 / brief | Kabyle, français, arabe selon recherche | NON REÇUS — 15/09/HQ ; région d'origine distincte du pays |
-| France | DIR-002 | Français, kabyle ; autres selon cohorte | NON REÇUS — 15/09/HQ |
-| Canada | DIR-002 | Français, anglais, kabyle ; périmètre provincial à examiner par 15 | NON REÇUS — 15/09/HQ |
-| États-Unis | DIR-002 | Anglais, kabyle, français ; périmètre territorial à examiner par 15 | NON REÇUS — 15/09/HQ |
-| Belgique | DIR-002 | Français, néerlandais, allemand, kabyle selon cohorte | NON REÇUS — 15/09/HQ |
-| Allemagne | DIR-002 | Allemand, kabyle, autres selon cohorte | NON REÇUS — 15/09/HQ |
-| Suisse | DIR-002 | Français, allemand, italien, autres dont kabyle selon cohorte | NON REÇUS — 15/09/HQ |
-| Royaume-Uni | DIR-002 | Anglais, kabyle, autres selon cohorte | NON REÇUS — 15/09/HQ |
+| Périmètre marketing | Priorités reçues | Travail de 16/19/15/09/10 avant ouverture |
+| --- | --- | --- |
+| Pays | États-Unis, Canada, Inde, France, Allemagne, Royaume-Uni, Japon, Chine, Brésil, Argentine, Colombie, Mexique, Algérie, Maroc, Afrique du Sud, Espagne et Australie | Qualifier par marché les besoins linguistiques, textes, support/modération, contraintes et preuves de préparation |
+| Régions ou ensembles | Kabylie, monde arabe et Asie | Décomposer les périmètres utiles à la campagne et au service ; ne pas les coder comme pays ou origine utilisateur |
+| Monde entier | Tous les autres publics restent inclus | Prioriser la préparation sans promettre une couverture opérationnelle immédiate |
 
-La liste est une base d'entretiens, pas un inventaire exhaustif des langues des pays. Ni pays légal de l'entreprise, ni domaine d'email, ni langue de l'appareil ne prouve la résidence. L'analyse juridique par pays appartient à 15 ; ce livrable n'énonce aucune autorisation réglementaire.
+La liste n'est pas un inventaire des langues nationales. Les besoins doivent être établis avec les cohortes et locuteurs concernés. Ni pays de l'entreprise, ni email, ni langue de l'appareil ne prouve la résidence. L'analyse par pays appartient à 15 ; aucun nouvel avis juridique n'est fourni par ce delta.
 
 Pour chaque combinaison **pays × fonction × langue d'interface**, le registre proposé conserve : version, public/âge approuvés, documents utilisateurs, support, modération/recours, avis 15/14, tests 18, décision HQ et procédure de suspension. États : NON ÉTUDIÉ → EN REVUE → PRÊT À ARBITRER → OUVERT, puis SUSPENDU si décision motivée. Le passage à OUVERT exige des preuves nommées ; aucune absence de réponse ne vaut accord. Une suspension d'acquisition ou de publication ne supprime pas automatiquement l'accès aux recours, droits et support des comptes existants.
 
@@ -53,24 +50,24 @@ Pour chaque combinaison **pays × fonction × langue d'interface**, le registre 
 
 | Candidate | Interface proposée | Contenus utilisateurs | Support | Modération et recours | Preuve actuelle |
 | --- | --- | --- | --- | --- | --- |
-| Français `fr` ; formats `fr-FR`, `fr-CA` si nécessaires | MVP : candidate principale | Unicode ; avec règles communes d'accès | Couverture humaine à nommer | Capacité et procédure à fournir par 09/10 | Aucun parcours complet validé |
-| Kabyle `kab`, écriture latine candidate | MVP : option bilingue à arbitrer ; sinon FEAT-032 | Priorité du corpus pilote ; diacritiques conservés | Locuteurs qualifiés à identifier | Expertise du contexte kabyle requise ; réponse NON REÇUE | Aucun glossaire ni relecteur confirmé |
+| Français `fr` ; formats `fr-FR`, `fr-CA` si nécessaires | MVP si retenu pour la cohorte ; sinon International | Unicode ; avec règles communes d'accès | Couverture humaine à nommer | Capacité et procédure à fournir par 09/10 | Aucun parcours complet validé |
+| Kabyle `kab`, écriture latine candidate | MVP si retenu pour la cohorte ; sinon International / FEAT-032 | Contenus inclus dans le socle Unicode ; diacritiques conservés | Locuteurs qualifiés à identifier | Expertise du contexte kabyle requise ; réponse NON REÇUE | Aucun glossaire ni relecteur confirmé |
 | Écriture tifinagh, corpus à valider avec locuteurs | International ; variante de contenu à examiner dès M0 | Vérification de rendu/édition et assistive ; pas de translittération automatique | À vérifier | Compétence linguistique à établir | Aucun texte d'interface approuvé |
-| Anglais `en` ; variantes de format selon besoin | International, sauf cohorte pilote validée qui l'exige | Texte lisible techniquement ; capacité opérationnelle distincte | NON REÇU | NON REÇUE | Candidature seulement |
-| Arabe `ar` ; autres variétés sur validation des locuteurs | International pour interface RTL complète | Texte RTL et mixte à tester dès MVP | NON REÇU | NON REÇUE ; pas d'assimilation des variétés | Candidature seulement |
-| Allemand, néerlandais, italien et autres langues | International selon demande observée | Socle Unicode commun | NON REÇU | NON REÇUE | Aucun engagement de support |
+| Anglais `en` ; variantes de format selon besoin | MVP si retenu pour la cohorte ; sinon International | Texte lisible techniquement ; capacité opérationnelle distincte | NON REÇU | NON REÇUE | Candidature seulement |
+| Arabe `ar` ; autres variétés sur validation des locuteurs | MVP si retenu avec RTL complet ; sinon International | Texte RTL et mixte à tester dès MVP | NON REÇU | NON REÇUE ; pas d'assimilation des variétés | Candidature seulement |
+| Allemand, espagnol, portugais, japonais, chinois (écritures à qualifier), langues des cohortes en Inde et autres marchés | MVP pour les langues effectivement retenues et préparées ; sinon International | Socle Unicode commun | NON REÇU | NON REÇUE | Aucun engagement de support |
 
-Les tags décrivent la langue du contenu ou un réglage, pas la citoyenneté, l'origine ou la résidence. L'orthographe, les variantes de kabyle et les autonymes du sélecteur exigent une revue humaine. La langue ne sera pas représentée uniquement par un drapeau.
+Les tags décrivent la langue du contenu ou un réglage, pas la citoyenneté, l'origine ou la résidence. L'orthographe, les variantes et les autonymes du sélecteur exigent une revue humaine dans chaque langue retenue, dont le kabyle s'il est choisi. La langue ne sera pas représentée uniquement par un drapeau.
 
-**Options pour DEC-0001 / DEC-0002 — aucune adoptée :**
+**Options réexaminées après DIR-012 pour DEC-0001 / DEC-0002 — aucune adoptée :**
 
 | Option | Valeur / coût | Risque et condition |
 | --- | --- | --- |
-| A — Interface française, contenus kabyles/français et capacité humaine correspondante | Moins de chaînes d'interface à qualifier ; socle Unicode complet | Exclut les personnes qui ne comprennent pas le français ; cohorte explicitement compatible et validation de compréhension indispensables |
-| B — Interfaces française et kabyle dès pilote | Accessibilité linguistique accrue pour le public initial | Nécessite glossaire, relecture de tous les parcours critiques, QA et couverture humaine ; coût non chiffré faute d'inventaire d'écrans |
-| C — Interfaces française, kabyle, anglaise et arabe dès pilote | Couverture plus large | Charge de traduction/RTL/Safety accrue sans équipe ni budget démontrés ; report recommandé tant que ces preuves manquent |
+| A — Une langue d'interface choisie selon la cohorte | Moins de chaînes à qualifier ; français ou anglais sont des exemples à comparer, sans choix par défaut | Compréhension de tous les parcours critiques à démontrer ; support/modération des contenus réellement accueillis |
+| B — Plusieurs langues ciblées dès le pilote | Couverture de cohortes ou marchés complémentaires ; aucune paire prédéfinie | Glossaires, relecteurs, QA, accessibilité et moyens humains pour chaque langue ; ensemble exact à arbitrer |
+| C — Large couverture linguistique et territoriale dès le pilote | Couverture plus vaste conforme à l'ambition mondiale | Charge et coût non démontrés ; capacité réelle, textes, corpus et avis nécessaires avant engagement |
 
-**Recommandation conditionnelle :** A si 01/19 démontrent que toute la cohorte comprend les parcours critiques et si 09/10 couvrent les contenus envisagés ; B si cette condition échoue et si les moyens sont confirmés. L'absence de moyens ne transforme pas A en solution acceptable pour des personnes qui ne comprennent pas le service. Les alternatives restent ouvertes. Pas de choix de pays définitif par l'équipe 16.
+**Recommandation de méthode PROPOSÉE :** 01/19 établissent les besoins dans les marchés prioritaires ; 16 compare A/B/C avec 09/10/15 et propose un ensemble testable au HQ. La recommandation antérieure français puis français/kabyle est retirée comme défaut. Une cohorte sans langue de service compréhensible ne devient pas admissible faute de moyens. Le public universel n'impose pas une interface unique ni une langue à une personne.
 
 ## 4. Fonctionnalités, règles et parcours détaillés
 
@@ -236,7 +233,7 @@ REQ-1613 reste une étude Long terme, sans critère d'exécution adopté : livra
 | Origine facultative « privée par défaut » dans v0.1 | Une possibilité de champ pouvait être lue comme autorisation de collecte | Recommander aucune collecte au pilote sans finalité validée ; option de champ déclaré seulement après arbitrage 15/HQ ; pas de nouveau champ dans ce lot |
 | Recherche multilingue | V0.1 évoquait Post-MVP ; catalogue affecte FEAT-023 à Phase 2 | Garder Phase 2 ; qualifier Unicode au MVP. Pas de moteur de recherche imposé ; 01/04/HQ |
 | Locale vs ouverture pays | Langues et pays cités dans les deux cadrages ne portent aucune preuve d'ouverture | Conserver cette concordance ; deux matrices distinctes, activation à décider pour DEC-0001/DEC-0002 |
-| Besoin kabyle et option française | Premier public kabyle n'implique pas qu'il comprenne l'interface française | Option A conditionnelle à étude 01/19 ; sinon B et moyens humains ; arbitrage OPEN-004 au tableau HQ |
+| DIR-012 et anciennes options linguistiques | Le public universel remplace l'hypothèse d'un premier public communautaire ; ni français ni couple français/kabyle ne sont des défauts approuvés | Refaire seulement la comparaison des langues/cohortes A/B/C sur les besoins et capacités ; OPEN-004, 01/16/19/09/10/15 |
 | Statut des transmissions | Tableau HQ au SHA source indique M0-TEAM-16 NON REÇU | Le mandat a été reçu dans cette discussion ; publier cette réponse fournit une pièce. 00/17 mettront le tableau à jour sur preuve ; réception des autres équipes toujours NON REÇUE |
 
 **Fiche de proposition liée à DEC-0001/DEC-0002 et OPEN-001/OPEN-004 :** objectif = pilote compréhensible et opérable ; problème = couverture des langues et territoires sans preuve ; solution candidate = option A ou B conditionnelle et registre d'ouverture ; alternatives = C et lancement mondial simultané, report recommandé mais non rejet définitif ; dépendances = INT-1601/1602/1603 ; priorité P0 pour le pilote. Impact business : coûts de traduction/support/recrutement et représentativité de la cohorte, montants NON REÇUS. Impact technique : versionner ressources, préférences et tests, sans imposer stack. Risques : exclusion linguistique, sous-modération et collecte excessive. Réexamen : besoins observés, capacité humaine disponible, nouvelle région/offre, changement de règle ou incident linguistique. Autorité : HQ avec 01/09/15/16/19, avis 02/03/04/14 selon delta. Les décisions finales iront au registre HQ ; aucune nouvelle DEC concurrente créée ici.
@@ -249,7 +246,7 @@ Toutes les demandes ci-dessous sont **À TRANSMETTRE**, réponses NON REÇUES. U
 | --- | --- | --- | --- |
 | INT-0009 | HQ → 16 | Demande existante traitée par ce document ; réponse soumise à HQ | Arbitrages pays/langues encore ouverts |
 | INT-1601 | 16 → 00/01/19/15 | Quelle cohorte comprend quelles langues, dans quels pays effectivement ouverts ? Fiche cohorte agrégée, avis 15 et décision DEC-0001/0002 ; sections 2–3/10 | Annonce et lancement, pas rédaction |
-| INT-1602 | 16 → 09/10/19 | Pour français/kabyle et contenus mixtes, qui examine, à quelles plages, avec quel secours ? Matrice de compétence, capacité, escalade/recours ; sections 3/5 | Ouverture d'une cohorte linguistique |
+| INT-1602 | 16 → 09/10/19 | Pour chaque langue de contenu envisagée et les contenus mixtes, qui examine, à quelles plages, avec quel secours ? Matrice de compétence, capacité, escalade/recours ; sections 3/5 | Ouverture d'une cohorte linguistique |
 | INT-1603 | 16 → 15/14/01 | Quels réglages sont nécessaires, privés, conservés et exportés ? Avis sur non-collecte de l'origine, suspension et données de diagnostic ; section 7 | Collecte, permissions et instrumentation |
 | INT-1604 | 16 → 02/05/06 | Quels écrans/chaînes critiques, polices, locales et technologies d'assistance ? Inventaire de ressources, prototype d'états et relecteurs ; sections 3–6 | Validation d'une langue d'interface |
 | INT-1605 | 16 → 03/04/05/06 | Quels contrats remplacent C-LANG/C-PREF/C-NOTIF ; quelles bornes, erreurs et versions ? Contrats producteurs/consommateurs ; section 8 | Implémentation du lot FEAT-021 |
@@ -281,9 +278,9 @@ Sources primaires consultées le 29 septembre 2026 ; elles justifient les conven
 ## Compte rendu de fin d'étape
 
 1. **Décisions prises et à valider** : chemin du mandat, réemploi des FEAT et détail local de spécification ; pays, langues, collecte, permissions et contrats restent proposés. Arbitrages liés à DEC-0001/DEC-0002, aucune décision transversale approuvée ici.
-2. **Livrables et références** : ce document v0.2, README propriétaire et rapport de contrôle ; référence d'entrée PR #2 / SHA ci-dessus. La PR de livraison porte la preuve du commit publié ; pas de fusion ni d'approbation implicite.
+2. **Livrables et références** : ce document v0.3 avec delta DIR-012, README propriétaire et rapport de contrôle historique v0.2 ; référence d'entrée PR #2 / SHA ci-dessus. La PR de livraison porte la preuve du commit publié ; pas de fusion ni d'approbation implicite.
 3. **Tests exécutés** : voir [rapport documentaire](../quality/localization-documentation-validation.md) et checks de la PR. Aucun test applicatif exécuté ; TEST-1601–1618 restent PLANNED.
-4. **Questions ouvertes** : cohorte compréhensive du français, option kabyle, couverture humaine, pays/âge, données réellement nécessaires, bornes des contrats, locales/écritures et corpus ; propriétaires dans INT-1601–1608.
+4. **Questions ouvertes** : langues comprises dans les cohortes mondiales candidates, couverture humaine, pays/âge, données réellement nécessaires, bornes des contrats, locales/écritures et corpus ; propriétaires dans INT-1601–1608.
 5. **Dépendances** : réponses ciblées attendues ; état À TRANSMETTRE aux discussions, pas de réception inventée.
 6. **Risques et limites** : sections 10/12 ; revue au SHA source, pas examen de toutes les branches concurrentes ni conformité pays attestée.
 7. **Suite / HQ** : recevoir les avis 01/09/15/19, arbitrer pays et options de langues, obtenir contrats/ressources/corpus, actualiser registre et tableau de coordination via 17, revue 21 avant fusion ; lancement/implémentation suivent leurs autorisations propres. Lecture ciblée de ce delta suffisante, pas de réanalyse générale demandée.
