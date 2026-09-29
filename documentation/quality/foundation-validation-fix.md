@@ -2,6 +2,31 @@
 
 Date : 29 septembre 2026. Proposé par HQ pour revue 20/14/18/21. Référence : [revue #19](https://github.com/yyogas/social-network/pull/19), findings FIND-21-01 à 05. Périmètre : CI et validateur du dépôt, aucune fonctionnalité applicative.
 
+## Complément du 29 septembre — consolidation sur la PR existante
+
+Après la revue [#26](https://github.com/yyogas/social-network/pull/26), le porteur a demandé de poursuivre la consolidation sans multiplier les branches. Le complément est proposé dans **#25**, sur la base vérifiée `786da003111f5ac985b521a4c872c7c3251dc00b`. Le texte ci-dessous conserve la preuve historique de la première version.
+
+- FIND-21-01/03 : corrections vérifiées par la revue indépendante #26 sur cette base ; scripts whitespace et preuve historique inchangés dans ce complément.
+- FIND-21-04 : rejet explicite des liens symboliques dans chaque composant du chemin avant `resolve()`, y compris les alias de répertoire, les chemins avec `..` et les caractères encodés dans l'URL. Les chemins de fichiers suivis conservent leur identité lexicale. Le contrôle de confinement dans le dépôt reste actif ; les liens relatifs ordinaires et répertoires avec contenu suivi restent acceptés.
+- Auteur de ce complément : équipe 21, sur instruction du porteur. Cette équipe devient donc auteur du delta : **ses tests ne constituent pas une revue indépendante de sa propre correction**. Relecture ciblée par 20/18 attendue avant clôture complète du constat. FIND-21-02 reste à arbitrer par HQ/14/20 ; FIND-21-05 reste séparé.
+
+Validation locale effectuée dans un export isolé : 35/35 hashes Git blob comparés à l'arbre GitHub de la base, Linux x86_64, Python 3.12.14, Git 2.51.1. Aucun commit racine local n'est présenté comme un commit distant.
+
+| Vérification | Résultat réellement observé |
+| --- | --- |
+| Quatre nouvelles méthodes de test ajoutées, avant modification du validateur | 24 tests exécutés, 6 échecs d'assertion dans 3 méthodes, dont 4 sous-cas d'alias de répertoire ; défaut reproduit |
+| Même suite après correction | 24 tests PASS, dont la non-régression du merge synthétique et les cas PR/push |
+| Alias fichier vers cible suivie, puis suppression de l'alias | Refus avec alias ; lien cassé après suppression |
+| Alias répertoire direct, descendant, composant avant `..`, nom encodé | Refus dans les 4 sous-cas |
+| Fichier déclaré suivi traversant un répertoire symbolique | Refus |
+| Liens ordinaires `./`, `../`, répertoire suivi et racine | Acceptés |
+| `python3 scripts/repository/validate_repository.py` | PASS, 35 fichiers |
+| `git diff --check` | PASS sur le delta local |
+
+Le SHA publié et la CI de ce complément sont consignés dans le corps de #25 après publication et consultation des logs. Les commandes de suite sont celles de la section historique ci-dessous. Aucun test applicatif, fusion, changement de protection ou suppression de branche effectué.
+
+Demande **À TRANSMETTRE** à 20/18 : relire uniquement le delta alias et ses quatre nouvelles méthodes de test. Demande **À TRANSMETTRE** à HQ/14/20 : enregistrer le choix de protection et les reviewers avant intégration. Le présent complément ne désigne aucun reviewer humain à leur place.
+
 ## Changements et statut
 
 - FIND-21-01 : correction proposée. La CI appelle un script Python sur le delta explicite PR/push ; checkout avec `fetch-depth: 0`. SHA validés avant appel Git, sans interpolation shell de métadonnées de PR. Référence absente ou événement inattendu : échec, aucun vert par omission.

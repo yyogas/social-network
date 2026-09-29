@@ -74,6 +74,45 @@ class RepositoryValidationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             self.assertTrue(any('Missing required file' in e for e in MODULE.inspect(Path(folder), [])))
 
+    def test_untracked_file_symlink_to_tracked_file_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'README.md').write_text('[Alias](alias.md)')
+            (root / 'guide.md').write_text('# Guide')
+            (root / 'alias.md').symlink_to('guide.md')
+            paths = ['README.md', 'guide.md']
+            self.assertTrue(any('symlink' in e for e in MODULE.inspect(root, paths, False)))
+            (root / 'alias.md').unlink()
+            self.assertTrue(any('Broken local link' in e for e in MODULE.inspect(root, paths, False)))
+
+    def test_untracked_directory_symlink_is_rejected_in_all_link_components(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'documentation').mkdir()
+            (root / 'documentation' / 'guide.md').write_text('# Guide')
+            (root / 'alias').symlink_to('documentation', target_is_directory=True)
+            paths = ['README.md', 'documentation/guide.md']
+            for target in ('alias/', 'alias/guide.md', 'alias/../documentation/guide.md',
+                           '%61lias/guide.md'):
+                with self.subTest(target=target):
+                    (root / 'README.md').write_text(f'[Alias]({target})')
+                    self.assertTrue(any('symlink' in e for e in MODULE.inspect(root, paths, False)))
+
+    def test_tracked_path_through_directory_symlink_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'actual').mkdir()
+            (root / 'actual' / 'guide.md').write_text('# Guide')
+            (root / 'documentation').symlink_to('actual', target_is_directory=True)
+            errors = MODULE.inspect(root, ['documentation/guide.md'], False)
+            self.assertTrue(any('Unsupported symlink' in e for e in errors))
+
+    def test_parent_relative_and_directory_links_without_symlinks_are_valid(self):
+        self.assertEqual([], self.check_files({
+            'README.md': '[Docs](documentation/) [Root](./)',
+            'documentation/guide.md': '[Home](../README.md) [Self](./guide.md)',
+        }))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -22,16 +22,21 @@ ALLOWED_ROOTS = {'applications', 'configuration', 'documentation', 'infrastructu
 PRIVATE_KEY = re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH |DSA |ENCRYPTED )?PRIVATE KEY-----')
 
 
+def contains_symlink(path: Path) -> bool:
+    """Inspect lexical components before resolve() can hide a local alias."""
+    return path.is_symlink() or any(parent.is_symlink() for parent in path.parents)
+
+
 def inspect(root: Path, paths: list[str], require_layout: bool = True) -> list[str]:
     root = root.resolve()
     errors = []
-    tracked = {(root / name).resolve() for name in paths}
+    tracked = {root / name for name in paths}
     if require_layout:
         errors.extend(f'Missing required file: {p}' for p in sorted(REQUIRED - set(paths)))
     for name in paths:
         path = root / name
         parts = Path(name).parts
-        if path.is_symlink() or root not in path.resolve().parents:
+        if contains_symlink(path) or root not in path.resolve().parents:
             errors.append(f'Unsupported symlink or escaping path: {name}')
             continue
         if len(parts) > 1 and parts[0] not in ALLOWED_ROOTS:
@@ -63,7 +68,11 @@ def inspect(root: Path, paths: list[str], require_layout: bool = True) -> list[s
             url = urlsplit(target)
             if url.scheme or url.netloc or not url.path:
                 continue
-            destination = (path.parent / unquote(url.path)).resolve()
+            candidate = path.parent / unquote(url.path)
+            if contains_symlink(candidate):
+                errors.append(f'Unsupported symlink in local link: {name} -> {target}')
+                continue
+            destination = candidate.resolve()
             if destination != root and root not in destination.parents:
                 errors.append(f'Link escapes repository: {name} -> {target}')
             elif not destination.exists():
