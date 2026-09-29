@@ -314,3 +314,20 @@ Date : 29 septembre 2026. Origine : exigences explicites du porteur de projet. S
 Dépendances : 17 Documentation, 20 Code Source, 21 Intégration, 18 QA, 14 DevOps, 03 Architecture et 15 Privacy. Risques : faux sentiment de sécurité d'un gate documentaire, divergence des liens lors des renommages, promesses de capacité non testées. Impact business : estimations distinguées des devis et budgets à arbitrer. Impact technique : arborescence explicite, CI documentaire et modèle de contribution ; aucune stack runtime nouvelle. Priorité : P0 pour la traçabilité ; P1 pour les propositions de dimensionnement.
 
 Les réponses importantes suivent désormais sept rubriques : décisions prises/restantes ; livrables et références GitHub ; tests exécutés/résultats ; questions ouvertes ; dépendances ; risques/limites ; prochaines étapes et informations HQ. Les anciennes rubriques restent historiques. La fusion de cette proposition exige une revue ; aucune fusion n'est déclarée à sa création.
+
+
+## DIR-011 — Mobilisation documentaire de toutes les équipes
+
+Date : 29 septembre 2026. Autorité : instruction explicite du porteur de projet. Statut : APPROVED pour lancer les contributions documentaires des équipes 01–21 ; propositions détaillées soumises à revue.
+
+- Objectif : construire des grandes lignes et fonctionnalités cohérentes, documentées et vérifiables avant réalisation.
+- Problème résolu : préparation limitée à quelques équipes, risques de silos et manque de contrats communs.
+- Solution retenue : un mandat par équipe, un modèle commun, un catalogue proposé, des parcours et un tableau de réception dans GitHub ; transmission réelle à suivre.
+- Alternatives rejetées : attendre séquentiellement toutes les équipes avant de commencer une analyse ; assimiler un brouillon HQ à une validation spécialisée ; développer toutes les ambitions simultanément.
+- Dépendances : 01–21, accès GitHub et revue de la PR nº 1 qui fournit les conventions utilisées.
+- Risques : contributions contradictoires, inflation documentaire et absence de retours effectifs. Le propriétaire canonique et les revues ciblées limitent ces risques.
+- Impact business : rend visibles le périmètre, les coûts à instruire et les arbitrages ; aucun budget ni modèle économique nouveau n'est adopté.
+- Impact technique : documentation et coordination ; aucune stack ou permission runtime nouvellement approuvée.
+- Priorité : P0 pour le cadre documentaire M0. Classification : préparation du MVP ; fonctionnalités ultérieures classées dans le catalogue.
+
+Le [tableau de coordination](coordination-board.md) et les [mandats](../teams/work-orders.md) étendent la séquence initiale INT-0001 à INT-0010 : toutes les équipes commencent leur analyse documentaire, avec convergence progressive. Les anciennes demandes restent traçables et ne constituent pas une preuve d'envoi. Les réponses spécialisées de cette nouvelle campagne sont NON REÇUES à sa préparation.

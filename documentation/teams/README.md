@@ -15,3 +15,13 @@
 | 20 | Code Source / Repository | 21 | Intégration / Code Review |
 
 Chaque équipe propose dans son mandat ; MASTER arbitre les impacts transversaux. Cette liste des discussions n'atteste pas de la livraison de leurs travaux. Les propriétaires humains et règles de revue GitHub restent à désigner.
+
+
+## Travail documentaire M0
+
+- [Les 21 mandats détaillés](work-orders.md)
+- [Message commun à transmettre](kickoff-message.md)
+- [Modèle de livrable et de compte rendu](deliverable-template.md)
+- [Tableau de réception et arbitrages HQ](../project-governance/coordination-board.md)
+
+Le HQ a préparé ces mandats. La transmission et les réponses des discussions sont suivies séparément ; leur présence dans GitHub ne déclenche pas automatiquement les discussions.
