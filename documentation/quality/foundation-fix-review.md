@@ -1,5 +1,44 @@
 # HQ-R02 — Revue ciblée du correctif de fondation
 
+## Mise à jour v0.3 — répétition locale d'intégration
+
+Date : 29 septembre 2026, après demande du porteur de continuer. Aucun nouvel avis n'a été reçu : les collections GitHub de reviews #25/#26 et de commentaires #24/#25 étaient vides lors de cette vérification ; 26 PR ouvertes, branches inchangées et sans protection déclarée. Ce constat ne prétend pas lire les autres discussions.
+
+### Sources et méthode
+
+Cinq instantanés ont été comparés à leurs arbres GitHub : **180/180 occurrences de fichiers ont un hash Git blob identique**. Un historique local minimal a été reconstruit pour représenter leurs ancêtres communs. Ce sont des commits locaux de simulation, **pas** les commits distants ni une validation de leurs signatures ou de tout leur historique.
+
+| Instantané | SHA distant source | Commit local représentant cet instantané |
+| --- | --- | --- |
+| #1 fondation | `8590a095d76965880e94614328a8eafbe09b93cb` | `219f52b91c496bcdb549dc5c32c8e84fa7736d1f` |
+| #2 coordination, issue de #1 | `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957` | `8de42ce4ca64934a6f02e20e47d16263d94b9f00` |
+| #25 avant complément, issue de #1 | `786da003111f5ac985b521a4c872c7c3251dc00b` | `43a291bf3ed9fd6bfff8fcaa5737bfe69c4c7acb` |
+| #25 avec complément | `8d02635e2b8c194555e84161f76ee800c2e235c0` | `88d325ace2a9653da69051b65c4328cc03de2955` |
+| #26 v0.2, issue de #25 avant complément | `9cb3cdf1c67ec11d9d743efb7308a1033ec01fab` | `822af2032505cecb663caa211a3416f470e5e913` |
+
+Méthode reproductible : exporter les fichiers aux cinq SHA ci-dessus ; vérifier chacun par SHA-1 du header Git blob et de ses octets ; créer le commit local #1, puis #2 et #25 initial avec ce parent ; créer #25 corrigée et #26 avec #25 initial comme parent. Exécuter ensuite `git merge --no-ff` dans l'ordre du tableau suivant. Tous les fichiers des instantanés sont de mode 100644. Environnement : Linux x86_64, Python 3.12.14, Git 2.51.1.
+
+| Fusion locale simulée | Résultat | Commit local obtenu |
+| --- | --- | --- |
+| #26 dans #25 corrigée | exit 0, aucun conflit | `de7cd41883cd83643febb96978b98baf621aca9d` |
+| Ensemble #25/#26 dans #1 | exit 0, aucun conflit | `aef355b0d9d474b241a24f3feba6dbb8cd4d972c` |
+| #2 dans la fondation corrigée | exit 0, aucun conflit | `3053bd8848136415dd8c6a04e6bf74bd059d3351` |
+
+Sur le dernier arbre combiné, les commandes ont réellement été exécutées :
+
+- `python3 scripts/repository/validate_repository.py` : exit 0, **46 fichiers PASS**.
+- `python3 -m unittest discover -s tests/repository -p 'test_*.py' -v` : exit 0, **24 tests PASS** en 0,517 s, dont la non-régression du merge synthétique.
+- `git diff --check 219f52b91c496bcdb549dc5c32c8e84fa7736d1f HEAD --` : exit 0, aucune erreur d'espacement sur le delta combiné.
+- `git status --short` : aucune modification restante avant ajout de cette preuve.
+
+**Verdict borné : composition technique #1/#2/#25/#26 compatible dans cette répétition locale.** Les contributions #3–24 ne sont pas incluses, main n'a pas été modifiée et aucune fusion distante n'a été exécutée. Cette preuve ne ratifie aucun contenu métier et ne remplace pas la relecture indépendante 20/18 du delta écrit par 21.
+
+### Point de décision avant fusion
+
+`CONTRIBUTING.md`, cycle de contribution §6–7, impose la revue avant fusion et précise qu'un auto-avis d'auteur n'est pas indépendant. La demande HQ-R02 réservait également FIND-21-02 au HQ avec 14/20. Ces éléments restent non reçus : reviewer indépendant désigné, avis sur le complément, dispositif de gouvernance de fusion. Aucune dérogation n'est déduite du seul résultat vert de la simulation.
+
+Option à soumettre au porteur/HQ pour avancer : mandater explicitement un second agent pour la revue technique indépendante (identifié comme tel, sans le présenter comme une équipe ou un humain ayant répondu), puis autoriser une intégration documentaire sous contrôle manuel si son avis est favorable, en conservant FIND-21-02 ouvert jusqu'à décision sur les protections. Cette option n'est ni adoptée ni exécutée dans le présent complément. L'alternative reste la réception des avis ciblés des discussions 20/18 et HQ/14/20. Aucune suppression de branche n'est proposée avant intégration vérifiée.
+
 ## Mise à jour v0.2 — consolidation sur les branches existantes
 
 Date : 29 septembre 2026. Auteur du complément : 21, après instruction du porteur de poursuivre la consolidation. Cette section donne l'état courant ; les sections suivantes conservent la revue indépendante v0.1 du SHA `786da003111f5ac985b521a4c872c7c3251dc00b`, y compris la reproduction du défaut historique.
