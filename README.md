@@ -16,6 +16,7 @@ Plateforme sociale internationale en phase **Fondation / M0**. La société port
 | `documentation/decisions/` | Décisions transversales et ADR approuvés |
 | `documentation/product/` | Recherche, périmètre, parcours et critères d'acceptation |
 | `documentation/architecture/` | Domaines, contrats et cartes de dépendances |
+| `documentation/mobile/` | Options et exigences mobiles ; propriétaire 06 |
 | `documentation/trust-safety/` | Politiques et outils de modération |
 | `documentation/privacy/` | Traitements de données et exigences de confidentialité |
 | `documentation/delivery/` | Jalons, qualité, exploitation et releases |
@@ -47,6 +48,7 @@ La CI actuelle vérifie le dépôt documentaire et les tests de son validateur. 
 - [Vision et principes produit](documentation/product/product-vision.md)
 - [Catalogue des fonctionnalités proposées](documentation/product/feature-catalog.md)
 - [Parcours et critères d'acceptation](documentation/product/user-journeys.md)
+- [Options mobiles : web responsive, PWA et applications installées](documentation/mobile/mobile-options.md)
 - [Mandats des 21 équipes](documentation/teams/work-orders.md)
 - [Pilotage, questions et réception des livrables](documentation/project-governance/coordination-board.md)
 - [Roadmap globale proposée](documentation/project-governance/global-roadmap.md)
