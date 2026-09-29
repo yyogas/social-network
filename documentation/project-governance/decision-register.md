@@ -1,9 +1,9 @@
 # Social Network — Direction / HQ
 
-**Version :** 0.6 — 29 septembre 2026  
-**Statut :** cadrage initial, à réviser avec les équipes  
-**Propriétaire :** Direction / HQ  
-**Nom du projet :** Social Network  
+**Version :** 0.7 — 29 septembre 2026
+**Statut :** cadrage initial, à réviser avec les équipes
+**Propriétaire :** Direction / HQ
+**Nom du projet :** Social Network
 
 ## 1. Vision et mandat
 
@@ -180,9 +180,9 @@ La priorité commune est un produit cohérent et documenté, avec traçabilité 
 
 ### Message canonique à diffuser
 
-> **RÈGLE COMMUNE — COORDINATION DU PROJET SOCIAL NETWORK**  
-> Tu fais partie d'un projet global comportant plusieurs équipes spécialisées. Ne prends pas seul une décision qui modifie fortement l'architecture globale, le business model, la sécurité, les données personnelles, les permissions, la roadmap ou la stack technologique. Dans ce cas, prépare une proposition motivée à transmettre à **00 — DIRECTION / HQ / CHEF D'ORCHESTRE** et, pour l'architecture, à l'équipe propriétaire concernée. Distingue toujours une proposition d'une décision validée.  
-> À la fin de chaque travail important, fournis : **1. Décisions prises ; 2. Livrables produits ; 3. Questions ouvertes ; 4. Dépendances avec les autres équipes ; 5. Risques ; 6. Prochaines étapes ; 7. Informations à transmettre au HQ.**  
+> **RÈGLE COMMUNE — COORDINATION DU PROJET SOCIAL NETWORK**
+> Tu fais partie d'un projet global comportant plusieurs équipes spécialisées. Ne prends pas seul une décision qui modifie fortement l'architecture globale, le business model, la sécurité, les données personnelles, les permissions, la roadmap ou la stack technologique. Dans ce cas, prépare une proposition motivée à transmettre à **00 — DIRECTION / HQ / CHEF D'ORCHESTRE** et, pour l'architecture, à l'équipe propriétaire concernée. Distingue toujours une proposition d'une décision validée.
+> À la fin de chaque travail important, fournis : **1. Décisions prises ; 2. Livrables produits ; 3. Questions ouvertes ; 4. Dépendances avec les autres équipes ; 5. Risques ; 6. Prochaines étapes ; 7. Informations à transmettre au HQ.**
 > Notre priorité est de construire un produit cohérent et documenté, pas simplement d'accumuler des fonctionnalités.
 
 ## 11. Mandat MASTER reçu — DIR-007
@@ -305,3 +305,12 @@ Le dépôt local `social-network-repository` contient le registre HQ, l'état du
 Le dépôt `https://github.com/yyogas/social-network` est créé et sa visibilité **privée** est vérifiée. L’utilisateur a confirmé l’installation automatique de Mend Bolt. Le connecteur dispose des droits de lecture et d’écriture. Le remote local `origin` pointe vers ce dépôt. La publication initiale utilise les API GitHub ; les deux commits locaux préparatoires restent un historique de préparation et ne sont pas présentés comme des commits distants. Les références de publication sont consultables dans l’historique GitHub.
 
 GitHub devient la référence versionnée pour les fichiers de ce dépôt. La précédente archive et la copie autonome du registre constituent des instantanés historiques ; les prochaines évolutions de ces fichiers passent par le dépôt. Les autres livrables d’équipes devront être intégrés avec leur statut et leurs preuves. Les protections de branche et reviewers restent à définir avec les équipes 20 et 21.
+
+
+## DIR-010 — Développement rigoureux et GitHub central
+
+Date : 29 septembre 2026. Origine : exigences explicites du porteur de projet. Statut : APPROVED pour les exigences ; mise en œuvre dans une pull request à revoir. Objectif : rendre le projet maintenable et vérifiable hors des conversations. Problème : livrables dispersés, nommage ambigu et validations non traçables. Solution retenue : fichiers indispensables versionnés, noms explicites respectant les standards, revue par PR, tests prouvés, documentation installation/exploitation et chiffrage d'hébergement daté. Alternatives rejetées : décisions indispensables uniquement en chat ; publication de secrets ; déclarations de réussite sans preuve.
+
+Dépendances : 17 Documentation, 20 Code Source, 21 Intégration, 18 QA, 14 DevOps, 03 Architecture et 15 Privacy. Risques : faux sentiment de sécurité d'un gate documentaire, divergence des liens lors des renommages, promesses de capacité non testées. Impact business : estimations distinguées des devis et budgets à arbitrer. Impact technique : arborescence explicite, CI documentaire et modèle de contribution ; aucune stack runtime nouvelle. Priorité : P0 pour la traçabilité ; P1 pour les propositions de dimensionnement.
+
+Les réponses importantes suivent désormais sept rubriques : décisions prises/restantes ; livrables et références GitHub ; tests exécutés/résultats ; questions ouvertes ; dépendances ; risques/limites ; prochaines étapes et informations HQ. Les anciennes rubriques restent historiques. La fusion de cette proposition exige une revue ; aucune fusion n'est déclarée à sa création.

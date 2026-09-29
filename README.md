@@ -4,26 +4,38 @@ Plateforme sociale internationale en phase **Fondation / M0**. La société port
 
 ## État vérifié
 
-- Le mandat de direction et le registre HQ sont dans [`docs/00-hq/registry.md`](docs/00-hq/registry.md).
+- Le mandat de direction et le registre HQ sont dans [`documentation/project-governance/decision-register.md`](documentation/project-governance/decision-register.md).
 - Le MVP, la date de lancement, le budget et l'architecture détaillée restent à arbitrer.
-- Ce dépôt initial contient de la gouvernance et des emplacements de travail. Il ne contient pas encore d'application, de service, de test exécuté ou de release.
+- Ce dépôt initial contient de la gouvernance et des emplacements de travail. Il ne contient pas encore d'application, de service, de test fonctionnel applicatif exécuté ou de release.
 
 ## Repères
 
 | Chemin | Rôle |
 | --- | --- |
-| `docs/00-hq/` | Registre MASTER et état du programme |
-| `docs/decisions/` | Décisions transversales et ADR approuvés |
-| `docs/product/` | Recherche, périmètre, parcours et critères d'acceptation |
-| `docs/architecture/` | Domaines, contrats et cartes de dépendances |
-| `docs/trust-safety/` | Politiques et outils de modération |
-| `docs/privacy/` | Traitements de données et exigences de confidentialité |
-| `docs/delivery/` | Jalons, qualité, exploitation et releases |
-| `docs/teams/` | Mandats et propriétaires des équipes |
-| `apps/`, `services/`, `packages/`, `infra/`, `tests/` | Emplacements réservés au code validé et à ses tests |
+| `documentation/project-governance/` | Registre MASTER et état du programme |
+| `documentation/decisions/` | Décisions transversales et ADR approuvés |
+| `documentation/product/` | Recherche, périmètre, parcours et critères d'acceptation |
+| `documentation/architecture/` | Domaines, contrats et cartes de dépendances |
+| `documentation/trust-safety/` | Politiques et outils de modération |
+| `documentation/privacy/` | Traitements de données et exigences de confidentialité |
+| `documentation/delivery/` | Jalons, qualité, exploitation et releases |
+| `documentation/teams/` | Mandats et propriétaires des équipes |
+| `applications/`, `services/`, `shared-packages/`, `infrastructure/`, `tests/` | Emplacements réservés au code validé et à ses tests |
 
 ## Fonctionnement
 
-Commencer par [`docs/00-hq/PROJECT-STATUS.md`](docs/00-hq/PROJECT-STATUS.md), puis consulter [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md). Les discussions spécialisées proposent ; MASTER arbitre les choix transversaux et publie les décisions. Une proposition n'est pas une spécification approuvée.
+Commencer par [`documentation/project-governance/project-status.md`](documentation/project-governance/project-status.md), puis consulter [`documentation/governance.md`](documentation/governance.md). Les discussions spécialisées proposent ; MASTER arbitre les choix transversaux et publie les décisions. Une proposition n'est pas une spécification approuvée.
 
-Ne pas ajouter de secrets, de données personnelles réelles ou de exports de conversation bruts dans ce dépôt. La visibilité GitHub et les accès doivent être déterminés avant la publication.
+Ne pas ajouter de secrets, de données personnelles réelles ou de exports de conversation bruts dans ce dépôt. Le dépôt est privé ; les accès supplémentaires sont soumis à validation.
+
+## Développement vérifiable
+
+- [Contribuer et faire revoir un changement](CONTRIBUTING.md)
+- [Organisation et convention de nommage](documentation/repository-conventions.md)
+- [Installation : état réel et prérequis](documentation/installation/installation-guide.md)
+- [Tests et validation](documentation/quality/test-strategy.md)
+- [Rapport des vérifications exécutées](documentation/quality/validation-report.md)
+- [Exploitation, sauvegardes et retour arrière](documentation/operations/operations-readiness.md)
+- [Hébergement : pilote, intermédiaire et premium](documentation/hosting/hosting-comparison.md)
+
+La CI actuelle vérifie le dépôt documentaire et les tests de son validateur. Les suites et l'installation applicatives restent à réaliser. Les protections de branche ne sont pas encore configurées.
