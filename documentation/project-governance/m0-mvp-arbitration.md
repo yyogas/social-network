@@ -4,7 +4,7 @@
 
 | Champ | Valeur |
 | --- | --- |
-| Référence / version | SN-INT-M0-ARB-001 — v0.3 |
+| Référence / version | SN-INT-M0-ARB-001 — v0.4 |
 | Date | 30 septembre 2026, Europe/Paris |
 | Auteur | 21 — Intégration / Code Review ; préparation du dossier, sans substitution aux propriétaires |
 | Autorité attendue | 00 — MASTER / HQ avec 01 Produit, 09 Safety, 15 Privacy et les propriétaires des arbitrages concernés |
@@ -74,6 +74,68 @@ Lecture ciblée des sections de recommandations et interfaces, sans nouvel audit
 | C3 — Natif mobile et/ou large couverture linguistique dès pilote | Couverture plus large des usages | Besoin, budget, compétences et maintenance à démontrer ; FEAT-025 reste Phase 2 candidate, extension linguistique selon FEAT-032 |
 
 Les contenus de toutes les langues, dont le kabyle, sont inclus dans la conception du socle Unicode ; compréhension, traduction et capacité de modération restent à démontrer pour la disponibilité annoncée. Un texte dans une langue non couverte suit le parcours de réception/escalade de 09/10/16, sans modération réussie simulée. Installation PWA, notifications push et synchronisation offline ne sont pas incluses automatiquement.
+
+### D — Comparaison du pilote international après DIR-012
+
+**Complément v0.4, 30 septembre 2026 — auteur 21, recommandation de coordination PROPOSÉE aux propriétaires 01/16/19 et au HQ.** Entrée examinée : PR #27 au SHA `e8d8a56f49d487d78a00af8df9847696b138e7a6`. Cette comparaison utilise les scénarios déjà rédigés par Growth et les exigences de Localisation ; elle ne constitue ni étude de marché, ni nouvel avis pays, ni approbation de ces équipes. Les repères IP1–IP3 sont locaux et ne réservent pas de nouvelle DEC/ADR.
+
+**CONFIRMÉ :** positionnement et priorités marketing DIR-012. **PROPOSÉ :** variantes, langues candidates et dimensionnement ci-dessous. **À VÉRIFIER :** besoins, compréhension, coûts et capacité par cohorte/marché. **NON REÇU :** sélection des pays ouverts, responsables disponibles, budget complet, ressources linguistiques validées et preuves applicatives. Les 17 pays, la Kabylie, le monde arabe, l'Asie et l'ensemble de la planète restent dans le cadre de la [vision](../product/product-vision.md) ; aucun classement entre ces priorités n'est introduit.
+
+| Variante candidate | Composition proposée | Ce qu'elle permet d'apprendre | Coût de préparation / risque | Avis de 21, soumis au HQ |
+| --- | --- | --- | --- | --- |
+| IP1 — Une langue, plusieurs marchés si prêts | Web responsive ; une langue choisie après qualification, anglais comme exemple à examiner ; périmètre d'admission borné | Boucle sociale et exploitation dans plusieurs marchés sans comparer deux interfaces | Un ensemble de textes critiques à qualifier ; participants exclus du test si incompréhension, sans extrapoler leurs besoins aux autres publics | Alternative de test limité si une seule couverture linguistique est démontrée ; ne valide pas un produit multilingue |
+| IP2 — Deux langues, plusieurs marchés si prêts | Web responsive ; anglais/français comme paire candidate à examiner ; deux cercles d'intérêt issus du scénario Growth S1 | Cohérence des mêmes parcours dans deux langues, choix/changement de locale, support et échanges entre cohortes | Deux ensembles de textes et de ressources critiques, relectures et couverture humaine correspondantes ; surcoût non chiffré | **Recommandation de préparation** : produire le dossier de faisabilité IP2, puis confirmer ou remplacer les langues selon la recherche et les moyens |
+| IP3 — Couverture linguistique large dès le pilote | Plusieurs langues et marchés du périmètre marketing préparés ensemble ; liste exacte encore ouverte | Expérience plus diversifiée dès l'ouverture | Autant de parcours, textes, compétences et preuves à préparer que de combinaisons retenues ; aucun budget ou effectif démontré | Garder comme option ; ne pas engager cette portée avant comparaison de capacité et coût |
+
+La paire anglais/français est une **hypothèse de travail**, destinée à rendre IP2 comparable ; elle n'est pas réputée optimale ni comprise par les habitants des pays cités. Une autre paire ou un autre ensemble doit la remplacer si les cohortes le justifient. Les langues du contenu, de l'interface, du support et du recours sont qualifiées séparément. L'anglais ne donne pas accès à un pays par défaut ; une langue de contenu non retenue pour l'interface n'est pas automatiquement interdite. Sa réception et son escalade suivent les contrats 09/10/16.
+
+#### Dimensionnement candidat : réutiliser S1, sans multiplier les plafonds
+
+Pour comparer IP1/IP2, reprendre comme **hypothèse** le scénario [Growth S1](../growth/pilot-launch-plan.md) : 40 comptes au total, dont 8 fondateurs/animateurs et 32 autres participants, deux cercles d'intérêt, admission par vagues d'au plus 20. Ce sont des nombres proposés dans Growth, pas une capacité technique vérifiée. Ils ne deviennent ni 40 comptes par pays ni 40 par langue ; les fondateurs restent séparés dans la mesure.
+
+Pour exercer réellement le caractère international, **viser une cohorte dans au moins deux pays préparés**, sans quotas de nationalité ni d'origine. La répartition des 40 comptes dépend des besoins et des capacités ; elle n'est pas fixée à parts égales. Si un seul pays est prêt, présenter au HQ le choix entre un test limité explicitement nommé et le report de la comparaison internationale. L'élargissement ne se déclenche pas automatiquement après une vague réussie. Pays, âge et invitation restent des paramètres à décider, sans déduire une admission de DIR-012.
+
+S1 prévoit 128 heures sur quatre semaines d'ouverture et une valorisation humaine illustrative de 6 400 €, réserve comprise. **Ce calcul n'est pas le devis d'IP2** : les heures de support ne prouvent aucune couverture linguistique, territoriale ou horaire. 19/09/10/16/14 doivent reprendre le calcul en détaillant préparation, traduction/relecture, QA, support/modération, exploitation et suppléance ; éviter de compter deux fois les heures déjà incluses. Ajouter les coûts externes et hypothèses de réserve sans inventer de montant. Si un poste manque, le total reste **INCOMPLET**, même si l'ancien S1 est chiffré. Aucune dépense autorisée ici.
+
+#### Choisir les marchés sur preuves, sans score de rentabilité inventé
+
+Les mêmes critères s'appliquent à chaque marché candidat de DIR-012 et à toute autre proposition motivée. 19/16 préparent une fiche par pays de service envisagé ; Kabylie, monde arabe et Asie restent des périmètres marketing distincts, à préciser quand une campagne ou un service concret est étudié. Aucun pays n'est classé facile, rentable, conforme ou techniquement accessible par ce dossier.
+
+| Preuve attendue dans la fiche de marché | Responsable / sortie observable | Effet de l'absence |
+| --- | --- | --- |
+| Besoin et cohorte : usage, raison de revenir, relais volontaires et compréhension des parcours | 01/19/16 : synthèse de recherche sans coordonnées ou origine inférée dans Git | Comparaison de valeur et recrutement non prêts |
+| Langues et textes : interface, contenu, aide, sécurité, signalement, décision, recours et droits sur les données | 02/16/09/10/15 : versions relues, manques explicites et responsable de chaque langue | Disponibilité annoncée non prête ; une page d'accueil traduite ne suffit pas |
+| Analyse du périmètre de service et admission | 15/14/01 : avis daté sur le service envisagé, âge/cas limites, données et textes ; contrat consommable par 04/05 | Ouverture du marché et implémentation dépendante bloquées ; aucune conclusion juridique nouvelle ici |
+| Capacité humaine et reprise | 09/10/14/19 : planning, titulaires/suppléants, délais annoncés, escalade et autorité de suspension/reprise | Vague concernée non prête ; aucune disponibilité 24/7 supposée |
+| Faisabilité, accès et qualité | 03/04/05/14/18 : environnement, accès au service depuis la cible, limites et résultats des parcours critiques | Aucun PASS technique ni ouverture déduit de la seule documentation |
+| Coût, plafond et autorité | HQ/19/14/16 : postes estimés, incertitudes, budget, plafond total, décision et preuve de sortie | Engagement de moyens ou acquisition non autorisé par cette proposition |
+
+Reprendre le cycle existant de 16 : **NON ÉTUDIÉ → EN REVUE → PRÊT À ARBITRER → OUVERT**, puis **SUSPENDU** si décision motivée. Une priorité marketing ne fait avancer aucun de ces états. Les avis et la preuve HQ conditionnent le passage ; aucune matrice d'ouverture remplie n'a été reçue. Après suspension d'acquisition, les voies de recours, de droits et de support existantes restent traitées selon leurs contrats ; ne pas désactiver indistinctement tous les accès.
+
+Entre dossiers suffisamment préparés, proposer l'ordre au HQ selon besoin observé, relais disponibles, couverture humaine et coût estimé. Garder les réserves visibles ; un critère de sécurité ou de préparation manquant n'est pas compensé par une promesse de croissance. À ce stade, les pièces disponibles ne permettent pas de nommer honnêtement les premiers pays ouverts.
+
+#### Impacts et acceptation de la variante retenue
+
+| Élément / phase | Règle ou scénario vérifiable proposé | Références et état réel |
+| --- | --- | --- |
+| Admission et paramètres — FEAT-001/004/021, MVP | Personne admissible selon la politique reçue ; choisir une langue disponible, vérifier/activer puis reprendre après coupure. Le choix ne change pas pays déclaré, droits ou origine ; aucun succès avant confirmation. | GAP-L1-01/02/03/06/07 ; TEST-1801/1833/1837 et TEST-1601/1603/1604 ; applicatif BLOCKED/PLANNED |
+| Boucle sociale — FEAT-003/005–010/018/021, MVP | Même capacité à publier/lire/répondre dans les langues retenues ; Unicode préservé, erreurs compréhensibles, navigation clavier/lecteur d'écran. Changer de langue ne rétablit pas un contenu interdit. | TEST-1832/1837/1844/1848 et TEST-1605/1611 ; applicatif BLOCKED/PLANNED |
+| Protection et droits — FEAT-013–017/021, MVP | Signalement dans une langue non couverte : reçu conservé et escalade réelle ; décision, recours et droits restent accessibles selon contrat. Aucun examen humain annoncé comme réussi sans preuve. | TEST-1602/1608/1614, TEST-1914/1917 et J04–J06 de 18 ; applicatif BLOCKED/PLANNED |
+| Croissance et coût — préparation MVP | Total des sous-cohortes respecte le plafond global ; fondateurs/tests exclus des indicateurs concernés, fenêtres matures et petites cellules protégées ; coûts inconnus restent affichés comme inconnus. | TEST-1910/1912/1915/1918 ; PLANNED, contrat 13/15 et données NON REÇUS |
+| Évolutions | Natif, messagerie et recherche restent Phase 2 candidats ; recommandation/publicité/paiements Phase 3 ; extension de langues/marchés International ; expérimentations Long terme selon catalogue. Aucune collecte anticipée n'est ajoutée. | FEAT et phases existants, inchangés ; choix linguistiques du pilote traités dès le MVP concerné |
+
+Les profils, états de session et permissions détaillés restent dans les contrats propriétaires et le rapport L1. Ce complément ne crée ni endpoint, ni champ d'origine, ni règle de géolocalisation, ni migration. Les données de recherche et les contacts éventuels demandent leurs finalités/accès/rétention ; la publication de ce dossier ne lance pas leur collecte.
+
+#### Demandes ciblées à transmettre et arbitrage proposé
+
+| Destinataire / suivi existant | Demande précise | Livrable et blocage |
+| --- | --- | --- |
+| 01/19 — INT-1901, SYN-002 | IP2 et S1 testent-ils le besoin de deux cercles d'intérêt sans groupes obligatoires ? Proposer les cohortes d'usage et l'ordre de préparation des marchés, sans supposer un public lié à une origine. | Fiches de cohortes et hypothèses réfutables ; bloque choix du pilote, pas le travail contractuel indépendant |
+| 16 avec 02/09/10/15 — INT-1601/1602/1604, INT-1902/1903 | Anglais/français convient-il aux cohortes proposées ? Nommer la couverture de chaque parcours/langue, l'alternative si nécessaire et les avis manquants. | Comparatif des langues, ressources, couverture et fiches de marché ; bloque promesse de disponibilité et ouverture |
+| 19/14/16 + HQ — INT-1907, OPEN-006 | Recalculer S1 pour la variante choisie : postes supplémentaires, doublons, suppléance et coûts externes. | Estimation complète avec incertitudes puis budget HQ ; bloque engagement de moyens |
+| 04/05/14/18/20 — GAP-L1 et INT-0407/0408 | Relier admission/locale/états/reprise au contrat L1 retenu et affecter les scénarios ci-dessus aux preuves existantes. | Schémas, erreurs, droits et oracles relus ; bloque code dépendant et verdict applicatif |
+
+**Toutes ces demandes sont À TRANSMETTRE.** Aucun avis de 01/16/19, contact, campagne ou budget n'est créé par la rédaction de 21. HQ peut choisir IP1/IP2/IP3, demander une autre variante ou demander des compléments ; consigner la variante, les langues, les pays de service, l'âge/admission, les plafonds, les responsables, le budget et les réserves dans DEC-0001/0002 selon leur portée. **Recommandation actuelle : instruire IP2 avec anglais/français candidats et le plafond S1 global ; ne pas annoncer de pays ouverts avant les preuves.** Elle ne remplace pas DIR-012 ni les gates du §6.
 
 ## 3. Périmètre candidat complet et phases
 
@@ -222,7 +284,7 @@ La base de départ a été reconstruite à partir des fichiers versionnés et so
 Contrôles de publication à consigner avec leur résultat effectif dans la PR : `python3 scripts/repository/validate_repository.py`, `git diff --cached --check`, puis workflow Repository quality au SHA publié, avec job et checkout réellement testés. Aucun nouveau test applicatif, audit juridique, benchmark ou exercice d'exploitation n'est exécuté par ce dossier.
 
 1. **Décisions prises / à valider :** synthèse locale et organisation du dossier ; positionnement universel DIR-012 confirmé ; B1 reste proposé ; A/C et les autres arbitrages de pilote restent ouverts.
-2. **Livrables :** présent dossier v0.3, complément L1 v0.2 et liens depuis l'index, le statut et la coordination ; mise à jour de la PR #27 existante sur la branche HQ, distincte du bilan #24 déjà fusionné.
+2. **Livrables :** présent dossier v0.4, comparaison internationale IP1–IP3 au §2D, complément L1 v0.2 et liens depuis l'index, le statut et la coordination ; mise à jour de la PR #27 existante sur la branche HQ, distincte du bilan #24 déjà fusionné.
 3. **Tests :** résultats du delta et de la CI dans la PR ; historiques séparés de l'exécution présente, aucun PASS applicatif.
 4. **Questions :** public/admission, groupes, langues/surface puis données, architecture et capacité selon SYN-001..007.
 5. **Dépendances :** demandes ciblées du §7, toutes À TRANSMETTRE tant qu'aucun envoi n'est établi.

@@ -303,8 +303,8 @@ Les contrôles réellement exécutés sur les fichiers figurent dans le [rapport
 
 ### Contribution à DEC-0001 — Public et pays pilotes (NON APPROUVÉ)
 
-- Objectif/problème : recruter des personnes partageant un besoin récurrent sans promettre huit ouvertures simultanées.
-- Solution candidate : tester les segments A/B, puis choisir un seul périmètre d'ouverture opérable avec 15/16 ; France à comparer en premier comme hypothèse de proximité de la société, sans en déduire faisabilité juridique ou présence d'une équipe locale.
+- Objectif/problème : recruter des personnes partageant un besoin récurrent dans le cadre universel DIR-012, sans promettre l'ouverture simultanée de tous les marchés marketing.
+- Solution candidate : tester les segments A/B et choisir les marchés sur besoins observés, langues, capacités et preuves de préparation avec 15/16, sans présélection de la France. Le [complément de coordination de 21](../project-governance/m0-mvp-arbitration.md), §2D, compare IP1–IP3 et recommande d'instruire IP2 ; cette recommandation n'est pas encore un avis de Growth ni un choix HQ.
 - Alternatives : plusieurs pays simultanés, segment créateurs seul, segment associatif seul. Aucune n'est rejetée officiellement ; la simultanéité augmente les prérequis de support et modération à instruire.
 - Dépendances : INT-1901/1902/1903/1907 ; besoin, âge, langues, capacité et budget.
 - Risques/impact business : échantillon biaisé, bassin limité, coût d'accueil ; améliore la possibilité d'apprentissage sans prévision d'acquisition.

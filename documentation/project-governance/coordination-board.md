@@ -52,7 +52,7 @@ Mise à jour du 29 septembre 2026 : le porteur indique que toutes les équipes o
 
 ## Arbitrages ouverts
 
-Le [dossier d’arbitrage préparé par 21](m0-mvp-arbitration.md), v0.1 du 30 septembre 2026, rassemble les options A/B/C et les demandes ciblées liées à SYN-001..007. Il ne vaut ni envoi aux équipes ni décision HQ. Statut : **PROPOSÉ — À ARBITRER** ; avis et décisions restent à recevoir.
+Le [dossier d’arbitrage préparé par 21](m0-mvp-arbitration.md), v0.4 du 30 septembre 2026, rassemble les options A/B/C, la comparaison internationale IP1–IP3 (§2D) et les demandes ciblées liées à SYN-001..007. **DIR-012 est confirmé** ; les modalités de pilote restent **PROPOSÉES — À ARBITRER**. Recommandation de préparation : instruire IP2 avec anglais/français candidats, cohorte S1 de 40 comptes au total et sélection des marchés sur preuves. Aucun envoi aux équipes, avis spécialisé ou choix de pays ouverts n'est présumé.
 
 | ID de suivi | Question | Porteurs des options | Preuve attendue avant décision |
 | --- | --- | --- | --- |
