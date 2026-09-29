@@ -291,11 +291,13 @@ Une personne rejoint le pilote, crée un profil, suit des personnes ou rejoint u
 
 ## 13. Dépôt GitHub — DIR-009
 
+**État courant : GITHUB LINKED — dépôt privé créé, structure publiée sur `main` et vérifiée.** Les paragraphes suivants conservent le contexte préparatoire, puis la décision exécutée.
+
 **Date :** 29 septembre 2026. **Décision :** préparer une structure de dépôt dédiée à Social Network, sous le contrôle de 20 — Code Source et 21 — Intégration, avec les documents M0 versionnés. **Statut :** structure et premier commit local créés ; connexion à un dépôt GitHub **EN ATTENTE**.
 
 Le dépôt local `social-network-repository` contient le registre HQ, l'état du projet, la gouvernance, les index des domaines et des emplacements pour applications, services, packages, infrastructure et tests. Premier commit local : `14c215e` (`docs: establish Social Network M0 foundation`). Aucune application ni release n'y figure. Le compte GitHub accessible ne montre actuellement aucun dépôt dédié à Social Network ; le seul dépôt modifiable découvert, `yyogas/kbwds`, n'est pas utilisé.
 
-**Décision ouverte :** destination GitHub et visibilité. Recommandation provisoire : un nouveau dépôt privé dédié, dont l'URL et les accès sont à confirmer avant publication. Les protections de branche, reviewers et conventions sont à instruire avec 20 et 21. Ne pas marquer `GITHUB LINKED` avant qu'un remote ait été configuré et que le commit soit visible dans le dépôt cible.
+**Décision initialement ouverte, désormais résolue :** destination GitHub et visibilité. Recommandation provisoire : un nouveau dépôt privé dédié, dont l'URL et les accès sont à confirmer avant publication. Les protections de branche, reviewers et conventions sont à instruire avec 20 et 21. Ne pas marquer `GITHUB LINKED` avant qu'un remote ait été configuré et que le commit soit visible dans le dépôt cible.
 
 
 ### Mise à jour GitHub — 29 septembre 2026
