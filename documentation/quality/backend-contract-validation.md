@@ -25,3 +25,28 @@ Aucun test applicatif, API runtime, sécurité, permission, performance, migrati
 ## Transmission
 
 Revue de cette seule contribution à demander à 03/05/06/08/09/10/14/15/18/21 selon leur domaine. Statut : À TRANSMETTRE aux discussions. Les arbitrages OPEN-003/005/007 restent ouverts.
+
+## Delta ciblé L1 v0.2 — 30 septembre 2026
+
+**Portée :** réponse 04 dans le [document Backend](../backend/api-contract-candidates.md), GAP-L1-01 à 04 uniquement, et présent rapport. Mandat HQ `206b1804df5cb602140729613fa85080fea32c7c` ; base PR #27 actualisée `85319286222559c22f943f4c94838840c23dae97`. La lecture de contenu est limitée au mandat, candidat L1 et contrats directs ; copie mécanique des 86 fichiers pour exécuter les contrôles existants, sans réaudit du corpus. Aucun script, test, workflow ou fichier d'un autre propriétaire modifié.
+
+Instantané local d'entrée distinct de l'historique distant : son arbre `39bbac81875877aa51bd36f2ba4d7411835802b4` est identique à l'arbre GitHub de la référence. Le SHA publié et la CI de ce delta sont consignés dans sa PR ; aucun succès de #27 n'est réutilisé comme preuve du nouveau delta.
+
+Environnement local : Linux, Python 3.12.14. Commandes exécutées :
+
+```sh
+python3 scripts/repository/validate_repository.py
+python3 -m unittest discover -s tests/repository -p 'test_*.py' -v
+git diff --check
+git diff --cached --check
+```
+
+Résultats : **86 fichiers PASS ; 24 tests du validateur/contrôle whitespace PASS ; espaces PASS**. Ces tests vérifient l'outillage du dépôt, pas les sessions de l'application.
+
+Contrôle ponctuel Python : quatre sections GAP propriétaires présentes ; onze critères locaux L1-BE ; 48 lignes historiques du catalogue préservées ; références TEST-18xx/14xx/WEB explicites du delta résolues dans les trois sources QA/Sécurité/Web ; les deux fixtures JSON d'identité sont syntaxiquement valides. Recherche Git dans la base : API-BE-049 absent, donc identifiant proposé sans collision observée dans cette référence ; nouvelles contributions simultanées à vérifier lors de l'intégration.
+
+**Échec de contrôle puis correction :** la première assertion comptait les mentions API des nouveaux tableaux comme de nouvelles définitions du catalogue historique. Elle a échoué ; le contrôle a été borné à la portion antérieure au titre « Delta propriétaire L1 », puis réussi. Aucune réussite applicative déduite de cette correction du contrôle textuel.
+
+Relecture locale : distinction clé K/preuve/contexte ; preuve expirée versus reçu historique ; mutation en cours et réponse perdue ; extension logout et changement de génération ; identité compte/profil séparée ; absence de Set-Cookie de suppression tardive ; issue de reconnexion si un ancien cookie invalide écrase B ; récupération contre login ancien ; données et paramètres proposés/ouverts. Cette relecture du producteur ne vaut pas revue indépendante de 21 ni avis 05/14/15/18.
+
+Aucun test applicatif, API, navigateur réel, CSRF, anti-énumération mesurée, cryptographie, concurrence DB, restauration, charge ou migration exécuté. Les scénarios S03a–h/S04a–h et L1-BE-01…11 sont PLANNED ; leurs preuves runtime restent manquantes. Les contrôles documentaires ne ferment aucun GAP. Avis ciblés préparés, À TRANSMETTRE / NON REÇUS. **L1 BLOQUÉ POUR CODE**, aucune fusion.
