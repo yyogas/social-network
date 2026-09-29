@@ -2,6 +2,49 @@
 
 Date : 29 septembre 2026, après signalement du porteur à 21 h 41 Europe/Paris. Auteur : 00 MASTER. Statut : réception vérifiée, consolidation initiale ; décisions de fond ouvertes.
 
+## Fondations intégrées — exécution autorisée du 29 septembre 2026
+
+Complément factuel rédigé par 21. Le porteur a explicitement autorisé à 22 h 56 Europe/Paris la revue par un second agent, puis, si favorable, les seules fusions #26/#25/#1/#2, avec SHA et CI contrôlés à chaque étape et sans supprimer de branche. Cet accord a été versionné avec l'avis indépendant dans [le rapport v0.4 intégré](https://github.com/yyogas/social-network/blob/71d7fd16be174381b7d937182979cdf7225cecb9/documentation/quality/foundation-fix-review.md).
+
+Le second agent `/root/independent_foundation_review`, distinct de l'auteur du complément de code, a donné un avis favorable : FIND-21-01/03/04 corrigés et vérifiés, aucun défaut bloquant. Son avis n'est pas présenté comme une réponse des discussions 20/18 ni comme une approbation GitHub humaine.
+
+### Fusions réellement effectuées
+
+| PR et cible | Head contrôlé avant fusion | Commit de fusion |
+| --- | --- | --- |
+| #26 vers #25 | `a139e7664b070fffeee778ecc50cd58d53dfd506` | `9bbcf1c0d14d667123d674cebfe8fde083f11fe3` |
+| #25 vers #1 | `9bbcf1c0d14d667123d674cebfe8fde083f11fe3` | `eba4d8cb96b5fd41c7cdf47eb0cdecaa995b43a3` |
+| #1 vers main | `eba4d8cb96b5fd41c7cdf47eb0cdecaa995b43a3` | `01bf86b55c0b4b39964ce987c86850b719a7b55a` |
+| #2 repositionnée vers main | `7f6dba24ff3adff1be3a660fbebc99b5a9ff4dd9` | **`71d7fd16be174381b7d937182979cdf7225cecb9`** |
+
+Chaque fusion a utilisé le head attendu et un commit de merge conservant l'ascendance. La fondation après #25 et après #1 a le même arbre que le correctif avec rapport : `f014a34223bb3112b5834bcad91cc8a14455266b`. Arbre final main avec coordination : `f738aa37b3028d69242c8ef683f1692c5e49f512`.
+
+#2 a reçu un complément de 14 lignes de traçabilité dans son rapport de validation, également relu favorablement par le second agent. Le changement de base seul n'avait pas déclenché de CI ; ce commit documentaire a déclenché les contrôles de la composition courante. Aucun code ou choix produit supplémentaire n'a été ajouté.
+
+### Preuves CI réellement consultées
+
+| Étape | Run / job, tous success | Checkout réellement testé | Fichiers / tests |
+| --- | --- | --- | --- |
+| #26 avant fusion | [36630530732](https://github.com/yyogas/social-network/actions/runs/36630530732) / 109618307716 | `a6665af4f6edfbe146f4682bb16f2ebac9e7cbba` | 36 / 24 |
+| #25 après #26 | [36630719826](https://github.com/yyogas/social-network/actions/runs/36630719826) / 109618951241 | `242f0c6719df9cc6f8bce06c11942c54c442178c` | 36 / 24 |
+| #1 après #25 | [36630888698](https://github.com/yyogas/social-network/actions/runs/36630888698) / 109619510373 | `8b42387935f79f005840af50103da86f58204279` | 36 / 24 |
+| Push main après #1 | [36631066344](https://github.com/yyogas/social-network/actions/runs/36631066344) / 109620117562 | `01bf86b55c0b4b39964ce987c86850b719a7b55a` | 36 / 24 |
+| #2 sur main corrigé | [36631289201](https://github.com/yyogas/social-network/actions/runs/36631289201) / 109620875573 | `7a2a3b64c1dfd196df09bf7aa7048ae51d784f46` | 46 / 24 |
+| Push main après #2 | [36631451793](https://github.com/yyogas/social-network/actions/runs/36631451793) / 109621423627 | **`71d7fd16be174381b7d937182979cdf7225cecb9`** | **46 / 24** |
+
+Tous ces logs ont été lus. Bornes whitespace PR : #26 `786da003..a139e766`, #25 `8590a095..9bbcf1c0`, #1 `46a4f36b..eba4d8cb`, #2 `8590a095..7f6dba24` (préfixes des SHA complets consignés dans les rapports et corps de PR). Les deux runs push ont contrôlé respectivement `46a4f36ba827b978bba57acf72ed9282ecb48b8a..01bf86b55c0b4b39964ce987c86850b719a7b55a` puis `01bf86b55c0b4b39964ce987c86850b719a7b55a..71d7fd16be174381b7d937182979cdf7225cecb9`.
+
+Vérification finale supplémentaire : **46/46 blobs de main identiques à la composition locale validée**, dont le correctif, l'avis indépendant et le complément de validation de #2. Les 27 branches présentes au départ sont conservées ; le réglage de suppression automatique était désactivé. Les 22 PR **#3–24 restent ouvertes**, y compris ce bilan #24. Aucune nouvelle branche ou PR créée dans cette intégration.
+
+### État courant et suite
+
+- **FIND-21-01/03/04 : vérifiés et présents dans main** au SHA final ci-dessus.
+- **FIND-21-02 : OUVERT**, solution durable de protections/reviewers à arbitrer par HQ/14/20. Le contrôle manuel a été autorisé pour ce lot ; aucune protection ni visibilité modifiée.
+- **FIND-21-05 : OUVERT**, maintenance checkout séparée.
+- Les documents produit de #2 restent des propositions ; les tests applicatifs restent PLANNED. Aucun lancement, déploiement applicatif ou approbation du MVP/stack/permissions n'est déduit des fusions.
+- Étape suivante proposée au HQ : revue puis intégration progressive des contributions #3–24 sur main, rapprochement README/plan/QA et actualisation de l'index par 17. Ces futures fusions et la suppression de branches ne sont pas incluses dans l'autorisation du lot exécuté.
+- Les anciens états « non intégré » des sections suivantes sont conservés comme historique. Cette section constitue le delta courant ; les handoffs vers les autres discussions restent **À TRANSMETTRE** lorsqu'aucun envoi réel n'a eu lieu.
+
 ## Complément de consolidation proposé par 21 — 29 septembre 2026
 
 Cette section est un delta de suivi rédigé par l'équipe 21 sur instruction du porteur. Elle ne constitue pas une décision HQ ni une nouvelle revue des 21 contributions. Les preuves et arbitrages historiques du bilan ci-dessous restent conservés.
