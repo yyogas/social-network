@@ -1,5 +1,50 @@
 # HQ-R02 — Revue ciblée du correctif de fondation
 
+## Mise à jour v0.2 — consolidation sur les branches existantes
+
+Date : 29 septembre 2026. Auteur du complément : 21, après instruction du porteur de poursuivre la consolidation. Cette section donne l'état courant ; les sections suivantes conservent la revue indépendante v0.1 du SHA `786da003111f5ac985b521a4c872c7c3251dc00b`, y compris la reproduction du défaut historique.
+
+**Correction publiée dans [#25](https://github.com/yyogas/social-network/pull/25), commit [8d02635e2b8c194555e84161f76ee800c2e235c0](https://github.com/yyogas/social-network/commit/8d02635e2b8c194555e84161f76ee800c2e235c0).** Aucun nouveau dépôt, branche ou PR créé pour ce complément.
+
+| Constat | État courant et portée |
+| --- | --- |
+| FIND-21-01/03 | Corrigés et vérifiés par la revue v0.1 ; fichiers du contrôle whitespace et preuve historique inchangés dans le nouveau delta |
+| FIND-21-04 | Correction complémentaire publiée ; tests locaux et CI PASS ; **revue indépendante du nouveau delta à recevoir**, pas de clôture unilatérale |
+| FIND-21-02 | Arbitrage HQ/14/20 non reçu. Réponse de branche relue : `main` reste `protected: false`, SHA `46a4f36ba827b978bba57acf72ed9282ecb48b8a` ; aucune configuration modifiée |
+| FIND-21-05 | OUVERT, suivi séparé ; avertissement checkout toujours visible dans la nouvelle CI |
+
+Le complément de code a été rédigé par 21. **Le verdict indépendant v0.1 ne s'étend donc pas à sa propre correction.** 20/18 doivent relire uniquement les quatre fichiers modifiés depuis la base historique : validateur, tests du validateur, README des scripts, rapport du correctif. Les demandes restent **À TRANSMETTRE** aux autres discussions.
+
+Le validateur refuse désormais tout composant symbolique du chemin avant résolution, conserve l'identité lexicale des fichiers suivis et maintient le confinement dans le dépôt. Quatre méthodes de test ont été ajoutées : alias fichier et disparition dans un checkout propre ; quatre variantes d'alias répertoire ; chemin suivi traversant un répertoire symbolique ; liens ordinaires relatifs/répertoires valides.
+
+| Preuve du complément | Résultat réellement consulté |
+| --- | --- |
+| Sources locales | 35/35 blobs de la base historique vérifiés avant modification ; Linux x86_64, Python 3.12.14, Git 2.51.1 |
+| Avant correction, nouveaux tests contre ancien validateur | 24 tests exécutés ; 6 échecs d'assertion dans 3 méthodes, dont 4 sous-cas ; reproduction confirmée |
+| Après correction | `python3 -m unittest discover -s tests/repository -p 'test_*.py' -v` : 24 PASS, dont ancien exit 0 / nouveau exit 2 sur merge synthétique |
+| Validateur et whitespace local | `python3 scripts/repository/validate_repository.py` : PASS, 35 fichiers ; `git diff --check` : PASS |
+| Delta distant relu | Un commit, quatre fichiers ; les quatre contenus publiés sont identiques aux fichiers testés |
+| CI #25 | [Run 36627957355](https://github.com/yyogas/social-network/actions/runs/36627957355), job 109609675858 : completed/success ; logs lus |
+| SHA head / base | `8d02635e2b8c194555e84161f76ee800c2e235c0` / `8590a095d76965880e94614328a8eafbe09b93cb` |
+| Checkout CI réellement testé | Merge synthétique `9541b1a5baa85b0bc81831d0b95f7f8476e5cb29` ; Python 3.12.3, Git 2.55.0 |
+| Résultats CI | 35 fichiers, 24 tests PASS ; whitespace sur `8590a095d76965880e94614328a8eafbe09b93cb..8d02635e2b8c194555e84161f76ee800c2e235c0` |
+
+Aucun test applicatif ni événement push main exécuté. Le corps de #26 consigne séparément le SHA et la CI du présent document après publication.
+
+### Séquence de consolidation proposée au HQ
+
+1. 20/18 relisent le delta alias de #25 ; HQ/14/20 enregistrent reviewers et mécanisme de protection ou dispositif transitoire explicite. Une CI verte ne désigne pas ces responsables.
+2. Après revue et autorisation d'intégration : #26 vers #25, puis #25 vers #1, puis #1 vers main. Vérifier le delta et la CI après chaque mise à jour ; privilégier des commits de merge conservant l'ascendance de cette pile.
+3. Repositionner #2 vers main après intégration de #1 ; revoir son delta et sa CI, puis l'intégrer sur autorisation.
+4. Repositionner progressivement #3–24 vers main après #2 ; revue par delta, rapprochement des changements partagés README/plan/QA, conservation du statut PROPOSÉ des choix métier.
+5. Nettoyer une branche seulement après vérification de son intégration et de l'absence de PR dépendante, sur autorisation. La fusion des documents ne valide pas le MVP ou la stack.
+
+Ce plan ne lance aucune fusion ni suppression. Réutiliser les branches existantes pour les corrections M0. Le point restant avant intégration est une décision identifiable et une relecture ciblée, sans nouveau tour général des 21 équipes.
+
+## Archive de la revue indépendante v0.1
+
+La reproduction de défaut et les verdicts qui suivent concernent exclusivement le SHA historique `786da003111f5ac985b521a4c872c7c3251dc00b`. Ses assertions d'acceptation des alias ne sont pas un test attendu vert sur la version corrigée.
+
 ## Identification et périmètre
 
 | Champ | Référence |
