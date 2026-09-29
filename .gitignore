@@ -12,3 +12,14 @@ coverage/
 *.pem
 *.key
 .DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.p12
+*.pfx
+*.dump
+*.backup
+*.bak
+backups/
+production-data/

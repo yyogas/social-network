@@ -1,7 +1,7 @@
 # État du projet
 
-**Date :** 29 septembre 2026  
-**Phase :** Fondation / M0  
+**Date :** 29 septembre 2026
+**Phase :** Fondation / M0
 **Objectif :** constituer les preuves et contrats nécessaires pour décider le premier MVP.
 
 ## Confirmé
@@ -31,3 +31,7 @@ Collecter les livrables M0 des équipes 01 Produit, 09 Trust & Safety, 15 Privac
 ## Référence versionnée
 
 Dépôt : https://github.com/yyogas/social-network — visibilité privée. Remote local : `origin`. L’import initial passe par les API GitHub ; les commits de préparation locaux ne sont pas des références de release.
+
+## Travail DIR-010 en revue
+
+Organisation et noms explicites, règles de contribution, CI du dépôt, tests du validateur, documentation d'installation/exploitation et scénarios d'hébergement : préparés dans la branche `docs/m0-engineering-foundation`. Suivre la PR pour statut de revue et résultat CI. Les suites applicatives, l'installation du produit sur OS vierge et les tests de charge restent BLOQUÉS ; la revue indépendante et les protections de branche restent à finaliser.
