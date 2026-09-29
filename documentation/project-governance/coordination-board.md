@@ -2,6 +2,10 @@
 
 Date : 29 septembre 2026. Responsable : 00 MASTER. Instruction source : « fait travailler toute les discussions, et bien construire la documentation, les grandes lignes, les fonctionnalités ».
 
+## Intégration constatée — complément de 21
+
+Les 21 réponses du tableau ci-dessous sont **fusionnées dans main** au SHA `8b2e75da39d9d4ceadbefc71690e233939fb9515`. Les 42 CI PR/push de cette séquence sont réussies ; les preuves exactes sont dans le [bilan HQ](m0-reception-report.md). La revue d'intégration documentaire est terminée pour ces contributions ; leur adoption métier reste à arbitrer. Aucun nouveau mandat ni avis spécialisé n'est supposé. Les transmissions des demandes suivantes restent À TRANSMETTRE.
+
 ## Ce qui est autorisé
 
 Chaque équipe prépare maintenant sa contribution documentaire dans son domaine. Le HQ fournit une première proposition de vision, de catalogue et de parcours pour rendre les analyses concrètes. Ce travail préparatoire n'est ni une validation spécialisée ni une autorisation d'implémenter une architecture, un traitement de données ou une fonctionnalité non approuvés.
@@ -14,27 +18,27 @@ Mise à jour du 29 septembre 2026 : le porteur indique que toutes les équipes o
 
 | Mandat | Équipe | Livrable spécialisé | Transmission | Réponse |
 | --- | --- | --- | --- | --- |
-| M0-TEAM-01 | 01 — Produit | [PR #9](https://github.com/yyogas/social-network/pull/9) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-02 | 02 — Design | [PR #3](https://github.com/yyogas/social-network/pull/3) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-03 | 03 — Architecture | [PR #6](https://github.com/yyogas/social-network/pull/6) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-04 | 04 — Backend / API | [PR #15](https://github.com/yyogas/social-network/pull/15) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-05 | 05 — Web | [PR #8](https://github.com/yyogas/social-network/pull/8) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-06 | 06 — Mobile | [PR #18](https://github.com/yyogas/social-network/pull/18) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-07 | 07 — IA / Recommandation | [PR #21](https://github.com/yyogas/social-network/pull/21) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-08 | 08 — Médias | [PR #4](https://github.com/yyogas/social-network/pull/4) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-09 | 09 — Trust & Safety | [PR #13](https://github.com/yyogas/social-network/pull/13) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-10 | 10 — Admin / Support | [PR #7](https://github.com/yyogas/social-network/pull/7) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-11 | 11 — Publicité | [PR #11](https://github.com/yyogas/social-network/pull/11) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-12 | 12 — Créateurs | [PR #5](https://github.com/yyogas/social-network/pull/5) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-13 | 13 — Data | [PR #12](https://github.com/yyogas/social-network/pull/12) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-14 | 14 — DevOps / Sécurité | [PR #10](https://github.com/yyogas/social-network/pull/10) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-15 | 15 — Privacy / Juridique | [PR #23](https://github.com/yyogas/social-network/pull/23) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-16 | 16 — International | [PR #16](https://github.com/yyogas/social-network/pull/16) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-17 | 17 — Documentation | [PR #17](https://github.com/yyogas/social-network/pull/17) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-18 | 18 — QA | [PR #22](https://github.com/yyogas/social-network/pull/22) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-19 | 19 — Growth | [PR #20](https://github.com/yyogas/social-network/pull/20) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-20 | 20 — Code Source | [PR #14](https://github.com/yyogas/social-network/pull/14) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
-| M0-TEAM-21 | 21 — Intégration / Revue | [PR #19](https://github.com/yyogas/social-network/pull/19) | Mandat reçu : réponse publiée | REÇU HQ — revue à poursuivre |
+| M0-TEAM-01 | 01 — Produit | [PR #9](https://github.com/yyogas/social-network/pull/9) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-02 | 02 — Design | [PR #3](https://github.com/yyogas/social-network/pull/3) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-03 | 03 — Architecture | [PR #6](https://github.com/yyogas/social-network/pull/6) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-04 | 04 — Backend / API | [PR #15](https://github.com/yyogas/social-network/pull/15) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-05 | 05 — Web | [PR #8](https://github.com/yyogas/social-network/pull/8) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-06 | 06 — Mobile | [PR #18](https://github.com/yyogas/social-network/pull/18) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-07 | 07 — IA / Recommandation | [PR #21](https://github.com/yyogas/social-network/pull/21) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-08 | 08 — Médias | [PR #4](https://github.com/yyogas/social-network/pull/4) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-09 | 09 — Trust & Safety | [PR #13](https://github.com/yyogas/social-network/pull/13) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-10 | 10 — Admin / Support | [PR #7](https://github.com/yyogas/social-network/pull/7) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-11 | 11 — Publicité | [PR #11](https://github.com/yyogas/social-network/pull/11) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-12 | 12 — Créateurs | [PR #5](https://github.com/yyogas/social-network/pull/5) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-13 | 13 — Data | [PR #12](https://github.com/yyogas/social-network/pull/12) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-14 | 14 — DevOps / Sécurité | [PR #10](https://github.com/yyogas/social-network/pull/10) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-15 | 15 — Privacy / Juridique | [PR #23](https://github.com/yyogas/social-network/pull/23) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-16 | 16 — International | [PR #16](https://github.com/yyogas/social-network/pull/16) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-17 | 17 — Documentation | [PR #17](https://github.com/yyogas/social-network/pull/17) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-18 | 18 — QA | [PR #22](https://github.com/yyogas/social-network/pull/22) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-19 | 19 — Growth | [PR #20](https://github.com/yyogas/social-network/pull/20) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-20 | 20 — Code Source | [PR #14](https://github.com/yyogas/social-network/pull/14) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
+| M0-TEAM-21 | 21 — Intégration / Revue | [PR #19](https://github.com/yyogas/social-network/pull/19) | Mandat reçu : réponse publiée | INTÉGRÉ — PROPOSÉ ; arbitrage métier ouvert |
 
 ## Convergence sans attente circulaire
 

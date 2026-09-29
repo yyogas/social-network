@@ -1,5 +1,127 @@
 # Réception des 21 contributions — bilan HQ M0
 
+## Consolidation exécutée — contributions spécialisées, v0.3
+
+Complément factuel de **21 — Intégration**, 29 septembre 2026. À la suite de la demande de continuation du porteur, les **21 PR spécialisées #3–23 sont fusionnées dans main**. Référence après cette séquence : **`8b2e75da39d9d4ceadbefc71690e233939fb9515`**, arbre `d55c3ab60e8257969f8cbf3b6705f0e9c5e191ed`, **82 fichiers**. Les 27 branches GitHub sont conservées. La lecture des 26 PR avant publication de ce complément ne trouve plus que **#24 ouverte**. L'état de fusion de ce dernier bilan et ses propres preuves CI sont consignés dans [la PR #24](https://github.com/yyogas/social-network/pull/24), après leur exécution ; aucun résultat futur n'est anticipé ici.
+
+### 1. Décisions et verdicts
+
+- Intégration documentaire des contributions après revue de leurs deltas, synchronisation avec main, contrôle des SHA et CI avant/après chaque fusion. Aucune nouvelle branche GitHub ni nouvelle PR créée ; aucun force-push ni suppression.
+- Les **48 fichiers de delta reçus sont Markdown**, avec **48/48 blobs source vérifiés**. Les compléments portent sur la traçabilité #19/#17/#24. Les apports partagés README, plan et stratégie QA sont préservés ; les 22 compositions préparatoires par fusion trois voies n'ont produit aucun conflit.
+- **FIND-21-01/03/04 : corrigés et vérifiés**, présents depuis la fondation intégrée. **FIND-21-02 : OUVERT**, protections et reviewers durables à arbitrer avec HQ/14/20 ; main relue `protected: false` à la référence ci-dessus. **FIND-21-05 : OUVERT**, maintenance checkout séparée. Aucun réglage de sécurité ou de visibilité modifié.
+- Les classements MVP / Phase 2 / Phase 3 / International / Long terme restent **PROPOSÉS**. Revue documentaire et fusion ne valent pas adoption du MVP, de la stack, des permissions ou des politiques. Aucun code applicatif, déploiement ni lancement n'est revendiqué.
+- #22 était encore en brouillon : GitHub a refusé une première tentative de fusion (405). Après contrôle de ses conditions de revue, de la CI et du mapping documentaire, elle a été passée prête pour revue puis fusionnée. Les 48 cas applicatifs restent BLOCKED ; aucune autorisation de release ni validation des oracles métier n'a été attribuée.
+
+### 2. Livrables GitHub et registre des fusions
+
+L'[index courant](../documentation-index.md) relie les 21 livrables, leurs propriétaires, PR et SHA reçus. La [revue initiale actualisée](../quality/integration-review.md) est v0.3 ; son ancienne v0.2 demeure historique. L'[état des branches](../quality/m0-branch-integration-status.md) conserve les inventaires antérieurs et reproduit l'avis du second agent, distinct de l'auteur et sans assimilation à une approbation humaine ou à un avis des équipes 17/18/20.
+
+Chaque synchronisation a pour parents le head de réception (voir registre figé historique et index) puis la base main indiquée. Chaque fusion a pour parents cette base main puis le head synchronisé. Les arbres de la composition locale, du checkout CI PR et de la fusion ont été comparés et sont identiques. La mise à jour des branches est en avance rapide, sans réécriture de leurs commits.
+
+| PR | Base main avant fusion | Head synchronisé et contrôlé | Commit de fusion dans main |
+| --- | --- | --- | --- |
+| [#3](https://github.com/yyogas/social-network/pull/3) | `71d7fd16be174381b7d937182979cdf7225cecb9` | `f028bb17423d3d4021061561153637c62034579b` | `8a719b04da0df603eb68311dd68dd961881f70f4` |
+| [#4](https://github.com/yyogas/social-network/pull/4) | `8a719b04da0df603eb68311dd68dd961881f70f4` | `7942968d3c8ca2c37572630b38787bd9f851ddbb` | `99f122328ab1a61bfd9844764524895bc4689986` |
+| [#5](https://github.com/yyogas/social-network/pull/5) | `99f122328ab1a61bfd9844764524895bc4689986` | `a0b8f5fa03353ea9c48f0f275fb621b5c95cc255` | `b232b210e3367fa6ddcac73ecd0c5c65d78c1b2e` |
+| [#6](https://github.com/yyogas/social-network/pull/6) | `b232b210e3367fa6ddcac73ecd0c5c65d78c1b2e` | `3be8ef6f0f92fab29a1ccb7348d16891bda026cd` | `2b21db59f99fab85c80822f47f03a75f692e6996` |
+| [#7](https://github.com/yyogas/social-network/pull/7) | `2b21db59f99fab85c80822f47f03a75f692e6996` | `a791808ecaf177dbedcef7f50006f51717ba3501` | `b167f575dd5714a791d8ffdf0ca48d4214eaa9c9` |
+| [#8](https://github.com/yyogas/social-network/pull/8) | `b167f575dd5714a791d8ffdf0ca48d4214eaa9c9` | `e775bb4639d271310e01b239f72435ce7b6160a5` | `23479b58c2ec94258b4f123f91260a3d1b0dd5f5` |
+| [#9](https://github.com/yyogas/social-network/pull/9) | `23479b58c2ec94258b4f123f91260a3d1b0dd5f5` | `8b7d2e092256376dac757b92de802502b9ddcb71` | `7192ea69885ce044ad06657418985eb55aea27ef` |
+| [#10](https://github.com/yyogas/social-network/pull/10) | `7192ea69885ce044ad06657418985eb55aea27ef` | `5df8675b2d8478f12a9e818490e344712dda8dc3` | `d87573a91f5c80ea6a6340a2503714c7c06efaca` |
+| [#11](https://github.com/yyogas/social-network/pull/11) | `d87573a91f5c80ea6a6340a2503714c7c06efaca` | `b8520d7d659b7850dfce66fc647cc542a9d5b164` | `b523f6aa6bc6b62d28cf1a07ba9d6d90109be4b8` |
+| [#12](https://github.com/yyogas/social-network/pull/12) | `b523f6aa6bc6b62d28cf1a07ba9d6d90109be4b8` | `5c6772b7a33aafe5fbd7e55f67b0bf4afb0f17c6` | `dc8eb1be9fc05727273e199c462f73bec9e3e904` |
+| [#13](https://github.com/yyogas/social-network/pull/13) | `dc8eb1be9fc05727273e199c462f73bec9e3e904` | `80f30002d2ec7d700a528c3767e698e3966af6a2` | `156d25d7e07f2b929895c430d4a44a5763d91f15` |
+| [#14](https://github.com/yyogas/social-network/pull/14) | `156d25d7e07f2b929895c430d4a44a5763d91f15` | `7664859039a5fc69f46e64c6d05a1937de2dd92b` | `30dfa0984adfaaf7305abc7853c8e5b7988ae61d` |
+| [#15](https://github.com/yyogas/social-network/pull/15) | `30dfa0984adfaaf7305abc7853c8e5b7988ae61d` | `bb16ccdd13021f8d2f24a93bc7459421765b9879` | `924ec94760d4bc3ad2c91fe825a2748ba67e9c21` |
+| [#16](https://github.com/yyogas/social-network/pull/16) | `924ec94760d4bc3ad2c91fe825a2748ba67e9c21` | `6fe34241e4d83fa701720d7eedb05ad84b4f5241` | `35da4e465eb300ee747318a096c697d175b42831` |
+| [#18](https://github.com/yyogas/social-network/pull/18) | `35da4e465eb300ee747318a096c697d175b42831` | `8c3a47911d681fd95f4543d0309657468ddef798` | `0c124c4b364c1483142ebe4c7e5b94008c35335d` |
+| [#20](https://github.com/yyogas/social-network/pull/20) | `0c124c4b364c1483142ebe4c7e5b94008c35335d` | `ba997559ab6d02e39dbd40e1c8e2552ee11771e9` | `d7a7f46ea4dc306c54787d022695784ca41b3601` |
+| [#21](https://github.com/yyogas/social-network/pull/21) | `d7a7f46ea4dc306c54787d022695784ca41b3601` | `980837591abd2f515bc91e257dfaa252347ff5c4` | `62173ab79f32bf0621fa48d701eb96a7671d6a37` |
+| [#22](https://github.com/yyogas/social-network/pull/22) | `62173ab79f32bf0621fa48d701eb96a7671d6a37` | `2555e81e7c6a7d563593445ff31b316a613973b6` | `d96250c1b23710c68a5f9b4df20c612fb35d9970` |
+| [#23](https://github.com/yyogas/social-network/pull/23) | `d96250c1b23710c68a5f9b4df20c612fb35d9970` | `7583bd888bb4245b6795aba6edad82318fba84ed` | `c0de0c8b1eca1bfbdd2e0b0dcddcad8f10af3c1a` |
+| [#19](https://github.com/yyogas/social-network/pull/19) | `c0de0c8b1eca1bfbdd2e0b0dcddcad8f10af3c1a` | `397073656ebd4ecc530800bd51e2a653c723b42b` | `921dfe4635a488141aa604f6a18508c7dbbdf63d` |
+| [#17](https://github.com/yyogas/social-network/pull/17) | `921dfe4635a488141aa604f6a18508c7dbbdf63d` | `d68ac9f0338aa3cb4dfa2587c000591916c7b09f` | `8b2e75da39d9d4ceadbefc71690e233939fb9515` |
+
+### 3. Tests réellement exécutés et preuves CI
+
+Les **42 runs** ci-dessous (21 PR et 21 push main) sont completed/success ; les jobs et logs ont été consultés. Dans chacun : validateur du dépôt PASS, **24 tests PASS**, contrôle des espaces PASS. Les régressions du merge synthétique fautif et des liens non versionnés, y compris les alias symboliques, font partie de cette suite.
+
+| PR | CI PR / job | Checkout réellement testé en PR | CI push main / job | Fichiers / tests dans les deux runs |
+| --- | --- | --- | --- | --- |
+| #3 | [run 36633437867](https://github.com/yyogas/social-network/actions/runs/36633437867) / job 109628067007 | `cca804263f1524a185af444cb81afce132e4145a` | [run 36633682136](https://github.com/yyogas/social-network/actions/runs/36633682136) / job 109628996912 | 47 / 24 |
+| #4 | [run 36633806574](https://github.com/yyogas/social-network/actions/runs/36633806574) / job 109629440973 | `94e61bba38791374f804d9614f0e47a50e72ae4b` | [run 36633875445](https://github.com/yyogas/social-network/actions/runs/36633875445) / job 109629670638 | 49 / 24 |
+| #5 | [run 36634003656](https://github.com/yyogas/social-network/actions/runs/36634003656) / job 109630091028 | `8fee5e3adcfa1291048d3fbd80b8da921d17e066` | [run 36634064880](https://github.com/yyogas/social-network/actions/runs/36634064880) / job 109630294979 | 51 / 24 |
+| #6 | [run 36634186619](https://github.com/yyogas/social-network/actions/runs/36634186619) / job 109630688547 | `aae0ea8bfb4c1303dedfa7bf9627545ad1585faa` | [run 36634242361](https://github.com/yyogas/social-network/actions/runs/36634242361) / job 109630875828 | 53 / 24 |
+| #7 | [run 36634346379](https://github.com/yyogas/social-network/actions/runs/36634346379) / job 109631218374 | `42c164864448464061fc5b43ce162f9d7fb86b90` | [run 36634404450](https://github.com/yyogas/social-network/actions/runs/36634404450) / job 109631407317 | 56 / 24 |
+| #8 | [run 36634504112](https://github.com/yyogas/social-network/actions/runs/36634504112) / job 109631732145 | `494d2a5fa45852e599f5a305e358fbe43651552f` | [run 36634558260](https://github.com/yyogas/social-network/actions/runs/36634558260) / job 109631907895 | 57 / 24 |
+| #9 | [run 36634685924](https://github.com/yyogas/social-network/actions/runs/36634685924) / job 109632325705 | `7e3ee16cd5c17a1479f3a50500b1d2530faf5a64` | [run 36634743168](https://github.com/yyogas/social-network/actions/runs/36634743168) / job 109632516093 | 58 / 24 |
+| #10 | [run 36634845299](https://github.com/yyogas/social-network/actions/runs/36634845299) / job 109632845185 | `d91704bfee6e89f8f6d619ed41bfbd84291a6e6c` | [run 36634902161](https://github.com/yyogas/social-network/actions/runs/36634902161) / job 109633027951 | 59 / 24 |
+| #11 | [run 36635004281](https://github.com/yyogas/social-network/actions/runs/36635004281) / job 109633369449 | `fadc240e9e7e0b94ccb6dca68403b21afdb8eb0e` | [run 36635058806](https://github.com/yyogas/social-network/actions/runs/36635058806) / job 109633550195 | 62 / 24 |
+| #12 | [run 36635170084](https://github.com/yyogas/social-network/actions/runs/36635170084) / job 109633913117 | `c2d33a75bd49182bc10461ad0b9ad1ce2d31d434` | [run 36635230877](https://github.com/yyogas/social-network/actions/runs/36635230877) / job 109634117030 | 63 / 24 |
+| #13 | [run 36635342744](https://github.com/yyogas/social-network/actions/runs/36635342744) / job 109634481542 | `20dd6ea3b8b56afdf211dbd9826d5bdcba92a773` | [run 36635401635](https://github.com/yyogas/social-network/actions/runs/36635401635) / job 109634675367 | 64 / 24 |
+| #14 | [run 36635527451](https://github.com/yyogas/social-network/actions/runs/36635527451) / job 109635097352 | `2f90a84eba8a6edf2645c2074ac74f2d97c957fa` | [run 36635583529](https://github.com/yyogas/social-network/actions/runs/36635583529) / job 109635279687 | 65 / 24 |
+| #15 | [run 36635715043](https://github.com/yyogas/social-network/actions/runs/36635715043) / job 109635715465 | `93901740b6b9ad4a803350b9952c95f61fee8535` | [run 36635774510](https://github.com/yyogas/social-network/actions/runs/36635774510) / job 109635909413 | 68 / 24 |
+| #16 | [run 36635870192](https://github.com/yyogas/social-network/actions/runs/36635870192) / job 109636223666 | `e411086f02314d75bb136d8fedf80d406a3020ac` | [run 36635927592](https://github.com/yyogas/social-network/actions/runs/36635927592) / job 109636409595 | 71 / 24 |
+| #18 | [run 36636046125](https://github.com/yyogas/social-network/actions/runs/36636046125) / job 109636805479 | `0ddddd1f4194195b323c77c9114399ebf3edbc4a` | [run 36636100118](https://github.com/yyogas/social-network/actions/runs/36636100118) / job 109636978065 | 72 / 24 |
+| #20 | [run 36636211341](https://github.com/yyogas/social-network/actions/runs/36636211341) / job 109637344003 | `732443ea9d4b5ba29480225625cd662c30f95094` | [run 36636261292](https://github.com/yyogas/social-network/actions/runs/36636261292) / job 109637521138 | 75 / 24 |
+| #21 | [run 36636373610](https://github.com/yyogas/social-network/actions/runs/36636373610) / job 109637893209 | `c4dab05a5aa0ca6aa16329501dc4cc8e8a1c1d91` | [run 36636428324](https://github.com/yyogas/social-network/actions/runs/36636428324) / job 109638070900 | 76 / 24 |
+| #22 | [run 36636535279](https://github.com/yyogas/social-network/actions/runs/36636535279) / job 109638432454 | `992f72cdd595b710af836d28e4c0cdd71f1985c9` | [run 36636703874](https://github.com/yyogas/social-network/actions/runs/36636703874) / job 109639000133 | 78 / 24 |
+| #23 | [run 36636814419](https://github.com/yyogas/social-network/actions/runs/36636814419) / job 109639370039 | `b11fe2788cc45cb1e176d5d0201f8c7bb5d656ad` | [run 36636866546](https://github.com/yyogas/social-network/actions/runs/36636866546) / job 109639543390 | 79 / 24 |
+| #19 | [run 36637004763](https://github.com/yyogas/social-network/actions/runs/36637004763) / job 109639980457 | `2aa397141d7dee41b79f2b406088e8a05af12a09` | [run 36637063511](https://github.com/yyogas/social-network/actions/runs/36637063511) / job 109640174022 | 80 / 24 |
+| #17 | [run 36637222796](https://github.com/yyogas/social-network/actions/runs/36637222796) / job 109640708774 | `9b4ca430b6c9749e3f20c9380964e2e95bc9d0dc` | [run 36637275058](https://github.com/yyogas/social-network/actions/runs/36637275058) / job 109640883691 | 82 / 24 |
+
+Le checkout de chaque run push est **exactement le commit de fusion** du premier tableau. Bornes réellement relevées dans les logs whitespace : **PR = base main..head synchronisé ; push = base main..commit de fusion**. Les tableaux donnent tous les SHA complets ; les corps des PR recopient les deux plages et les liens de preuve.
+
+Commandes CI exécutées :
+
+```sh
+python3 scripts/repository/validate_repository.py
+python3 -m unittest discover -s tests/repository -p 'test_*.py' -v
+python3 scripts/repository/check_whitespace.py
+```
+
+Contrôles locaux complémentaires : validateur et `git diff <avant> <après> --check` sur chacune des 22 compositions préparatoires ; 24 tests du dépôt PASS sur la composition locale complète. Ces commits locaux sont des répétitions de contenu et **ne sont pas présentés comme les commits distants**. La CI ci-dessus fournit les exécutions sur les véritables SHA GitHub.
+
+Le contrôle courant de l'index a été exécuté par le second agent : **21/21 cibles versionnées**, couples PR/SHA et liens conformes. Son ancien script supposant 20 livrables absents est archivé dans son périmètre initial. Le contrôle de traçabilité QA repris du rapport #22 a également été exécuté sur la composition : **48 cas uniques BLOCKED, 31/31 AC mappés, 34 phases/priorités FEAT conservées, 13 références de dépendances présentes et correctement reliées**, aucune autre définition de ligne TEST-1801..1848 repérée. Il ne teste aucun comportement produit.
+
+Limites : pas de tests applicatifs, E2E, charge, restauration ou installation produit ; pas de certification juridique, d'audit métier exhaustif ni de scan complet de secrets. Le validateur couvre les liens locaux inline, pas les fragments et URL externes. Les logs signalent toujours la maintenance checkout de FIND-21-05, sans vulnérabilité présumée.
+
+### 4. Questions ouvertes
+
+Les dossiers **SYN-001..007** du bilan historique restent ouverts : communautés dans le pilote, public/pays/langues/âge, plateforme/stack, durées par finalité, reprise/hébergement, accès/médias/recours et capacité humaine. Aucune de leurs options n'est transformée en décision par cette consolidation. Le registre courant et les pièces reçues sont disponibles sur main pour arbitrage.
+
+### 5. Dépendances et demandes précises — À TRANSMETTRE
+
+| Destinataires | Livrable attendu | Effet sur la suite |
+| --- | --- | --- |
+| HQ + 01/19/09/10 | Décision de scope MVP et variante communautés (SYN-001, DEC-0002) | Bloque les lots qui dépendent du scope |
+| HQ + 15/16/19/01 | Fiche public/pays/langues/âge et inconnues juridiques (SYN-002, DEC-0001) | Bloque ouverture et traitements dépendants |
+| 03/04/05/06/20 | Proposition cohérente de plateforme, stack et premier lot (SYN-003) | Bloque la réalisation sur ces contrats ouverts |
+| 13/07/15 | Tableau finalité/donnée/durée/accès/mesure conciliant les propositions (SYN-004) | Bloque la collecte concernée ; aucune durée maximale par défaut |
+| HQ + 14/03 | Budget, objectifs de reprise et preuve de restauration attendue (SYN-005) | Bloque la préparation d'exploitation dépendante |
+| 04/08/09/10/14/15 + 18 | Matrice acteur/action/état, révocation, erreurs, recours et oracles QA (SYN-006) | Bloque les lots d'accès et de modération concernés |
+| HQ + 19/09/10/14 | Responsables, couverture, plafond pilote et procédure d'arrêt (SYN-007) | Bloque l'ouverture du pilote |
+| HQ + 14/20 | Protections/reviewers durables (FIND-21-02) ; maintenance checkout distincte (FIND-21-05) | Contrôle manuel transitoire ne remplace pas une protection technique |
+
+Publication GitHub effectuée par ce lot documentaire ; aucun envoi aux autres discussions ni réception de leurs nouveaux avis n'est revendiqué.
+
+### 6. Risques et mesures
+
+Le risque principal est de confondre fusion documentaire, accord métier et preuve applicative. Mesure : statuts PROPOSÉ/PLANNED/BLOCKED maintenus et décisions explicites par les propriétaires. Le risque de contournement de revue sur main non protégée subsiste : FIND-21-02 reste visible. Le risque de perte de contributions est réduit par les fusions à deux parents, la comparaison des arbres et la conservation des 27 branches. Les anciennes preuves sont archivées avec leurs SHA, sans les réattribuer aux versions actuelles.
+
+### 7. Prochaines étapes et informations HQ
+
+1. Finaliser l'intégration du présent bilan #24 avec sa propre CI ; consigner son résultat réel dans la PR.
+2. Arbitrer les dossiers DEC-0001 et DEC-0002 à partir des contributions reçues ; prioriser les désaccords SYN-001..007 avec les propriétaires.
+3. Fixer les contrats, permissions et données du premier lot retenu, puis faire relier ses critères par QA avant réalisation autorisée par 20.
+4. Traiter FIND-21-02 avec 14/20 et la maintenance FIND-21-05 séparément. La suppression des branches exige une décision ultérieure ; aucune suppression exécutée ici.
+
+Il n'est pas nécessaire de relancer un tour général des 21 équipes ou de multiplier les branches documentaires. Les prochains changements doivent répondre aux arbitrages ciblés et citer les sources déjà intégrées.
+
+## Archive — fondations, réception et propositions antérieures
+
+Les nombres de PR ouvertes, prochaines étapes et demandes non reçues qui suivent décrivent leurs instantanés historiques. L'état courant ci-dessus et les PR de fusion déterminent ce qui a réellement été intégré ; les décisions métier demeurent ouvertes.
+
 Date : 29 septembre 2026, après signalement du porteur à 21 h 41 Europe/Paris. Auteur : 00 MASTER. Statut : réception vérifiée, consolidation initiale ; décisions de fond ouvertes.
 
 ## Fondations intégrées — exécution autorisée du 29 septembre 2026

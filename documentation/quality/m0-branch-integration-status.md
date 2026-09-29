@@ -1,5 +1,86 @@
 # État des branches et séquence d'intégration M0
 
+## Résultat constaté après les 21 contributions spécialisées
+
+Complément factuel de 21, 29 septembre 2026 : **#3–23 fusionnées**, main `8b2e75da39d9d4ceadbefc71690e233939fb9515`, **82 fichiers**, CI finale [36637275058](https://github.com/yyogas/social-network/actions/runs/36637275058), job 109640883691, checkout identique à main, **24 tests PASS**. Les **42 runs PR/push** des 21 étapes sont réussis ; parents, arbres et plages whitespace vérifiés. Les [tableaux HQ](../project-governance/m0-reception-report.md) contiennent les références exactes.
+
+Lecture GitHub après #17 : **27 branches conservées, 26 PR au total, seule #24 encore ouverte**. Cette PR publie le présent bilan ; son état ultérieur et ses propres checks se lisent dans [#24](https://github.com/yyogas/social-network/pull/24). Aucune fusion future n'est comptée dans le relevé. Main reste `protected: false` ; FIND-21-02/05 ouverts. Les dossiers produit/politiques restent PROPOSÉS.
+
+Les deux retouches bornées demandées à #19 (v0.3 / archive v0.2 et formulation sans résultat futur anticipé) ont été appliquées avant son intégration. #22 a quitté le statut draft après revue du delta, CI et mapping QA, puis a été fusionnée ; ce passage n'approuve pas une release produit.
+
+## Avis indépendant conservé — périmètre et limites propres
+
+Le texte ci-dessous reproduit l'avis du second agent et son complément de relecture. Ses SHA locaux et observations initiales restent attachés à leur instantané ; les preuves distantes postérieures sont dans le bilan courant. Il n'est pas attribué aux équipes 17/18/20 ou à un reviewer humain.
+
+### Revue indépendante ciblée — documents #19, #24 et #17
+
+Révision v0.1, 29 septembre 2026. Auteur : second agent indépendant `/root/independent_foundation_review`, distinct de l'auteur des compléments. Ce n'est ni un avis des discussions 17/20/18 ni une approbation humaine GitHub. Aucune mutation distante effectuée.
+
+#### Verdict
+
+**APPROVED WITH MINOR CHANGES pour intégration documentaire**, sous réserve du delta de traçabilité décrit ci-dessous, de la résolution des éventuels conflits sans perte et de la CI sur les nouvelles bases. Aucun blocage métier nouveau ni besoin de réaudit général identifié. Cet avis ne ratifie aucune proposition produit, architecture, données ou permissions.
+
+Sources GitHub relues directement :
+
+| PR | Head examiné | Delta |
+| --- | --- | --- |
+| [#19](https://github.com/yyogas/social-network/pull/19) | `d0a7dcbad10efa4c27c7724b9f39226a6f01a384` | Un rapport de revue historique et grille des futures contributions |
+| [#24](https://github.com/yyogas/social-network/pull/24) | `5eea764e3dfcd4c83b1e0c3dc306dbdf5a901230` | Réception, bilan HQ, statut projet, ancien état des branches |
+| [#17](https://github.com/yyogas/social-network/pull/17) | `3c174c4053d98dea63cae353686b09f38392c589` | Index, rapport de couverture, liens README et plan |
+| Base d'intégration | `71d7fd16be174381b7d937182979cdf7225cecb9` | Main : 46 fichiers dans l'arbre GitHub non tronqué |
+
+#### Modifications ciblées nécessaires
+
+1. **#19 — archive clairement identifiée.** Ajouter en tête un état daté renvoyant au rapport du correctif intégré : FIND-21-01/03/04 vérifiés ; FIND-21-02/05 ouverts. Conserver les verdicts CHANGES REQUIRED/BLOCKED et preuves dans une section explicitement historique aux SHA initiaux. Le contenu initial est cohérent avec son périmètre, mais ne doit pas apparaître comme le verdict actuel sur main.
+2. **#24 — synchroniser les pages de statut.** Le bilan `m0-reception-report.md` distingue déjà le complément courant des preuves historiques. En revanche `quality/m0-branch-integration-status.md` présente encore 26 branches/25 PR ouvertes avant création de #26 : étiqueter cet inventaire historique et ajouter un état courant avec référence de contrôle. `project-status.md` conserve « collecter les livrables » et « corrections de fondation avant intégration » comme prochaine action : mettre à jour cette entrée et dater les passages DIR-010/011. Les protections durables ne sont pas réputées configurées.
+3. **#17 — index courant et snapshot historique.** Conserver la matrice ABSENT/NON REÇU au SHA d'entrée comme historique ; ajouter les références des réponses effectivement reçues et distinguer intégration, revue documentaire et adoption métier. Le script de `documentation-index-validation.md` impose que seul le livrable 17 existe : il reste reproductible uniquement sur son ancien instantané. L'étiqueter comme tel et fournir une preuve de couverture adaptée à la composition actuelle. Ne pas réécrire ses anciens résultats 44 fichiers/10 tests comme s'ils étaient actuels.
+
+Les nouvelles sections factuelles devront identifier leur auteur et éviter d'attribuer une validation aux propriétaires spécialisés. Une preuve de réception HQ n'est pas un avis sur les arbitrages SYN-001..007. Le maintien des phases PROPOSÉ et des critères PLANNED est satisfaisant dans les documents examinés.
+
+#### Contrôles réellement effectués
+
+- Métadonnées des trois PR, deltas et six documents centraux relus via GitHub aux SHA ci-dessus ; ajouts README/plan et coordination également examinés dans le patch.
+- Contrôle ponctuel des liens inline locaux sur les six documents contre l'inventaire main et leurs ajouts : **86 références, aucune cible manquante**. Ancres et URL externes non testées.
+- Relecture des références d'autorité, temporalité, phases, critères et liens de preuve ; aucun code ou test applicatif modifié.
+- Les métadonnées initiales indiquent #19/#17 `mergeable: false` sur leur ancienne base, #24 `true`. Ces signaux demandent une relecture après retarget ; ils ne démontrent pas un conflit sémantique ni un verdict de contenu.
+- Aucune suite Python ni nouvelle CI réexécutée par ce second agent pour ce delta documentaire. Les tests/run historiques mentionnés dans les documents restent leurs preuves historiques, pas des exécutions nouvelles revendiquées ici.
+
+#### Suite et limites
+
+Relire les seuls compléments ci-dessus une fois préparés, puis contrôler le diff intégré et la CI à chaque nouvelle base. Conserver les autres contributions et les historiques. L'avis ne couvre pas la validation métier des 21 contributions ni une permission de suppression de branche. FIND-21-02 et FIND-21-05 restent suivis séparément. Aucun arbitrage global nouveau proposé.
+
+#### Complément v0.2 — relecture des corrections préparées
+
+Les compléments locaux #19/#17/#24 sous `documentary-integration/deltas/` ont été relus par ce même second agent, sans réaudit métier. **Avis favorable sur ces corrections documentaires** : les états courants et archives sont désormais explicitement séparés ; FIND-21-01/03/04 vérifiés et FIND-21-02/05 ouverts restent distingués ; l'index ajoute les 21 réponses avec leurs PR et SHA de réception sans les présenter comme adoptées. L'ancien script limité au snapshot initial est clairement archivé.
+
+Deux retouches textuelles bornées demandées avant publication de #19 : nommer le complément v0.3 et l'archive v0.2, car l'identification originale porte SN-INT-M0-001 v0.2 ; écrire que les références de synchronisation/CI « seront consignées après exécution » tant que les opérations distantes ne sont pas réalisées. Cet avis favorable couvre ces deux retouches exactes, sans nouveau tour de revue.
+
+Contrôle réellement exécuté : premier bloc Python de `documentation-index-validation.md`, extrait et lancé avec `python3 -c` depuis la composition locale `documentary-integration/rehearsal` au commit local `49aed97ff2336c5f90a67df37c9e19dbca64b021` : **exit 0, 21/21 mandats reçus, liés et versionnés**. Vérification complémentaire des 21 couples PR/SHA contre `sources.json` et des chemins réels de leurs liens : **PASS**. Les cinq fichiers complétés #19/index/validation-index/statut-projet/état-branches sont identiques entre les deltas relus et cette composition.
+
+La composition locale n'est pas une fusion distante. Aucun résultat de nouvelle CI ni commit de fusion future n'est inventé dans cet avis. Les 22 merges locaux et les 24 tests finaux signalés par l'intégrateur n'ont pas été réexécutés par ce second agent sur ce passage ; seule la preuve de couverture ciblée ci-dessus est revendiquée ici. Le journal #24 pourra recevoir les faits de fusion/CI au fil de leur réalisation. Les ajouts de liens vers les contributions supposent leur présence dans la composition au moment d'intégrer #17 ; le validateur et la CI de cette composition restent les contrôles avant fusion.
+
+## Relecture indépendante du complément final #24
+
+Le second agent a donné un **avis favorable** après comparaison des 21 lignes de fusion, 21 lignes CI et 42 références run/job avec le journal d'intégration : SHA, bases, checkouts et plages whitespace concordent. Il a relu GitHub : main `8b2e75da39d9d4ceadbefc71690e233939fb9515`, `protected: false`, seule #24 ouverte ; le log du job 109640883691 confirme le checkout main, 82 fichiers et 24 tests. Il ne revendique pas une relecture individuelle des 42 logs.
+
+Sa précision de vocabulaire, couverte par cet avis, est appliquée : « 13 références de dépendances présentes et correctement reliées » désigne le mapping QA ; les arbitrages ne sont pas réputés résolus. Avis favorable sur la distinction archives/courant, les statuts PROPOSÉ/BLOCKED et l'absence de preuve de fusion future de #24. Aucune mutation distante par ce second agent.
+
+## Archive — préparation de la consolidation
+
+## État courant — intégration des contributions, v0.2
+
+Complément de 21, 29 septembre 2026. La demande de continuation du porteur prolonge le travail d'intégration des contributions documentaires sur les branches et PR existantes. Le mode manuel transitoire demeure distinct d'une protection technique de GitHub. Les propositions produit, architecture et politiques restent à arbitrer ; aucun déploiement ou nettoyage de branche demandé.
+
+Au départ de ce lot : **27 branches, 22 PR ouvertes #3–24**, `main` à `71d7fd16be174381b7d937182979cdf7225cecb9`. #26/#25/#1/#2 sont déjà fusionnées, avec 24 tests du dépôt réussis. Les références de chaque étape suivante sont consignées dans le [bilan HQ](../project-governance/m0-reception-report.md) et dans chaque PR : SHA reçu, base main, SHA synchronisé, CI PR (checkout réel), commit de fusion et CI push.
+
+Périmètre de revue : 48 fichiers de delta, tous Markdown, aux SHA de réception ; 48/48 blobs source comparés à GitHub. Contrôle de composition des apports partagés README/plan/QA, liens, statuts et traçabilité ; aucune recertification métier exhaustive des 21 dossiers. Les compléments #19/#17/#24 distinguent l'état courant de leurs archives. Le second agent indépendant examine ces compléments ; il n'est ni une discussion spécialisée ni un reviewer humain GitHub.
+
+FIND-21-01/03/04 sont corrigés et vérifiés dans main. FIND-21-02/05 restent ouverts. Aucune branche nouvelle, suppression, réécriture forcée d'historique, visibilité ou permission modifiée dans ce lot.
+
+## Archive — inventaire initial avant création de #26
+
+Le relevé de **26 branches et 25 PR ouvertes**, les anciens résultats et les prochaines étapes ci-dessous sont historiques. Ils ne décrivent pas l'état courant. Les SHA et commandes sont conservés tels qu'observés.
+
 Date : 29 septembre 2026. Source : métadonnées GitHub relues à la demande du porteur de projet. Ce document complète le bilan de réception HQ ; il ne ratifie aucune proposition métier.
 
 ## 1. Décisions prises et décisions à valider
