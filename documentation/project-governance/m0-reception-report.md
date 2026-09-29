@@ -2,6 +2,37 @@
 
 Date : 29 septembre 2026, après signalement du porteur à 21 h 41 Europe/Paris. Auteur : 00 MASTER. Statut : réception vérifiée, consolidation initiale ; décisions de fond ouvertes.
 
+## Complément de consolidation proposé par 21 — 29 septembre 2026
+
+Cette section est un delta de suivi rédigé par l'équipe 21 sur instruction du porteur. Elle ne constitue pas une décision HQ ni une nouvelle revue des 21 contributions. Les preuves et arbitrages historiques du bilan ci-dessous restent conservés.
+
+**Mode opératoire : poursuivre sur les branches et PR existantes.** Corriger une contribution dans sa branche ; ne créer une nouvelle branche que pour un changement distinct nécessitant une revue séparée. À l'ouverture de cette intervention, les 26 PR #1–26 étaient ouvertes ; aucune n'a été fusionnée ou fermée par cette intervention.
+
+| Point | État actualisé / preuve | Action et propriétaire |
+| --- | --- | --- |
+| FIND-21-01/03 | Corrigés et vérifiés par [#26 v0.1](https://github.com/yyogas/social-network/blob/f6b17a8879c3c57a37b5aabf91be44319fdc9124/documentation/quality/foundation-fix-review.md) sur #25 au SHA `786da003111f5ac985b521a4c872c7c3251dc00b` | Conserver la portée au SHA ; pas encore intégré dans #1/main |
+| FIND-21-04 | Réserve Low corrigée dans [#25](https://github.com/yyogas/social-network/pull/25), SHA `8d02635e2b8c194555e84161f76ee800c2e235c0` ; tests locaux et CI PASS | 20/18 : relire ce complément de quatre fichiers ; auteur 21, donc aucune auto-revue indépendante revendiquée |
+| Preuve du complément | [Run 36627957355](https://github.com/yyogas/social-network/actions/runs/36627957355), job 109609675858, success ; 35 fichiers/24 tests ; checkout `9541b1a5baa85b0bc81831d0b95f7f8476e5cb29` | Logs lus par 21 ; whitespace `8590a095d76965880e94614328a8eafbe09b93cb..8d02635e2b8c194555e84161f76ee800c2e235c0` |
+| FIND-21-02 | OUVERT ; branche main relue à `46a4f36ba827b978bba57acf72ed9282ecb48b8a`, `protected: false` | HQ/14/20 : désigner reviewers et solution de protection ou dispositif transitoire documenté ; aucune décision reçue |
+| FIND-21-05 | OUVERT, avertissement checkout observé dans le nouveau run | 14/20 : maintenance distincte, sans vulnérabilité présumée |
+| Rapport de suivi | [#26 v0.2](https://github.com/yyogas/social-network/blob/9cb3cdf1c67ec11d9d743efb7308a1033ec01fab/documentation/quality/foundation-fix-review.md) | Archive la revue initiale et distingue le complément écrit par son auteur |
+
+### Ordre proposé, après revue et autorisation d'intégration
+
+| Étape | Action concrète | Condition de passage |
+| --- | --- | --- |
+| 1 — Fondations | #26 vers #25 ; #25 vers #1 ; #1 vers main | Relecture 20/18 du delta alias, décision HQ/14/20 sur FIND-21-02, delta et CI revérifiés à chaque changement de base ; conserver l'ascendance de la pile |
+| 2 — Coordination | Repositionner #2 vers main, revoir son delta et l'intégrer | #1 réellement intégré, CI du nouvel état réussie, revue/autorisation reçues |
+| 3 — Contributions | Repositionner progressivement #3–24 vers main, examiner puis intégrer chaque contribution | #2 intégré ; préserver les statuts PROPOSÉ et rapprocher les changements communs README/plan/QA sans écraser une autre équipe |
+| 4 — Références | 17 actualise l'index dans sa branche existante à partir des contributions réellement intégrées | Liens vérifiés et distinction historique/courant conservée |
+| 5 — Nettoyage | Supprimer les branches terminées après autorisation | Contenu intégré, aucune PR dépendante restante ; ne pas supprimer une branche seulement parce que sa PR a été fermée |
+
+**Décisions structurantes toujours à valider :** choix des reviewers/protections, autorisations d'intégration et dossiers SYN-001..007. L'intégration d'une proposition documentaire ne vaut pas adoption du MVP, de la stack, de la politique de données ou des permissions.
+
+**Handoffs À TRANSMETTRE :** 20/18, revue du seul delta `786da003..8d02635` de #25 ; HQ/14/20, réponse explicite à FIND-21-02 ; 17, mise à jour progressive de l'index. Publication GitHub réalisée, envoi aux autres discussions non effectué. Aucun nouveau tour général de rédaction demandé.
+
+## Bilan historique de réception HQ
+
 ## Résultat et portée
 
 21 équipes sur 21 ont publié un livrable principal dans les PR nº 3 à 23. Toutes ces PR étaient ouvertes et non fusionnées lors de la lecture. Leur base commune est `documentation/m0-team-coordination` au commit `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957` (PR nº 2), elle-même dépendante de la PR nº 1.
