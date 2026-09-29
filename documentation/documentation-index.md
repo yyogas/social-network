@@ -1,5 +1,71 @@
 # Index documentaire canonique — Fondation / M0
 
+## Index courant des réponses — complément de traçabilité v0.2
+
+Complément de 21 pour intégration, 29 septembre 2026, sans substitution à l'autorité documentaire de 17. Les 21 réponses sont **REÇUES** dans les PR indiquées. Leurs fichiers sont présents dans cette composition documentaire ; les SHA ci-dessous identifient les contributions reçues avant synchronisation. La présence dans `main` se vérifie par le statut de fusion et le commit de chaque PR, pas par le mot REÇU.
+
+La base de cette intégration est `main` après les fondations, SHA `71d7fd16be174381b7d937182979cdf7225cecb9`. Les nouveaux SHA de synchronisation et résultats CI sont consignés dans les PR existantes et le [bilan HQ #24](https://github.com/yyogas/social-network/pull/24). Aucune nouvelle branche n'est nécessaire pour cette mise à jour.
+
+**Revue documentaire et intégration ≠ adoption métier.** Les classements MVP / Phase 2 / Phase 3 / International / Long terme restent PROPOSÉS ; les critères applicatifs restent PLANNED/BLOCKED en l'absence d'exécution prouvée. Le périmètre MVP, communautés, pays/langues/âge, stack, politiques et budget restent à arbitrer par HQ et les propriétaires. FIND-21-01/03/04 sont vérifiés dans la [fondation intégrée](quality/foundation-fix-review.md) ; FIND-21-02/05 restent ouverts.
+
+| Mandat | Livrable reçu | PR | SHA de réception | Statut métier |
+| --- | --- | --- | --- | --- |
+| M0-TEAM-01 | [documentation/product/mvp-specification.md](product/mvp-specification.md) | [#9](https://github.com/yyogas/social-network/pull/9) | `b076be7231f0128ac0819fe509985b2b8511dc82` | REÇU ; PROPOSÉ |
+| M0-TEAM-02 | [documentation/user-experience/user-journeys.md](user-experience/user-journeys.md) | [#3](https://github.com/yyogas/social-network/pull/3) | `71d6e1067f6ed2349d0f8682627e74083ebc2292` | REÇU ; PROPOSÉ |
+| M0-TEAM-03 | [documentation/architecture/architecture-proposal.md](architecture/architecture-proposal.md) | [#6](https://github.com/yyogas/social-network/pull/6) | `79f73f914255bbd4bc356e24b2e90a8ac168056d` | REÇU ; PROPOSÉ |
+| M0-TEAM-04 | [documentation/backend/api-contract-candidates.md](backend/api-contract-candidates.md) | [#15](https://github.com/yyogas/social-network/pull/15) | `e685cc1e36c09c7a0be98a10e701e532d4c83cc9` | REÇU ; PROPOSÉ |
+| M0-TEAM-05 | [documentation/web-application/web-requirements.md](web-application/web-requirements.md) | [#8](https://github.com/yyogas/social-network/pull/8) | `5a49cc713138e78122470125b04fd93240f33e23` | REÇU ; PROPOSÉ |
+| M0-TEAM-06 | [documentation/mobile/mobile-options.md](mobile/mobile-options.md) | [#18](https://github.com/yyogas/social-network/pull/18) | `b5d3482af45937eb5e5afe99714391ce195e238d` | REÇU ; PROPOSÉ |
+| M0-TEAM-07 | [documentation/artificial-intelligence/recommendation-options.md](artificial-intelligence/recommendation-options.md) | [#21](https://github.com/yyogas/social-network/pull/21) | `8683b45e2f546510553a4f78bd03702602ec2070` | REÇU ; PROPOSÉ |
+| M0-TEAM-08 | [documentation/media/media-lifecycle.md](media/media-lifecycle.md) | [#4](https://github.com/yyogas/social-network/pull/4) | `2ffc7b043ee612685eb30e82a7472ccd83a19ef0` | REÇU ; PROPOSÉ |
+| M0-TEAM-09 | [documentation/trust-safety/moderation-requirements.md](trust-safety/moderation-requirements.md) | [#13](https://github.com/yyogas/social-network/pull/13) | `d8c11551a141b836fab2efa201f3d96f6fdc9bed` | REÇU ; PROPOSÉ |
+| M0-TEAM-10 | [documentation/administration/administration-support-requirements.md](administration/administration-support-requirements.md) | [#7](https://github.com/yyogas/social-network/pull/7) | `fb19574ba3d62ae2ea0e54354cfc8f24dc0e7ff5` | REÇU ; PROPOSÉ |
+| M0-TEAM-11 | [documentation/advertising/advertising-options.md](advertising/advertising-options.md) | [#11](https://github.com/yyogas/social-network/pull/11) | `6c043d22f3f605a3cbdc198684c8e30cee3fbbc9` | REÇU ; PROPOSÉ |
+| M0-TEAM-12 | [documentation/creators/creator-economy-options.md](creators/creator-economy-options.md) | [#5](https://github.com/yyogas/social-network/pull/5) | `3374cd51d6028f3e8c493d835619b1beb531f476` | REÇU ; PROPOSÉ |
+| M0-TEAM-13 | [documentation/analytics/measurement-plan.md](analytics/measurement-plan.md) | [#12](https://github.com/yyogas/social-network/pull/12) | `70c14a465ece7b31a47c1cb2a8b385d6ac345a77` | REÇU ; PROPOSÉ |
+| M0-TEAM-14 | [documentation/security/security-operations-requirements.md](security/security-operations-requirements.md) | [#10](https://github.com/yyogas/social-network/pull/10) | `ca77b561fd79fc01a527bb5cd57b90bbfdd361ea` | REÇU ; PROPOSÉ |
+| M0-TEAM-15 | [documentation/privacy/privacy-requirements.md](privacy/privacy-requirements.md) | [#23](https://github.com/yyogas/social-network/pull/23) | `afb9d22b7d2fc3e28bfd16bdc25ae025c721a592` | REÇU ; PROPOSÉ |
+| M0-TEAM-16 | [documentation/international/localization-requirements.md](international/localization-requirements.md) | [#16](https://github.com/yyogas/social-network/pull/16) | `eebcfc593cf5a1ac8f01dff8355f5692aa522702` | REÇU ; PROPOSÉ |
+| M0-TEAM-17 | [documentation/documentation-index.md](documentation-index.md) | [#17](https://github.com/yyogas/social-network/pull/17) | `3c174c4053d98dea63cae353686b09f38392c589` | REÇU ; PROPOSÉ |
+| M0-TEAM-18 | [documentation/quality/acceptance-test-matrix.md](quality/acceptance-test-matrix.md) | [#22](https://github.com/yyogas/social-network/pull/22) | `c503d80c2132f4ac95164a80f0dba4e7668fae07` | REÇU ; PROPOSÉ |
+| M0-TEAM-19 | [documentation/growth/pilot-launch-plan.md](growth/pilot-launch-plan.md) | [#20](https://github.com/yyogas/social-network/pull/20) | `52783caac1dea5f6f11ad498ed2e4ee4ed84ebb4` | REÇU ; PROPOSÉ |
+| M0-TEAM-20 | [documentation/delivery/implementation-readiness.md](delivery/implementation-readiness.md) | [#14](https://github.com/yyogas/social-network/pull/14) | `8918ac04b7a0cfd28cbce033da145adbd55e1e6a` | REÇU ; PROPOSÉ |
+| M0-TEAM-21 | [documentation/quality/integration-review.md](quality/integration-review.md) | [#19](https://github.com/yyogas/social-network/pull/19) | `d0a7dcbad10efa4c27c7724b9f39226a6f01a384` | REÇU ; PROPOSÉ |
+
+### Pièces complémentaires présentes
+
+Les références ci-dessous complètent les sources de la v0.1 conservées dans l'archive. La portée de chaque preuve demeure limitée à son SHA et à ses commandes ; une ancienne réussite ne remplace pas la CI de l'intégration courante.
+
+| Source | Limite |
+| --- | --- |
+| [documentation/administration/README.md](administration/README.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/administration/administration-validation.md](administration/administration-validation.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/advertising/README.md](advertising/README.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/architecture/architecture-validation.md](architecture/architecture-validation.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/backend/README.md](backend/README.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/creators/README.md](creators/README.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/growth/README.md](growth/README.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/growth/pilot-launch-validation.md](growth/pilot-launch-validation.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/international/README.md](international/README.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/media/README.md](media/README.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/quality/advertising-validation.md](quality/advertising-validation.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/quality/backend-contract-validation.md](quality/backend-contract-validation.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/quality/foundation-fix-review.md](quality/foundation-fix-review.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/quality/foundation-validation-fix.md](quality/foundation-validation-fix.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/quality/localization-documentation-validation.md](quality/localization-documentation-validation.md) | Pièce complémentaire ; statut et portée dans le document |
+| [documentation/quality/qa-m0-validation.md](quality/qa-m0-validation.md) | Pièce complémentaire ; statut et portée dans le document |
+
+### Lecture des écarts et des preuves
+
+- L'ancienne matrice ABSENT/NON REÇU et l'exemple de contrat NON REÇU décrivent uniquement `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957`. Utiliser le tableau courant pour retrouver les propositions reçues ; leurs validations et implémentations peuvent toujours manquer.
+- Les conflits de propositions sont conservés dans le bilan HQ (SYN-001..007), avec leurs propriétaires. Aucun choix sémantique n'est imposé par cet index.
+- [Validation de l'index](quality/documentation-index-validation.md) : contrôle courant des 21 cibles versionnées et archivage explicite de l'ancien script limité à son snapshot.
+- Les réceptions GitHub sont prouvées par les références ci-dessus. Les messages vers les autres discussions restent **À TRANSMETTRE** si aucun envoi n'est établi.
+
+## Archive — index v0.1 sur son instantané initial
+
+Tout le contenu qui suit, notamment les absences, les résultats et les demandes, est conservé comme état historique au SHA source de la v0.1. En cas d'écart temporel, l'index courant ci-dessus fait référence pour la réception des réponses. Les règles de statut et propositions de maintenance restent à examiner par leurs propriétaires.
+
 ## Identification et statut
 
 | Champ | Valeur |

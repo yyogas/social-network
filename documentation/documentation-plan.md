@@ -22,7 +22,7 @@ La documentation doit permettre à une personne extérieure aux conversations de
 - `installation/`, `operations/`, `hosting/` et `delivery/` : procédures reproductibles, exploitation, estimations et livraison ; propriétaires 14, 17, 18, 20 et 21 selon le contenu.
 - `teams/` : responsabilités, ordres de travail et format des échanges ; 00 coordonne, 17 maintient la lisibilité et les liens.
 
-L'[index canonique](documentation-index.md) est fourni par 17 comme contribution spécialisée v0.1 proposée, avec références de révision, propriétaires, lacunes et preuves. Ce plan décrit la couverture et le travail restant, sans se substituer à cet index. La spécification `documentation/product/mvp-specification.md` est attendue de 01 ; les documents produit de cadrage préparés au HQ alimentent sa rédaction sans la remplacer. Ce dernier chemin reste une cible absente de la référence examinée par l'index. La présence de l'index dans une PR ne prouve ni réception HQ ni approbation métier.
+L'[index canonique](documentation-index.md) rassemble les 21 contributions spécialisées reçues, avec propriétaires, PR, SHA de réception et statut PROPOSÉ. Il conserve séparément son instantané historique. La [spécification MVP candidate](product/mvp-specification.md) est reçue de 01 dans la PR #9 ; vision, catalogue et parcours HQ restent des propositions de cadrage. Ce plan décrit la couverture attendue sans se substituer aux sources des propriétaires. Réception, intégration Git et approbation métier sont distinctes.
 
 17 ne choisit pas la stack, les permissions ou les durées de conservation à la place de leurs propriétaires. Chaque équipe entretient son contenu ; 17 vérifie sa structure, son intégration et sa traçabilité.
 

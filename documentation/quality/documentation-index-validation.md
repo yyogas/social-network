@@ -1,5 +1,30 @@
 # Vérification du livrable M0-TEAM-17
 
+## Vérification d'intégration v0.2 — périmètre courant
+
+Complément de 21, 29 septembre 2026. Le tableau courant de l'index contient les 21 mandats, leurs chemins versionnés et les PR/SHA de réception. Les preuves locales de composition et la CI de synchronisation sont consignées dans la PR #17 ; aucune exécution applicative revendiquée. La revue du second agent distinct de l'auteur ne constitue pas une approbation humaine ni un avis spécialisé de 17/18/20.
+
+Contrôle ponctuel courant reproductible depuis la racine du dépôt versionné :
+
+```python
+import pathlib, re, subprocess
+root = pathlib.Path.cwd()
+tracked = set(subprocess.check_output(["git", "ls-files"], text=True).splitlines())
+orders = (root / "documentation/teams/work-orders.md").read_text()
+targets = re.findall(r"\*\*Livrable propriétaire\*\* : `([^`]+)`", orders)
+index = (root / "documentation/documentation-index.md").read_text().split("## Archive — index v0.1")[0]
+assert len(targets) == len(set(targets)) == 21
+for number, target in enumerate(targets, 1):
+    assert target in tracked and (root / target).is_file(), target
+    row = next(line for line in index.splitlines() if line.startswith(f"| M0-TEAM-{number:02} |"))
+    assert f"[{target}]" in row and "REÇU ; PROPOSÉ" in row, row
+print("PASS: 21/21 mandats reçus, liés et versionnés ; adoption métier non déduite")
+```
+
+## Archive — validation v0.1 et script de l'ancien instantané
+
+Les résultats 44 fichiers / 10 tests et le script ci-dessous appartiennent exclusivement à l'ancien snapshot de la v0.1. Ce script suppose que seul le livrable 17 existe ; **ne pas l'exécuter comme contrôle du dépôt consolidé**. Les commandes, résultats et limites historiques restent inchangés pour audit.
+
 Date : 29 septembre 2026. Propriétaire : 17 — Documentation. Destinataires : 18 QA, 20 Code Source, 21 Intégration et 00 MASTER. Statut : compte rendu de contrôles documentaires ; revue indépendante NON REÇUE.
 
 ## Références et méthode
