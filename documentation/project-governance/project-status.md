@@ -1,5 +1,9 @@
 # État du projet
 
+## Préparation des arbitrages — 30 septembre 2026
+
+Le [dossier d’arbitrage pilote/MVP](m0-mvp-arbitration.md) prépare trois choix HQ : public/admission, suivi ou communautés, surface/langues. Il est **PROPOSÉ**, sans décision de scope, stack, données ou permissions adoptée. Base relue : `main` à `ba26729aa10dc497338a960ae78ba904a72216b2`, 26 PR fusionnées et aucune ouverte avant cette nouvelle proposition ; [preuves finales #24](https://github.com/yyogas/social-network/pull/24). Les demandes ciblées restent À TRANSMETTRE.
+
 ## État courant — consolidation documentaire v0.2
 
 Complément factuel de 21, 29 septembre 2026. Phase **Fondation / M0**. Les 21 réponses spécialisées #3–23 sont reçues et **intégrées dans main** au SHA `8b2e75da39d9d4ceadbefc71690e233939fb9515` ; le bilan HQ est #24. Les CI PR et push ont été vérifiées pour chacune. La fusion documentaire conserve leurs statuts PROPOSÉ. Les fondations #26/#25/#1/#2 sont intégrées dans `main` au SHA `71d7fd16be174381b7d937182979cdf7225cecb9`. Le [bilan de réception](m0-reception-report.md) et l'[état d'intégration](../quality/m0-branch-integration-status.md) consignent la progression suivante et ses preuves exactes.

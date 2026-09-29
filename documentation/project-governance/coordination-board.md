@@ -50,6 +50,8 @@ Mise à jour du 29 septembre 2026 : le porteur indique que toutes les équipes o
 
 ## Arbitrages ouverts
 
+Le [dossier d’arbitrage préparé par 21](m0-mvp-arbitration.md), v0.1 du 30 septembre 2026, rassemble les options A/B/C et les demandes ciblées liées à SYN-001..007. Il ne vaut ni envoi aux équipes ni décision HQ. Statut : **PROPOSÉ — À ARBITRER** ; avis et décisions restent à recevoir.
+
 | ID de suivi | Question | Porteurs des options | Preuve attendue avant décision |
 | --- | --- | --- | --- |
 | OPEN-001 | Public et pays effectivement ouverts au pilote | 01, 15, 16, 19 | Besoins, contraintes, support et capacité de modération par marché |

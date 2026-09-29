@@ -62,6 +62,10 @@ Les références ci-dessous complètent les sources de la v0.1 conservées dans 
 - [Validation de l'index](quality/documentation-index-validation.md) : contrôle courant des 21 cibles versionnées et archivage explicite de l'ancien script limité à son snapshot.
 - Les réceptions GitHub sont prouvées par les références ci-dessus. Les messages vers les autres discussions restent **À TRANSMETTRE** si aucun envoi n'est établi.
 
+## Dossier transversal proposé après consolidation
+
+[Dossier d’arbitrage pilote/MVP v0.1](project-governance/m0-mvp-arbitration.md), préparé par 21 le 30 septembre 2026 : options pour DEC-0001/0002, périmètre candidat, dépendances et gates. **PROPOSÉ — À ARBITRER**, sans modification des phases ou contrats propriétaires approuvés. Les 21 réponses reçues restent les sources de domaine ; ce dossier n’ajoute pas une équipe.
+
 ## Archive — index v0.1 sur son instantané initial
 
 Tout le contenu qui suit, notamment les absences, les résultats et les demandes, est conservé comme état historique au SHA source de la v0.1. En cas d'écart temporel, l'index courant ci-dessus fait référence pour la réception des réponses. Les règles de statut et propositions de maintenance restent à examiner par leurs propriétaires.
