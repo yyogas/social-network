@@ -1,5 +1,17 @@
 # État du projet
 
+## État courant — consolidation documentaire v0.2
+
+Complément factuel de 21, 29 septembre 2026. Phase **Fondation / M0**. Les 21 réponses spécialisées #3–23 sont reçues et **intégrées dans main** au SHA `8b2e75da39d9d4ceadbefc71690e233939fb9515` ; le bilan HQ est #24. Les CI PR et push ont été vérifiées pour chacune. La fusion documentaire conserve leurs statuts PROPOSÉ. Les fondations #26/#25/#1/#2 sont intégrées dans `main` au SHA `71d7fd16be174381b7d937182979cdf7225cecb9`. Le [bilan de réception](m0-reception-report.md) et l'[état d'intégration](../quality/m0-branch-integration-status.md) consignent la progression suivante et ses preuves exactes.
+
+**Prochaine action HQ : arbitrer les propositions reçues**, en commençant par public/pays/langues/âge et MVP, puis contrats, architecture, permissions, données, capacité et budget. L'intégration documentaire garde les statuts PROPOSÉ et les critères applicatifs PLANNED/BLOCKED. Elle n'autorise ni lancement ni implémentation sur des contrats ouverts.
+
+FIND-21-01/03/04 sont corrigés et vérifiés dans la fondation ; FIND-21-02 (protections/reviewers durables, HQ/14/20) et FIND-21-05 (maintenance checkout, 14/20) restent ouverts. Aucun paramètre de protection ou visibilité modifié ; aucune branche supprimée. Les transmissions aux autres discussions restent À TRANSMETTRE.
+
+## Archive — préparation et réception initiale DIR-009/010/011
+
+Les états « collecter », « en revue », « à recevoir » et « corrections avant intégration » ci-dessous sont historiques. Consulter l'état courant et les preuves de fusion, sans réattribuer les anciennes preuves à de nouveaux SHA.
+
 **Date :** 29 septembre 2026
 **Phase :** Fondation / M0
 **Objectif :** constituer les preuves et contrats nécessaires pour décider le premier MVP.
@@ -40,3 +52,8 @@ Organisation et noms explicites, règles de contribution, CI du dépôt, tests d
 ## Campagne documentaire DIR-011
 
 Les 21 mandats sont préparés dans le [tableau de coordination](coordination-board.md). Le HQ propose une vision, un catalogue, des parcours et une [roadmap](global-roadmap.md) ; les avis spécialisés restent à recevoir. Travail publié par une PR distincte dépendant de la PR nº 1 ; la publication ne vaut ni transmission aux discussions ni approbation du MVP. Le [plan documentaire](../documentation-plan.md) définit les responsabilités et les éléments restant à compléter.
+
+
+## Réception spécialisée — 29 septembre 2026
+
+Les 21 réponses sont reçues et leurs publications vérifiées dans les PR nº 3–23 : [bilan et références](m0-reception-report.md). Cette mise à jour remplace l'état NON REÇU de la préparation de DIR-011 ; elle n'approuve pas les contenus. Les 21 runs documentaires observés sont success. La revue 21 demande toutefois des corrections de fondation (FIND-21-01 à 03) avant intégration de la pile. MVP, architecture, politiques et ouverture restent à arbitrer. Les nouveaux handoffs sont préparés, pas réputés envoyés.
