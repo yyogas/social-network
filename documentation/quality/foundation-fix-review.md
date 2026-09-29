@@ -1,5 +1,112 @@
 # HQ-R02 — Revue ciblée du correctif de fondation
 
+## Mise à jour v0.4 — avis indépendant reçu et intégration autorisée
+
+Date : 29 septembre 2026. Le porteur a explicitement répondu « oui » à 22 h 56 Europe/Paris à la demande de revue par un second agent, puis de fusion de **#26, #25, #1 et #2**, si l'avis est favorable, avec vérification des SHA et de la CI à chaque étape et **sans suppression de branche**.
+
+Cette autorisation couvre ce lot de fondation et de coordination sous contrôle manuel. Elle ne constitue ni une protection de branche configurée, ni l'avis d'un reviewer humain, ni une approbation des fonctionnalités ou de la stack proposées. FIND-21-02 reste ouvert pour la solution durable HQ/14/20 ; FIND-21-05 reste suivi séparément.
+
+Un second agent, distinct de l'auteur du complément de code, a été mandaté pour la revue ciblée. Son rapport est reproduit ci-dessous. Il n'est pas présenté comme une réponse des discussions 20/18. Le texte historique des versions précédentes conserve l'état connu à leur date ; les mentions d'avis ou d'autorisation non reçus y sont désormais historiques.
+
+Séquence autorisée : #26 dans #25, #25 dans #1, #1 dans main, puis #2 repositionnée sur main et intégrée après ses contrôles. Les commits de merge conservent l'ascendance de la pile. Le réglage GitHub `delete_branch_on_merge: false` a été vérifié avant l'opération. Chaque étape reste conditionnée au head attendu, au delta examiné et à une CI réussie sur la composition applicable. Les SHA résultants et runs sont consignés dans les corps de PR et le bilan #24 après exécution.
+
+# Revue indépendante additionnelle — fondation et coordination M0
+
+Date : 29 septembre 2026. Référence : SN-INT-HQR02-INDEPENDENT-001 v0.1.
+
+Auteur : second agent indépendant `/root/independent_foundation_review`, mandaté après l'accord explicite du porteur du projet pour une seconde revue puis l'intégration conditionnelle de #26, #25, #1 et #2. Cet agent n'a pas rédigé le complément de code. Il ne représente ni une réponse des discussions 20/18, ni un reviewer humain, ni une approbation GitHub formelle. Il n'a effectué aucune mutation GitHub.
+
+## 1. Décisions et verdicts
+
+**Avis technique favorable à l'intégration du périmètre examiné. Aucun défaut bloquant identifié.**
+
+| Élément | Verdict indépendant | Portée |
+| --- | --- | --- |
+| FIND-21-01 | CORRIGÉ ET VÉRIFIÉ | Bornes PR/push explicites, refus des références invalides et non-régression du merge synthétique confirmés ; script inchangé entre les deux versions de #25 |
+| FIND-21-03 | CORRIGÉ ET VÉRIFIÉ | Preuve historique conforme aux logs relus : head, base, merge réellement exécuté, run/job et limite du succès historique |
+| FIND-21-04 | CORRIGÉ ET VÉRIFIÉ au SHA `8d02635e2b8c194555e84161f76ee800c2e235c0` | Alias symboliques refusés avant résolution, identité des chemins suivis conservée et confinement maintenu ; régression historique reproduite puis absence confirmée |
+| FIND-21-02 | OUVERT, hors clôture de cet avis | Le contrôle manuel explicitement autorisé par le porteur pour ces intégrations ne configure aucune protection ; décision durable HQ/14/20 toujours nécessaire |
+| FIND-21-05 | OUVERT, suivi séparé | Avertissement checkout Node 20/24 encore visible ; aucune panne ou vulnérabilité déduite |
+| #26, rapport v0.3 | APPROVED pour intégration documentaire du contenu examiné | Historique, changements d'auteur, SHA et limites sont distingués. Ajouter le présent avis et la décision du porteur comme nouvel état daté, sans réécrire les conclusions historiques |
+| #1 avec #25/#26 incorporées | APPROVED techniquement sous contrôle de l'intégration réelle | La fondation d'origine ne contient pas encore les corrections ; conserver le contrôle des SHA et de la CI après incorporation |
+| #2 | APPROVED pour intégration documentaire du delta examiné | 15 fichiers par rapport à #1, propositions produit et tests PLANNED explicitement conservés ; aucune ratification métier ni extension au contenu des 21 contributions |
+
+La présente revue lève la réserve technique restante sur le complément de #25. Elle ne ferme pas FIND-21-02 et n'accorde pas elle-même des permissions de fusion ; l'autorisation spécifique vient du porteur du projet. Une évolution fonctionnelle après les SHA ci-dessous nécessite une revue de son delta. L'ajout exact du présent avis est une publication documentaire, pas une modification du correctif.
+
+## 2. Sources et livrable
+
+Heads vérifiés directement via GitHub au début de la revue :
+
+| PR/source | SHA exact | Base examinée |
+| --- | --- | --- |
+| [#1](https://github.com/yyogas/social-network/pull/1) | `8590a095d76965880e94614328a8eafbe09b93cb` | `46a4f36ba827b978bba57acf72ed9282ecb48b8a` |
+| [#2](https://github.com/yyogas/social-network/pull/2) | `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957` | `8590a095d76965880e94614328a8eafbe09b93cb` |
+| #25 avant complément | `786da003111f5ac985b521a4c872c7c3251dc00b` | `8590a095d76965880e94614328a8eafbe09b93cb` |
+| [#25](https://github.com/yyogas/social-network/pull/25) | `8d02635e2b8c194555e84161f76ee800c2e235c0` | `8590a095d76965880e94614328a8eafbe09b93cb` |
+| [#26](https://github.com/yyogas/social-network/pull/26) | `bc8e03037d0656b5d613278550cf678b927266b2` | Ancêtre `786da003111f5ac985b521a4c872c7c3251dc00b` ; merge CI avec #25 corrigée `8d02635e2b8c194555e84161f76ee800c2e235c0` |
+
+Les quatre PR sont ouvertes et non fusionnées à cette observation. Le delta #25 initial → corrigé contient bien quatre fichiers : validateur, tests du validateur, README des scripts et rapport du correctif. Aucun changement du workflow ou du script whitespace dans ce complément.
+
+Les arbres GitHub complets de ces cinq instantanés ont été récupérés indépendamment ; aucune réponse tronquée. Chaque fichier local copié dans un espace de test distinct a été vérifié par SHA-1 Git blob contre l'arbre distant : **32 + 42 + 35 + 35 + 36 = 180/180 occurrences conformes**, toutes de mode 100644. Le rapport #26 a été relu au SHA actuel ; blob `b790de783b6701a5fb19e4e669f3f589e1cbe4ec`.
+
+Ce livrable est destiné à être intégré au rapport existant `documentation/quality/foundation-fix-review.md` dans #26. Aucune nouvelle branche ou PR n'est nécessaire.
+
+## 3. Tests réellement exécutés
+
+Environnement local : Linux 6.18.44 x86_64, Python 3.12.14, Git 2.51.1. Répertoire isolé : `independent-review-work/composition`. Un historique minimal local a été reconstruit à partir des instantanés vérifiés pour conserver leurs ancêtres communs. Ces commits de simulation ne sont pas les commits GitHub et n'en vérifient ni les signatures ni tout l'historique.
+
+| Opération exécutée | Résultat |
+| --- | --- |
+| `git merge --no-ff review` dans la simulation de #25 corrigée | Exit 0, aucun conflit ; commit local `44fbcfd107245cf7aea9a4f422027555d084c154` |
+| `git merge --no-ff fix` dans la simulation de #1 | Exit 0, aucun conflit ; commit local `33cc5e152beb8f11ed14b636b3c6d920e0de336f` |
+| `git merge --no-ff coordination` | Exit 0, aucun conflit ; commit local final `9d02d668c442206cdba9843a30672707645a7e9b` |
+| `python3 scripts/repository/validate_repository.py` sur cet état | Exit 0, **46 fichiers PASS** |
+| `python3 -m unittest discover -s tests/repository -p 'test_*.py' -v` | Exit 0, **24 tests PASS**, 0,546 s |
+| `git diff --check 348186aac90e9138f45db4541810a7733c315cd8 HEAD --` | Exit 0, aucune erreur ; base locale représentant #1 |
+| `git status --short` après les tests | Aucun changement |
+
+Les 24 tests comprennent 16 méthodes du validateur et 8 méthodes du contrôle de delta ; certaines méthodes comprennent plusieurs sous-cas. Les tests PR/push créent de vrais historiques Git et des événements synthétiques locaux. Aucun vrai push main n'a été exécuté par cet agent.
+
+Sondes indépendantes additionnelles exécutées :
+
+- Alias fichier non suivi vers un fichier suivi : ancien validateur retourne `[]`, nouveau retourne `Unsupported symlink in local link` ; disparition de l'alias : `Broken local link`.
+- Alias répertoire dans `alias/guide.md`, `alias/../documentation/guide.md`, `%61lias/guide.md` et `alias/%2e%2e/documentation/guide.md` : tous rejetés par le nouveau validateur.
+- Fichier ordinaire non suivi : rejeté. Fichier suivi direct et répertoire contenant un descendant suivi : acceptés. Chemin sortant du dépôt : rejeté.
+- Rejeu séparé de la fixture du merge synthétique : ancien `git show --format= --check HEAD` exit **0**, nouveau contrôle PR exit **2**. Commit local de fixture `3f2ab0b6da1bca62fc41d156002814caccf2ecfc`, base événement `2c125eddc786f5ef0911d28b704921173b00e93f`, head événement `be86f88b9ca0f4b2d7dc752eb22e9a6fb6714e66`. Ce sont uniquement des SHA synthétiques.
+- Cohérence des identifiants de #2 : **34 FEAT**, aucune référence FEAT orpheline dans les parcours, **31 critères AC uniques**, **21 mandats M0-TEAM**. Les critères applicatifs demeurent PLANNED.
+
+### Preuves CI recoupées directement
+
+Les statuts des runs/jobs et les logs suivants ont été lus par ce second agent :
+
+| Source | Run / job | Checkout réel et résultats |
+| --- | --- | --- |
+| #25 corrigée | [36627957355](https://github.com/yyogas/social-network/actions/runs/36627957355) / `109609675858` | completed/success ; checkout `9541b1a5baa85b0bc81831d0b95f7f8476e5cb29` ; 35 fichiers, 24 tests ; whitespace `8590a095d76965880e94614328a8eafbe09b93cb..8d02635e2b8c194555e84161f76ee800c2e235c0` |
+| #26 v0.3 | [36629545180](https://github.com/yyogas/social-network/actions/runs/36629545180) / `109614970594` | completed/success ; checkout `367410815aac258a899170ebe1be529fc8e1b2c5` ; 36 fichiers, 24 tests ; whitespace `786da003111f5ac985b521a4c872c7c3251dc00b..bc8e03037d0656b5d613278550cf678b927266b2` |
+| #1 historique | [36615257604](https://github.com/yyogas/social-network/actions/runs/36615257604) / `109566513206` | checkout `bdb6f3b14caa257c533a64ee4a40dbddeee701e5` ; 32 fichiers, 10 tests ; concordance avec la preuve FIND-21-03 |
+
+Les deux CI actuelles emploient Python 3.12.3 et Git 2.55.0. La CI #26 teste réellement le merge de #26 avec #25 corrigée, même si le delta whitespace commence au merge-base antérieur ; c'est cohérent avec le contrat du contrôle PR. Ces runs ne couvrent pas l'intégration réelle future de #2 dans main.
+
+## 4. Questions ouvertes
+
+HQ/14/20 : protections et reviewers permanents, FIND-21-02. 14/20 avec QA : maintenance checkout, FIND-21-05. Produit et propriétaires spécialisés : contrats MVP et stack encore proposés, hors périmètre de cette intégration documentaire. Aucune nouvelle question technique bloquante n'est créée par cette revue.
+
+## 5. Dépendances
+
+L'intégration autorisée dépend de la stabilité des SHA et des checks à chaque étape : #26 vers #25, #25 vers #1, #1 vers main, puis #2 repositionnée vers main et recontrôlée. Le responsable d'intégration doit consigner les SHA de fusion et les nouveaux runs. L'avis présent ne prétend pas avoir été reçu dans les autres discussions ; leurs handoffs restent à transmettre lorsqu'ils sont nécessaires.
+
+## 6. Risques et limites
+
+La revue couvre les scripts documentaires, leur non-régression, la preuve CI, le rapport et la compatibilité du delta de coordination. Aucun test applicatif, validation métier, contrôle juridique, audit général de sécurité ou nouvelle revue des 21 contributions n'a été effectué. La simulation locale n'est pas une fusion distante.
+
+Le validateur conserve son périmètre annoncé : liens Markdown inline locaux, sans ancres ni URL externes, contrôle de fichiers sensibles limité. Les protections GitHub ne sont pas configurées par les tests. Le tableau de réception de #2 décrit son état initial ; la consolidation des contributions relève du delta HQ #24 et ne doit pas être interprétée comme une nouvelle absence réelle de livrables.
+
+## 7. Suite et information HQ
+
+Intégrer cet avis au rapport existant avec l'autorisation explicite du porteur, conserver les sections historiques datées, puis procéder aux seules fusions autorisées avec contrôle des SHA et de la CI à chaque étape. Ne supprimer aucune branche. Enregistrer FIND-21-01/03/04 vérifiés sur le correctif exact, puis vérifier leur présence dans main après les fusions. Garder FIND-21-02 et FIND-21-05 ouverts et distincts ; l'intégration documentaire ne ratifie ni le MVP ni les autres décisions produit.
+
+## Historique des revues et préparations
+
 ## Mise à jour v0.3 — répétition locale d'intégration
 
 Date : 29 septembre 2026, après demande du porteur de continuer. Aucun nouvel avis n'a été reçu : les collections GitHub de reviews #25/#26 et de commentaires #24/#25 étaient vides lors de cette vérification ; 26 PR ouvertes, branches inchangées et sans protection déclarée. Ce constat ne prétend pas lire les autres discussions.
