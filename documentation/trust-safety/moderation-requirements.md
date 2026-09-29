@@ -139,6 +139,16 @@ Pour FEAT-013/014 : quotas proportionnés, détection de répétitions, limitati
 
 Une campagne coordonnée de faux signalements peut faire l'objet d'un cas distinct et d'une mesure motivée. Le rate limiting doit préserver une voie urgente et une voie Support accessible, elles-mêmes protégées. À seuil de modèle inconnu ou modèle indisponible, conserver file humaine et mesures techniques existantes ; pas d'auto-approbation ni de sanction globale de repli. Avant tout retrait automatique futur : jeu d'évaluation par langue/catégorie, faux positifs/négatifs, revue d'échantillons et rollback de règle/version. Les décisions humaines restent auditables et peuvent être erronées.
 
+Classement complémentaire de l'automatisation, rattaché à FEAT-014 et à examiner avec 07 :
+
+| Capacité | Phase proposée | Limite avant activation |
+| --- | --- | --- |
+| Règles déterministes de débit, regroupement et alertes | MVP | Seuils, exceptions, expiration et recours à valider ; pas de verdict au seul volume |
+| Assistance IA au triage, à la traduction et au résumé | Phase 2 | Évaluation par langue, contrôle humain du contenu original, confidentialité et coût ; aucun texte signalé traité comme une instruction du système |
+| Détection coordonnée avancée et suggestions de mesures | Phase 3 | Analyse des signaux autorisés, erreurs mesurées, justification et arrêt de la règle/version |
+| Calibration et expertise par nouveau marché | International | Ne remplace pas la couverture linguistique indispensable dès le pilote |
+| Automatisation de décisions lourdes | Long terme, étude uniquement | Aucune autorisation implicite ; nécessité et acceptabilité à réexaminer avec HQ/14/15, possibilité de rejet |
+
 ### FEAT-015 — recours, décision indépendante et réparation
 
 User story : en tant que personne affectée, je veux comprendre et contester une mesure même si mon compte est suspendu, afin qu'une erreur soit corrigée.
@@ -251,7 +261,7 @@ Ces fiches alimentent DEC-0001/DEC-0002 encore attendues au registre ; aucun nou
 | Champ | Socle opérationnel et politique d'âge | Étendue du blocage et automatisation |
 | --- | --- | --- |
 | Objectif / problème | Pilote exploitable malgré abus et recours ; couverture et âge non arrêtés | Contrôle utilisateur sans fausse promesse d'invisibilité ni sanction arbitraire |
-| Solution candidate | Socle FEAT-012 à FEAT-017 avant ouverture des surfaces ; périmètre proportionné à la capacité ; procédure mineurs même si pilote adultes | Matrice FEAT-012 ci-dessus ; décisions lourdes humaines ; règles anti-spam réversibles |
+| Solution candidate | Socle FEAT-012 à FEAT-015 avec FEAT-017 ; articulation avec FEAT-016 propriété de 15 ; périmètre proportionné à la capacité ; procédure mineurs même si pilote adultes | Matrice FEAT-012 ci-dessus ; décisions lourdes humaines ; règles anti-spam réversibles |
 | Alternatives | Pilote réservé aux adultes, ou ouvert à des mineurs avec protections et opérations adaptées ; réserver aux adultes ne prouve pas absence de mineurs. Ouvrir sans équipe : rejet recommandé | Masquer seulement dans le fil : moins complexe mais protection moindre. Tout automatiser : réduit la charge apparente mais erreurs et recours accrus |
 | Dépendances | 00/01/10/14/15/16/19 ; admissibilité, règles, budget et horaires | 01/03/04/07/08/14/15 ; audience, caches, signalement et droits |
 | Impact business | Coût humain, périmètre et date de lancement ; confiance et prévention du préjudice | Friction d'usage, coût de modération et contestation ; effets possibles sur croissance |
