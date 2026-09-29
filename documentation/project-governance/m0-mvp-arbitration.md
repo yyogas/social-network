@@ -290,3 +290,37 @@ Contrôles de publication à consigner avec leur résultat effectif dans la PR :
 5. **Dépendances :** demandes ciblées du §7, toutes À TRANSMETTRE tant qu'aucun envoi n'est établi.
 6. **Risques :** §8 ; statuts et gates évitent de transformer une proposition en autorisation.
 7. **Suite :** obtenir les choix A/B/C et avis nécessaires, les inscrire via HQ dans DEC-0001/0002, puis finaliser les contrats du premier lot avant code. La revue et la fusion de cette PR documentaire suivent leur propre autorisation et ne valent pas GO produit.
+
+## 10. Reprise HQ — demande ciblée au propriétaire Backend
+
+**30 septembre 2026 — organisation du travail par HQ, sans approbation des options.** Référence de reprise : PR #27 au SHA `9ce0118d2a6072347f4d8c07d37a149f4d161894`. Les PR #1 à #26 sont vérifiées fusionnées ; #27 est la seule PR ouverte lors de cette reprise. Son workflow Repository quality est completed/success, run 36644587422. Ces preuves concernent la révision reçue ; le présent complément doit recevoir ses propres contrôles.
+
+Le dossier v0.4 est **REÇU HQ pour instruction**. Ce statut n'est ni une revue spécialisée favorable ni une approbation de B1, IP2, des langues, des pays, du budget ou du schéma d'identité. Les huit GAP restent ouverts. Le positionnement confirmé DIR-012 est conservé.
+
+### Première réponse attendue : 04 — Backend / API
+
+**Mandat borné :** produire un delta documentaire propriétaire sur GAP-L1-01 à 04 à partir de la [préparation L1, sections 3 à 4.1](../quality/first-lot-contract-readiness.md). Réutiliser API-BE-001 à 007 et C1–C8 ; ne pas refaire le catalogue complet et ne pas lancer le code applicatif.
+
+| Sujet | Réponse concrète attendue de 04 | Avis nécessaires avant gel |
+| --- | --- | --- |
+| Identité et transport, GAP-01 | Comparaison des options pertinentes pour le client candidat ; recommandation motivée, preuve d'identité, stockage client, contrôle d'origine/CSRF, paramètres encore ouverts et effets sur le modèle de données | 03/05/14/15 ; HQ pour les décisions structurantes |
+| Idempotence préauthentifiée, GAP-02 | Tableau même clé/même entrée, entrée différente, clé différente, preuve consommée, expiration, mutation en cours et réponse perdue ; résultat observable, erreur et confidentialité pour chaque cas | 14 et consommation 05 ; oracles 18 |
+| Identité courante, GAP-03 | Avis accepté/amendé/rejeté sur chaque champ et chaque règle du candidat §4.1 ; option lecture/bootstrap, anonymous/restricted/unavailable, mapping d'erreurs et responsabilités d'invalidation | 05/14, projection 09/15 ; aucune route imposée par HQ |
+| Cycle de session, GAP-04 | Table connexion/rotation concurrente/révocation/récupération/expiration/déconnexion répétée ; portée, instant d'effet proposé, résultat inconnu et convergence après réponse perdue | 05/14/15 ; paramètres motivés et encore proposés jusqu'à décision |
+
+Chaque réponse doit indiquer : règle proposée, état nominal, erreur, données, permission, producteur/consommateur, dépendances, références QA existantes, décision attendue et preuve de validation future. Un paramètre inconnu reste explicitement ouvert avec propriétaire et impact ; ne pas le remplacer silencieusement par une valeur. Si une option dépend de la stack ou du pilote, rendre la branche conditionnelle et avancer sur la sémantique indépendante.
+
+**Emplacements :** mettre à jour le document Backend propriétaire existant ; proposer seulement les ajustements nécessaires au complément L1 de 21. Conserver les repères GAP existants ; ne pas marquer VERIFIED un contrat seulement rédigé. Les pays et langues ne sont ni fixés ni déduits des priorités marketing. Les autres GAP et SYN continuent d'exister ; cette priorité de réponse ne change pas la roadmap.
+
+### Passage aux avis et critères de retour HQ
+
+1. 04 produit son delta et fournit le SHA, le diff, les questions résiduelles et les vérifications réellement exécutées.
+2. 05 examine les comportements consommateur et 14 les hypothèses de session/autorisation ; 09/15 examinent uniquement les projections et données touchées.
+3. 18 rattache les oracles aux tests existants, y compris S03a–h ; aucune exécution applicative n'est revendiquée.
+4. HQ rapproche les réponses et tranche uniquement les choix relevant de son autorité ; 21 revoit ensuite la cohérence du delta avant intégration.
+
+Critère de réception : les quatre lignes ci-dessus ont chacune une réponse explicite, des alternatives et des dépendances attribuées. Critère de fermeture d'un GAP : réponse propriétaire, accords nécessaires et décision traçable ; un simple document publié ne suffit pas. Les avis non reçus sont conservés comme tels.
+
+**État de transmission : À TRANSMETTRE à la discussion 04.** Ce mandat préparé dans GitHub ne déclenche pas l'autre discussion. Les demandes 05/14/18 sont séquencées après le delta 04 pour éviter des contrats parallèles contradictoires ; leurs contributions indépendantes restent possibles. Aucun envoi individuel, aucune réception ni aucun avis n'est revendiqué ici.
+
+**Compte rendu HQ :** organisation de cette réponse ciblée seulement ; livrable présent §10 dans la PR #27 existante ; contrôles de ce complément à vérifier au nouveau SHA ; questions de fond et protections FIND-21-02/05 ouvertes ; risque principal de substituer une proposition HQ aux autorités de domaine ; prochaine étape : recevoir le delta 04 puis les avis bornés. L1 reste BLOQUÉ POUR CODE et aucun GO de lancement n'est donné.
