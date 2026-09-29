@@ -35,3 +35,8 @@ Dépôt : https://github.com/yyogas/social-network — visibilité privée. Remo
 ## Travail DIR-010 en revue
 
 Organisation et noms explicites, règles de contribution, CI du dépôt, tests du validateur, documentation d'installation/exploitation et scénarios d'hébergement : préparés dans la branche `docs/m0-engineering-foundation`. Suivre la PR pour statut de revue et résultat CI. Les suites applicatives, l'installation du produit sur OS vierge et les tests de charge restent BLOQUÉS ; la revue indépendante et les protections de branche restent à finaliser.
+
+
+## Campagne documentaire DIR-011
+
+Les 21 mandats sont préparés dans le [tableau de coordination](coordination-board.md). Le HQ propose une vision, un catalogue, des parcours et une [roadmap](global-roadmap.md) ; les avis spécialisés restent à recevoir. Travail publié par une PR distincte dépendant de la PR nº 1 ; la publication ne vaut ni transmission aux discussions ni approbation du MVP. Le [plan documentaire](../documentation-plan.md) définit les responsabilités et les éléments restant à compléter.

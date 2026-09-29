@@ -39,3 +39,16 @@ Ne pas ajouter de secrets, de données personnelles réelles ou de exports de co
 - [Hébergement : pilote, intermédiaire et premium](documentation/hosting/hosting-comparison.md)
 
 La CI actuelle vérifie le dépôt documentaire et les tests de son validateur. Les suites et l'installation applicatives restent à réaliser. Les protections de branche ne sont pas encore configurées.
+
+
+## Construire le produit — campagne M0
+
+- [Plan documentaire et couverture](documentation/documentation-plan.md)
+- [Vision et principes produit](documentation/product/product-vision.md)
+- [Catalogue des fonctionnalités proposées](documentation/product/feature-catalog.md)
+- [Parcours et critères d'acceptation](documentation/product/user-journeys.md)
+- [Mandats des 21 équipes](documentation/teams/work-orders.md)
+- [Pilotage, questions et réception des livrables](documentation/project-governance/coordination-board.md)
+- [Roadmap globale proposée](documentation/project-governance/global-roadmap.md)
+
+Ces documents sont préparés par le HQ pour les revues spécialisées. Ils n'attestent pas de l'approbation des fonctionnalités ni de l'exécution des travaux par les autres discussions.
