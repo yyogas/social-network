@@ -4,7 +4,7 @@
 
 | Champ | Valeur |
 | --- | --- |
-| Référence / version | SN-INT-M0-ARB-001 — v0.1 |
+| Référence / version | SN-INT-M0-ARB-001 — v0.2 |
 | Date | 30 septembre 2026, Europe/Paris |
 | Auteur | 21 — Intégration / Code Review ; préparation du dossier, sans substitution aux propriétaires |
 | Autorité attendue | 00 — MASTER / HQ avec 01 Produit, 09 Safety, 15 Privacy et les propriétaires des arbitrages concernés |
@@ -151,6 +151,8 @@ Pour la reprise, les propositions 24 h/8 h et 1 h/4 h doivent être rapprochées
 
 Les lots suivants sont un séquencement candidat, pas une nouvelle roadmap approuvée. Des travaux documentaires indépendants peuvent continuer immédiatement ; le démarrage du code d'un lot exige ses contrats et une autorisation de réalisation suffisants.
 
+Les ordres 0–4 ci-dessous regroupent les travaux ; les identifiants L0–L7 de [20](../delivery/implementation-readiness.md) restent la référence des lots. Le complément [préparation contractuelle L1 v0.1](../quality/first-lot-contract-readiness.md) rapproche les onze API candidates et les besoins Web, précise huit demandes avec propriétaires et réutilise les tests existants. Il ne change pas les options A/B/C ni leur statut.
+
 | Ordre | Livrable borné | Condition d'entrée | Preuve de sortie / limite |
 | --- | --- | --- | --- |
 | 0 — Décisions et contrats | DEC-0001/0002 ; arbitrages d'architecture ; matrice acteurs/états/données ; limites et erreurs du premier lot | Dossier présent, avis ciblés et réponse HQ ; pas besoin de relancer les 21 équipes | Décisions datées et liées à un SHA ; contrats propriétaires relus ; budgets et capacités explicites |
@@ -217,7 +219,7 @@ La base de départ a été reconstruite à partir des fichiers versionnés et so
 Contrôles de publication à consigner avec leur résultat effectif dans la PR : `python3 scripts/repository/validate_repository.py`, `git diff --cached --check`, puis workflow Repository quality au SHA publié, avec job et checkout réellement testés. Aucun nouveau test applicatif, audit juridique, benchmark ou exercice d'exploitation n'est exécuté par ce dossier.
 
 1. **Décisions prises / à valider :** synthèse locale et organisation du dossier ; A1/B1/C1 conditionnel recommandés, arbitrages structurants ouverts.
-2. **Livrables :** présent dossier v0.1, liens depuis l'index, le statut et la coordination ; publication sur la branche HQ existante avec nouvelle PR distincte du bilan #24 déjà fusionné.
+2. **Livrables :** présent dossier v0.2, complément L1 v0.1 et liens depuis l'index, le statut et la coordination ; mise à jour de la PR #27 existante sur la branche HQ, distincte du bilan #24 déjà fusionné.
 3. **Tests :** résultats du delta et de la CI dans la PR ; historiques séparés de l'exécution présente, aucun PASS applicatif.
 4. **Questions :** public/admission, groupes, langues/surface puis données, architecture et capacité selon SYN-001..007.
 5. **Dépendances :** demandes ciblées du §7, toutes À TRANSMETTRE tant qu'aucun envoi n'est établi.
