@@ -40,3 +40,8 @@ Organisation et noms explicites, règles de contribution, CI du dépôt, tests d
 ## Campagne documentaire DIR-011
 
 Les 21 mandats sont préparés dans le [tableau de coordination](coordination-board.md). Le HQ propose une vision, un catalogue, des parcours et une [roadmap](global-roadmap.md) ; les avis spécialisés restent à recevoir. Travail publié par une PR distincte dépendant de la PR nº 1 ; la publication ne vaut ni transmission aux discussions ni approbation du MVP. Le [plan documentaire](../documentation-plan.md) définit les responsabilités et les éléments restant à compléter.
+
+
+## Réception spécialisée — 29 septembre 2026
+
+Les 21 réponses sont reçues et leurs publications vérifiées dans les PR nº 3–23 : [bilan et références](m0-reception-report.md). Cette mise à jour remplace l'état NON REÇU de la préparation de DIR-011 ; elle n'approuve pas les contenus. Les 21 runs documentaires observés sont success. La revue 21 demande toutefois des corrections de fondation (FIND-21-01 à 03) avant intégration de la pile. MVP, architecture, politiques et ouverture restent à arbitrer. Les nouveaux handoffs sont préparés, pas réputés envoyés.
