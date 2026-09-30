@@ -25,3 +25,49 @@ Aucun test applicatif, API runtime, sécurité, permission, performance, migrati
 ## Transmission
 
 Revue de cette seule contribution à demander à 03/05/06/08/09/10/14/15/18/21 selon leur domaine. Statut : À TRANSMETTRE aux discussions. Les arbitrages OPEN-003/005/007 restent ouverts.
+
+## Delta ciblé L1 v0.2 — 30 septembre 2026
+
+**Portée :** réponse 04 dans le [document Backend](../backend/api-contract-candidates.md), GAP-L1-01 à 04 uniquement, et présent rapport. Mandat HQ `206b1804df5cb602140729613fa85080fea32c7c` ; base PR #27 actualisée `85319286222559c22f943f4c94838840c23dae97`. La lecture de contenu est limitée au mandat, candidat L1 et contrats directs ; copie mécanique des 86 fichiers pour exécuter les contrôles existants, sans réaudit du corpus. Aucun script, test, workflow ou fichier d'un autre propriétaire modifié.
+
+Instantané local d'entrée distinct de l'historique distant : son arbre `39bbac81875877aa51bd36f2ba4d7411835802b4` est identique à l'arbre GitHub de la référence. Le SHA publié et la CI de ce delta sont consignés dans sa PR ; aucun succès de #27 n'est réutilisé comme preuve du nouveau delta.
+
+Environnement local : Linux, Python 3.12.14. Commandes exécutées :
+
+```sh
+python3 scripts/repository/validate_repository.py
+python3 -m unittest discover -s tests/repository -p 'test_*.py' -v
+git diff --check
+git diff --cached --check
+```
+
+Résultats : **86 fichiers PASS ; 24 tests du validateur/contrôle whitespace PASS ; espaces PASS**. Ces tests vérifient l'outillage du dépôt, pas les sessions de l'application.
+
+Contrôle ponctuel Python : quatre sections GAP propriétaires présentes ; onze critères locaux L1-BE ; 48 lignes historiques du catalogue préservées ; références TEST-18xx/14xx/WEB explicites du delta résolues dans les trois sources QA/Sécurité/Web ; les deux fixtures JSON d'identité sont syntaxiquement valides. Recherche Git dans la base : API-BE-049 absent, donc identifiant proposé sans collision observée dans cette référence ; nouvelles contributions simultanées à vérifier lors de l'intégration.
+
+**Échec de contrôle puis correction :** la première assertion comptait les mentions API des nouveaux tableaux comme de nouvelles définitions du catalogue historique. Elle a échoué ; le contrôle a été borné à la portion antérieure au titre « Delta propriétaire L1 », puis réussi. Aucune réussite applicative déduite de cette correction du contrôle textuel.
+
+Relecture locale : distinction clé K/preuve/contexte ; preuve expirée versus reçu historique ; mutation en cours et réponse perdue ; extension logout et changement de génération ; identité compte/profil séparée ; absence de Set-Cookie de suppression tardive ; issue de reconnexion si un ancien cookie invalide écrase B ; récupération contre login ancien ; données et paramètres proposés/ouverts. Cette relecture du producteur ne vaut pas revue indépendante de 21 ni avis 05/14/15/18.
+
+Aucun test applicatif, API, navigateur réel, CSRF, anti-énumération mesurée, cryptographie, concurrence DB, restauration, charge ou migration exécuté. Les scénarios S03a–h/S04a–h et L1-BE-01…11 sont PLANNED ; leurs preuves runtime restent manquantes. Les contrôles documentaires ne ferment aucun GAP. Avis ciblés préparés, À TRANSMETTRE / NON REÇUS. **L1 BLOQUÉ POUR CODE**, aucune fusion.
+
+## Amendement de convergence L1 v0.3 — 30 septembre 2026
+
+**Périmètre :** amendement de la PR #28 existante, document Backend et présent rapport exclusivement. Mandat HQ §11 `4d3cd079e92217936af3292429a38f91f7b576ff`, avis #29–32 et Architecture #33 `a7901fc87e79975d8963e909a89fc8150410e40a`, références immuables détaillées dans C0. Lecture ciblée de ces entrées, sans nouvelle analyse du corpus complet. Parent distant attendu : `1acf84fffcaa8131c0826d4874126e107a4cf978`. Son arbre `01734ad8af79ce5d0017045bb99541d9457d1f21` correspond à l'instantané local de préparation `01799c75c8bdde98a5997771e4821ffbf39cfb9e` ; les SHA locaux et distants ne sont pas confondus.
+
+Contrôles exécutés pour cet amendement :
+
+```sh
+python3 scripts/repository/validate_repository.py
+python3 -m unittest discover -s tests/repository -p 'test_*.py' -v
+git diff --check
+git diff --cached --check
+```
+
+Résultats : **86 fichiers suivis PASS ; 24 tests de l'outillage PASS ; espaces PASS**. Contrôle textuel ponctuel Python exécuté : table C8 de 36 lignes, comprenant les 34 constats individuels bloquants/à amender (10 Web, 10 Sécurité, 7 Privacy, 7 QA), plus QA-E et le raccordement Architecture ; présence de chaque identifiant attendu vérifiée. Catalogue historique antérieur au delta L1 conservé, hors en-tête de version. Ce comptage ne valide pas la résolution sémantique des constats ni les ancres des sections. Les onze blocages sont inclus, aucun fermé.
+
+Relecture producteur ciblée : cohérence du bundle d'identité et attribution de l'intention, limites entre racines indépendantes, logout avançant le fence et reçu distinct, invalidation des challenges après récupération, autorisation après attentes de verrous, K absent ambigu, rotation/purge des empreintes, priorité des erreurs, neuf cycles de données et oracles révisés. A/B restent conditionnels, reconnexion après reload non adoptée, garantie globale non prouvée. Calendrier audit/backups, canal hors session et paramètres manquants sont explicitement bloquants. Cette relecture ne remplace aucun propriétaire.
+
+Le commit publié, la comparaison de son arbre/contenu et le résultat réel de sa CI seront consignés dans la description de la PR #28 après publication. Le succès de CI v0.2 n'est pas une preuve pour v0.3. La base HQ a avancé ; aucun merge ni fichier HQ ajouté à cet amendement.
+
+**Aucun test applicatif, session, navigateur, cryptographie, anti-énumération, concurrence de base, restauration ou charge exécuté.** Les oracles C7 restent PLANNED/BLOCKED selon leurs dépendances. Avis #29–32 et #33 reçus comme entrées ; relectures de v0.3 À TRANSMETTRE / NON REÇUES. Pas de modification des rapports sources, pas de clôture de constat, pas de GO code/pilote.
