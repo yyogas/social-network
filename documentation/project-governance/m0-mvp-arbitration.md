@@ -321,6 +321,55 @@ Chaque réponse doit indiquer : règle proposée, état nominal, erreur, donnée
 
 Critère de réception : les quatre lignes ci-dessus ont chacune une réponse explicite, des alternatives et des dépendances attribuées. Critère de fermeture d'un GAP : réponse propriétaire, accords nécessaires et décision traçable ; un simple document publié ne suffit pas. Les avis non reçus sont conservés comme tels.
 
-**État de transmission : À TRANSMETTRE à la discussion 04.** Ce mandat préparé dans GitHub ne déclenche pas l'autre discussion. Les demandes 05/14/18 sont séquencées après le delta 04 pour éviter des contrats parallèles contradictoires ; leurs contributions indépendantes restent possibles. Aucun envoi individuel, aucune réception ni aucun avis n'est revendiqué ici.
+**État historique à la préparation du §10 : À TRANSMETTRE à la discussion 04 ; remplacé par la réception vérifiée au §11.** Ce mandat préparé dans GitHub ne déclenche pas l'autre discussion. Les demandes 05/14/18 sont séquencées après le delta 04 pour éviter des contrats parallèles contradictoires ; leurs contributions indépendantes restent possibles. Aucun envoi individuel, aucune réception ni aucun avis n'est revendiqué ici.
 
 **Compte rendu HQ :** organisation de cette réponse ciblée seulement ; livrable présent §10 dans la PR #27 existante ; contrôles de ce complément à vérifier au nouveau SHA ; questions de fond et protections FIND-21-02/05 ouvertes ; risque principal de substituer une proposition HQ aux autorités de domaine ; prochaine étape : recevoir le delta 04 puis les avis bornés. L1 reste BLOQUÉ POUR CODE et aucun GO de lancement n'est donné.
+
+## 11. Réception HQ des avis L1 et convergence des corrections
+
+**30 septembre 2026 — réception vérifiée, pas approbation du protocole.** La réponse Backend [#28](https://github.com/yyogas/social-network/pull/28), SHA `1acf84fffcaa8131c0826d4874126e107a4cf978`, et les quatre avis ci-dessous sont reçus HQ. Ces avis portent tous sur ce même SHA Backend. Le statut NON REÇU antérieur est historique pour ces quatre avis seulement ; les accords sur corrections, l'avis Architecture et les réponses Safety restent non reçus.
+
+| Propriétaire | PR ouverte | Source versionnée reçue | CI du SHA de l'avis |
+| --- | --- | --- | --- |
+| 05 Web | [#29](https://github.com/yyogas/social-network/pull/29) | [Avis au SHA exact](https://github.com/yyogas/social-network/blob/e363e751d4b797cceb6c6ab3ec79745d6e54e380/documentation/web-application/backend-l1-web-review.md) | [success](https://github.com/yyogas/social-network/actions/runs/36648382675) |
+| 14 Sécurité | [#30](https://github.com/yyogas/social-network/pull/30) | [Avis au SHA exact](https://github.com/yyogas/social-network/blob/3221f762b5f98a552a3600fc24118fbe99b7a003/documentation/security/backend-l1-security-review.md) | [success](https://github.com/yyogas/social-network/actions/runs/36648436925) |
+| 15 Privacy | [#31](https://github.com/yyogas/social-network/pull/31) | [Avis au SHA exact](https://github.com/yyogas/social-network/blob/81063238cd32689c630aaa1e70633b7104a48042/documentation/privacy/backend-l1-targeted-review.md) | [success](https://github.com/yyogas/social-network/actions/runs/36648452400) |
+| 18 QA | [#32](https://github.com/yyogas/social-network/pull/32) | [Avis au SHA exact](https://github.com/yyogas/social-network/blob/cada61a7b6391a1119bfdf70b4ddc7b04ab13dbb/documentation/quality/backend-l1-qa-review.md) | [success](https://github.com/yyogas/social-network/actions/runs/36649149045) |
+
+Les quatre CI sont completed/success lors de cette consultation. HQ a lu les pièces, les verdicts et les demandes : ce n'est ni une exécution de tests applicatifs ni une nouvelle revue spécialisée. Les acceptations documentaires sont locales ; aucun GAP n'est fermé. Les quatre avis contiennent **onze constats bloquants au total, avec recouvrements** : Web 4, Sécurité 3, Privacy 2, QA 2. Ne pas les présenter comme onze bugs runtime ni additionner leurs tests d'outillage pour annoncer une couverture produit.
+
+### Corrections regroupées, sans nouvel identifiant concurrent
+
+| Groupe de travail | Constats sources à conserver | Livrable de convergence attendu | Responsables et contrôle |
+| --- | --- | --- | --- |
+| Liaison navigateur et acquisition cohérente | Web B01/B04 ; S14-L1-05 ; QA L1-BE-08 / QA-B | Table identité/version/CSRF/cookies et intention ; deux bootstraps concurrents, cookies tardifs/perdus/remplacés, réveil d'onglet ; résultat HTTP, effet durable et état UI pour chaque ordre ; refus des combinaisons incohérentes | 03 propose primitives/hypothèses ; 04 amende le contrat ; 05/14 revoient ; 18 vérifie les oracles |
+| Attribution du login et ordre logout/login | Web B02 ; S14-L1-13 ; QA L1-BE-07 / QA-A | Distinguer login préparé avant logout mais committé après, nouvelle intention explicite après logout, récupération concurrente et réponse login perdue ; point de sérialisation et attribution du résultat à l'intention, sans lookup privé | 03/04, avis 14/05 et minimisation 15 ; ni nom de DB ni protocole choisis par HQ |
+| Déconnexion incertaine après reload | Web B03 ; amendements QA L1-BE-06 / QA-D | Portée et fin du verrou, reload/historique/restauration/nouvel onglet, stockage indisponible/perdu ; mécanisme minimal ou limite de reprise explicite ; ne pas réafficher le privé par simple relecture d'une session encore active | 04/05/14/15 ; paramètres et persistance à ratifier, aucun stockage de secret implicitement autorisé |
+| Historique K absent, perdu ou purgé | S14-L1-09 ; QA-C | Distinguer première opération autorisée et historique perdu ; garanties de durabilité/admission ou invalidation de génération ; pas de mutation doublée sur miss cache ; lien avec rotation d'empreinte, tombstones et purge | 03/04/14, cycle 15, oracle 18 |
+| Conservation après validité | P15-L1-08 ; QA-C/QA-F | Compléter les neuf objets du tableau Privacy : finalité, accès, début/fin de validité, déclencheur et borne de conservation, marge de purge, exceptions/backups, preuve de restauration ; borner le contexte multi-compte | 04 décrit les besoins ; 14/15 valident les contraintes ; aucune durée déduite d'un TTL ou d'un ancien chiffre analytics |
+| Accès aux droits sous restriction | P15-L1-05 ; QA-E ; questions Web sur reprise | Matrice opération × état × preuve × canal, y compris hors session ; voies recours/privacy et responsable opérationnel ; distinguer restriction, authentification et panne | 09/10/15/14 définissent avec 04 ; 05 consomme ; dépendance GAP-05 déjà ouverte, pas de réaudit de la modération entière |
+
+**Amendements non bloquants à ne pas perdre :** chaque ligne À AMENDER des quatre sources doit aussi recevoir une réponse motivée : priorité des erreurs, allowlist d'activité, bornes et budgets, rotation d'empreinte, challenges après recovery, projection compte/profil/capacités, paramètres, messages et preuves navigateur. Le tableau ci-dessus priorise les blocages sans supprimer les autres verdicts. Conserver les repères des propriétaires dans la réponse.
+
+### Mandat de correction et ordre de travail
+
+- **03 Architecture :** instruire les primitives nécessaires aux quatre premiers groupes avec les contraintes des avis ; proposer une option et ses alternatives, hypothèses, atomicité/durabilité, modes panne et coût de complexité. Réutiliser les ADR candidats ; aucune stack, table ou durée ne devient approuvée par défaut. Une option plus simple avec reprise utilisateur explicite doit être comparée aux contextes/reçus supplémentaires avant toute sophistication.
+- **04 Backend :** compléter la PR #28 existante, après lecture des quatre avis ; produire une table source → réponse → section amendée → dépendance → preuve attendue. Avancer sur les corrections indépendantes ; conserver les choix Architecture, Privacy et Safety explicitement ouverts jusqu'à leur réponse. Ne pas marquer les avis clos sur sa seule auto-évaluation.
+- **05/14/15/18 :** revoir ensuite uniquement le delta qui répond à leurs constats au nouveau SHA, sans recommencer la revue historique. 09/10 interviennent uniquement sur le raccordement des droits ; leurs avis ne sont pas présumés reçus.
+- **21 :** vérifier la cohérence et les raccordements après amendements et avis ; HQ arbitre les décisions transversales sur options concrètes. Le contrôle technique n'adopte pas le périmètre produit.
+
+Critère de réception du correctif : les onze constats bloquants et chaque amendement ont une réponse traçable, même si certaines restent BLOQUÉES avec propriétaire. Critère de levée : correction au SHA exact et avis favorable du propriétaire concerné ; les tests runtime restent à réaliser après autorisation du lot. Aucune fusion de #27–32 ni GO code/pilote dans cette réception.
+
+### Branches, preuves et compte rendu
+
+#28 est empilée sur #27 ; #29–32 sont empilées sur #28. Après modification d'une base, vérifier le diff propre à chaque contribution et sa CI ; les avis restent ancrés au SHA initial et ne valent pas approbation automatique du nouveau Backend. Ne pas supprimer les branches ni recopier les quatre rapports dans le contrat : les liens immuables ci-dessus sont les pièces de référence.
+
+Ce delta HQ met à jour le dossier existant sur la branche de #27. Sa vérification documentaire et sa CI sont à consigner dans la PR au nouveau SHA ; les CI ci-dessus concernent uniquement les avis reçus. Aucun test applicatif, navigateur, sécurité ou restauration exécuté par cette consolidation.
+
+1. **Décision :** réception des quatre avis et organisation des corrections ; aucune option technique adoptée.
+2. **Livrable :** présent §11, sources versionnées et demandes groupées ; §10 conservé comme historique du mandat.
+3. **Vérifications :** SHA/PR/fichiers et quatre CI relus ; tests runtime toujours non exécutés.
+4. **Questions :** primitives 03, contrats amendés 04, cycles 15 et droits 09/10 ; durées et options toujours ouvertes.
+5. **Dépendances :** matrice ci-dessus ; nouvelles demandes 03/04 **À TRANSMETTRE**, leur publication n'est pas une réception interdiscussion.
+6. **Risques :** accepter un protocole par simple CI verte, divergence des réponses aux mêmes courses, surconservation ou accès aux droits absent ; aucune faille applicative reproduite.
+7. **Suite HQ :** transmettre le mandat à 03 et 04 ; recevoir leurs deltas et solliciter la relecture ciblée des propriétaires. L1 demeure BLOQUÉ POUR CODE.
