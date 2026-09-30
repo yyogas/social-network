@@ -50,3 +50,24 @@ Contrôle ponctuel Python : quatre sections GAP propriétaires présentes ; onze
 Relecture locale : distinction clé K/preuve/contexte ; preuve expirée versus reçu historique ; mutation en cours et réponse perdue ; extension logout et changement de génération ; identité compte/profil séparée ; absence de Set-Cookie de suppression tardive ; issue de reconnexion si un ancien cookie invalide écrase B ; récupération contre login ancien ; données et paramètres proposés/ouverts. Cette relecture du producteur ne vaut pas revue indépendante de 21 ni avis 05/14/15/18.
 
 Aucun test applicatif, API, navigateur réel, CSRF, anti-énumération mesurée, cryptographie, concurrence DB, restauration, charge ou migration exécuté. Les scénarios S03a–h/S04a–h et L1-BE-01…11 sont PLANNED ; leurs preuves runtime restent manquantes. Les contrôles documentaires ne ferment aucun GAP. Avis ciblés préparés, À TRANSMETTRE / NON REÇUS. **L1 BLOQUÉ POUR CODE**, aucune fusion.
+
+## Amendement de convergence L1 v0.3 — 30 septembre 2026
+
+**Périmètre :** amendement de la PR #28 existante, document Backend et présent rapport exclusivement. Mandat HQ §11 `4d3cd079e92217936af3292429a38f91f7b576ff`, avis #29–32 et Architecture #33 `a7901fc87e79975d8963e909a89fc8150410e40a`, références immuables détaillées dans C0. Lecture ciblée de ces entrées, sans nouvelle analyse du corpus complet. Parent distant attendu : `1acf84fffcaa8131c0826d4874126e107a4cf978`. Son arbre `01734ad8af79ce5d0017045bb99541d9457d1f21` correspond à l'instantané local de préparation `01799c75c8bdde98a5997771e4821ffbf39cfb9e` ; les SHA locaux et distants ne sont pas confondus.
+
+Contrôles exécutés pour cet amendement :
+
+```sh
+python3 scripts/repository/validate_repository.py
+python3 -m unittest discover -s tests/repository -p 'test_*.py' -v
+git diff --check
+git diff --cached --check
+```
+
+Résultats : **86 fichiers suivis PASS ; 24 tests de l'outillage PASS ; espaces PASS**. Contrôle textuel ponctuel Python exécuté : table C8 de 36 lignes, comprenant les 34 constats individuels bloquants/à amender (10 Web, 10 Sécurité, 7 Privacy, 7 QA), plus QA-E et le raccordement Architecture ; présence de chaque identifiant attendu vérifiée. Catalogue historique antérieur au delta L1 conservé, hors en-tête de version. Ce comptage ne valide pas la résolution sémantique des constats ni les ancres des sections. Les onze blocages sont inclus, aucun fermé.
+
+Relecture producteur ciblée : cohérence du bundle d'identité et attribution de l'intention, limites entre racines indépendantes, logout avançant le fence et reçu distinct, invalidation des challenges après récupération, autorisation après attentes de verrous, K absent ambigu, rotation/purge des empreintes, priorité des erreurs, neuf cycles de données et oracles révisés. A/B restent conditionnels, reconnexion après reload non adoptée, garantie globale non prouvée. Calendrier audit/backups, canal hors session et paramètres manquants sont explicitement bloquants. Cette relecture ne remplace aucun propriétaire.
+
+Le commit publié, la comparaison de son arbre/contenu et le résultat réel de sa CI seront consignés dans la description de la PR #28 après publication. Le succès de CI v0.2 n'est pas une preuve pour v0.3. La base HQ a avancé ; aucun merge ni fichier HQ ajouté à cet amendement.
+
+**Aucun test applicatif, session, navigateur, cryptographie, anti-énumération, concurrence de base, restauration ou charge exécuté.** Les oracles C7 restent PLANNED/BLOCKED selon leurs dépendances. Avis #29–32 et #33 reçus comme entrées ; relectures de v0.3 À TRANSMETTRE / NON REÇUES. Pas de modification des rapports sources, pas de clôture de constat, pas de GO code/pilote.
