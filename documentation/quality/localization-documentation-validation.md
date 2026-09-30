@@ -1,5 +1,7 @@
 # Validation documentaire — équipe 16 / M0
 
+**Portée historique :** contrôles de la spécification Localisation v0.2 à la révision ci-dessous. Le delta de positionnement DIR-012 du 30 septembre 2026 produit la v0.3 ; il ne bénéficie pas rétroactivement de ces preuves. Ses contrôles courants sont consignés dans la PR #27.
+
 Date : 29 septembre 2026. Propriétaire : 16 — International / Localisation.
 Statut : compte rendu de contrôles documentaires ; aucune validation fonctionnelle ou approbation indépendante.
 

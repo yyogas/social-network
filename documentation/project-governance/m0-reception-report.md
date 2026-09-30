@@ -1,5 +1,7 @@
 # Réception des 21 contributions — bilan HQ M0
 
+**Actualisation de lecture — 30 septembre 2026 :** ce bilan conserve les réceptions et constats à leurs SHA. Son ancien cadrage SYN-002 « audience kabyle/diaspora » est **historique et remplacé** par [DIR-012](decision-register.md), positionnement universel et priorités marketing confirmés par le porteur. Le [dossier courant](m0-mvp-arbitration.md) contient les options de pilote à réexaminer. Les anciennes preuves CI ne valident pas les deltas postérieurs.
+
 ## Consolidation exécutée — contributions spécialisées, v0.3
 
 Complément factuel de **21 — Intégration**, 29 septembre 2026. À la suite de la demande de continuation du porteur, les **21 PR spécialisées #3–23 sont fusionnées dans main**. Référence après cette séquence : **`8b2e75da39d9d4ceadbefc71690e233939fb9515`**, arbre `d55c3ab60e8257969f8cbf3b6705f0e9c5e191ed`, **82 fichiers**. Les 27 branches GitHub sont conservées. La lecture des 26 PR avant publication de ce complément ne trouve plus que **#24 ouverte**. L'état de fusion de ce dernier bilan et ses propres preuves CI sont consignés dans [la PR #24](https://github.com/yyogas/social-network/pull/24), après leur exécution ; aucun résultat futur n'est anticipé ici.

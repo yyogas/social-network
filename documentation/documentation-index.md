@@ -1,5 +1,9 @@
 # Index documentaire canonique — Fondation / M0
 
+## Complément reçu — vingt sous-agents, ronde 01
+
+Le [dossier de coordination déléguée](teams/agent-round-01/README.md) indexe vingt avis nouveaux et leur revue croisée sur Backend v0.3 / Architecture PR 33. Autorité d’organisation : DIR-013 ; propriétaire de la consolidation : HQ. Les contributions techniques restent PROPOSÉES et distinctes des avis des équipes M0. [Preuves documentaires et limites](quality/agent-round-01-validation.md). Ce complément ne renouvelle pas les acceptations historiques sur un autre SHA et ne ferme aucun gate de code.
+
 ## Index courant des réponses — complément de traçabilité v0.2
 
 Complément de 21 pour intégration, 29 septembre 2026, sans substitution à l'autorité documentaire de 17. Les 21 réponses sont **REÇUES** dans les PR indiquées. Leurs fichiers sont présents dans cette composition documentaire ; les SHA ci-dessous identifient les contributions reçues avant synchronisation. La présence dans `main` se vérifie par le statut de fusion et le commit de chaque PR, pas par le mot REÇU.
@@ -61,6 +65,12 @@ Les références ci-dessous complètent les sources de la v0.1 conservées dans 
 - Les conflits de propositions sont conservés dans le bilan HQ (SYN-001..007), avec leurs propriétaires. Aucun choix sémantique n'est imposé par cet index.
 - [Validation de l'index](quality/documentation-index-validation.md) : contrôle courant des 21 cibles versionnées et archivage explicite de l'ancien script limité à son snapshot.
 - Les réceptions GitHub sont prouvées par les références ci-dessus. Les messages vers les autres discussions restent **À TRANSMETTRE** si aucun envoi n'est établi.
+
+## Dossier transversal proposé après consolidation
+
+[Dossier d’arbitrage pilote/MVP v0.4](project-governance/m0-mvp-arbitration.md), préparé par 21 le 30 septembre 2026 : options pour DEC-0001/0002, périmètre candidat, dépendances et gates ; comparaison IP1–IP3 du pilote international, langues candidates, dimensionnement S1 global et critères de choix des marchés au §2D. **DIR-012 CONFIRMÉ pour le positionnement universel et le marketing ; pilote/MVP À ARBITRER**, sans modification des phases ou contrats propriétaires approuvés. Les 21 réponses reçues restent les sources de domaine ; ce dossier n’ajoute pas une équipe.
+
+[Préparation contractuelle du lot L1 v0.4](quality/first-lot-contract-readiness.md) : rapprochement compte/session/profil, onze API candidates, huit demandes ciblées et scénarios reliés aux tests existants ; candidats identité courante GAP-L1-03 et cycle de session GAP-L1-04, schémas, états, reprise, réponses/cookies tardifs et sous-cas S03a–h/S04a–h. **PROPOSÉ — L1 BLOQUÉ POUR CODE** ; aucun résultat applicatif ni contrat L1 approuvé ; entrée de positionnement DIR-012 actualisée.
 
 ## Archive — index v0.1 sur son instantané initial
 

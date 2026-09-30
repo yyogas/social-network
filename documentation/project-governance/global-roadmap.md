@@ -1,5 +1,7 @@
 # Roadmap globale — proposition HQ
 
+**Positionnement confirmé — 30 septembre 2026 :** [DIR-012](decision-register.md) destine le réseau à tout le monde dès sa conception. Les phases ci-dessous organisent fonctionnalités et préparation opérationnelle ; « International » ne reporte pas l'inclusion des publics mondiaux. Pays disponibles et langues restent à arbitrer.
+
 Date : 29 septembre 2026. Statut : PROPOSÉ, sans dates ni budget approuvés. Fondation / M0 est la phase actuelle. Les classes de fonctionnalités sont MVP, Phase 2, Phase 3, International, Long terme. « International » est aussi un chantier transversal : les exigences nécessaires aux langues et marchés du pilote doivent être traitées dès le MVP.
 
 ## Grandes lignes

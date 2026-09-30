@@ -1,15 +1,15 @@
 # Social Network — Direction / HQ
 
-**Version :** 0.7 — 29 septembre 2026
-**Statut :** cadrage initial, à réviser avec les équipes
+**Version :** 0.8 — 30 septembre 2026
+**Statut :** orientations du porteur confirmées, dont DIR-012 ; périmètre pilote et contrats spécialisés encore à arbitrer
 **Propriétaire :** Direction / HQ
 **Nom du projet :** Social Network
 
 ## 1. Vision et mandat
 
-Construire, depuis une société basée en France, un réseau social universel et économiquement viable, lancé d'abord auprès de la communauté kabyle et de sa diaspora, puis ouvert progressivement à d'autres publics et régions. Le produit doit donner davantage de contrôle aux personnes sur leurs données, leur temps et leur expérience, offrir des communautés solides, mieux servir les créateurs, rendre la publicité intelligible et proposer des outils professionnels utiles.
+Construire, depuis une société basée en France, un réseau social universel et économiquement viable, destiné à tout le monde dès sa conception, y compris au peuple kabyle. Le produit doit donner davantage de contrôle aux personnes sur leurs données, leur temps et leur expérience, offrir des communautés solides, mieux servir les créateurs, rendre la publicité intelligible et proposer des outils professionnels utiles.
 
-Le lancement communautaire est une stratégie d'acquisition et d'apprentissage ; l'identité, les fonctions et les règles de la plateforme doivent pouvoir accueillir d'autres communautés dès le départ. Marchés initiaux envisagés : France, Algérie, Canada, États-Unis, Belgique, Allemagne, Suisse et Royaume-Uni. Leur ordre, leur couverture linguistique et leur disponibilité effective restent à décider.
+DIR-012 remplace le ciblage initial d'une seule communauté par une audience universelle et des priorités marketing géographiques explicites. Les pays effectivement disponibles, les langues prises en charge et le rythme d'ouverture restent à décider séparément ; aucun public n'est présenté comme une extension tardive de l'identité du produit.
 
 **Règle de gouvernance :** HQ tranche les arbitrages transversaux après avis des propriétaires concernés. Une proposition d'équipe ne devient pas une décision validée sans inscription explicite dans ce registre. Les engagements juridiques, financiers, de sécurité et de calendrier exigent une validation adaptée avant exécution.
 
@@ -45,10 +45,32 @@ Les noms des discussions, responsables humains et mandats détaillés restent à
 | ID | Décision | Portée |
 | --- | --- | --- |
 | DIR-001 | Société basée en France. | Gouvernance et préparation du lancement. |
-| DIR-002 | Première audience : communauté kabyle et diaspora des pays cités dans le brief. | Acquisition initiale ; disponibilité exacte ouverte. |
-| DIR-003 | Ambition universelle et ouverture progressive à d'autres régions. | Architecture et marque extensibles. |
+| DIR-002 | Orientation historique de première audience communautaire — **REMPLACÉE par DIR-012 le 30 septembre 2026**. | Conservée pour traçabilité ; ne détermine plus le public ni le recrutement. |
+| DIR-003 | Ambition universelle, précisée par DIR-012 : public mondial dès la conception. | Préparation et disponibilité opérationnelles à décider ; marque universelle. |
 | DIR-004 | Principes : expérience positive et moderne, vie privée, contrôle utilisateur, respect du temps, communautés, créateurs, publicité transparente, outils professionnels et viabilité économique. | Critères d'arbitrage produit. |
 | DIR-005 | HQ maintient priorités, roadmap, arbitrages, cohérence, risques et registre des décisions. | Gouvernance de ce document. |
+| DIR-012 | Réseau pour tout le monde, peuple kabyle inclus ; priorités marketing mondiales ci-dessous. | **CONFIRMÉ par instruction explicite du porteur**, 30 septembre 2026 ; remplace DIR-002. |
+
+### DIR-012 — Positionnement universel et priorités marketing
+
+**Autorité et preuve :** instruction directe du porteur du projet reçue le 30 septembre 2026 à 00:45 Europe/Paris dans la discussion 21 ; intégration documentaire par 21 dans la PR #27. Révision d'entrée : `f779bf728a8a77fbd1003158c78473109ce71d54`. **Statut : CONFIRMÉ pour le positionnement et les priorités marketing.** Cette trace ne vaut pas avis spécialisé des autres équipes.
+
+- **Décision :** le réseau est destiné à tout le monde, y compris au peuple kabyle. Le ciblage initial exclusif ou privilégié d'une communauté kabyle est retiré. L'identité universelle s'applique dès la conception du produit.
+- **Priorités marketing confirmées — pays :** États-Unis, Canada, Inde, France, Allemagne, Royaume-Uni, Japon, Chine, Brésil, Argentine, Colombie, Mexique, Algérie, Maroc, Afrique du Sud, Espagne et Australie.
+- **Priorités marketing confirmées — régions ou ensembles :** Kabylie, monde arabe et Asie. Ces libellés sont des périmètres marketing, pas des codes de pays, une résidence ni une origine à attribuer aux personnes.
+- **Portée mondiale :** toute la planète reste concernée ; les pays ou publics non cités restent inclus dans l'ambition. L'ordre de la liste ne fixe ni un classement, ni un budget, ni une vague de déploiement.
+- **Effet sur les propositions antérieures :** A1 France/adultes/invitation et C1 français ne sont pas validés par ce message et perdent leur statut de recommandation par défaut ; cohorte, pays servis, langues, âge et admission sont à réexaminer dans ce cadre mondial. L'inclusion de la fonctionnalité générique de groupes/communautés FEAT-020 reste un arbitrage distinct.
+- **Limites :** aucune campagne, dépense, collecte d'origine, ouverture de pays, traduction, modification d'ACL ou autorisation d'implémentation n'est déclenchée. La liste marketing du réseau ne modifie pas la phase candidate de la publicité intégrée au produit.
+- **Classement :** orientation de produit et préparation marketing applicables dès M0/MVP ; fonctionnalités MVP / Phase 2 / Phase 3 / International / Long terme inchangées. « International » décrit la préparation des marchés et langues, pas une future ouverture du public à d'autres peuples.
+
+| Transmission ciblée — toutes À TRANSMETTRE | Livrable attendu / blocage |
+| --- | --- |
+| 01/19 : remplacer les segments fondés sur une origine par des usages, centres d'intérêt et besoins | Fiche de cohorte candidate et plan marketing par marché ; bloque le recrutement effectif, pas cette correction de positionnement |
+| 16 + 09/10/15 : rapprocher pays servis, langues d'interface/contenu/support et capacités humaines | Matrice de préparation par marché et options de langues ; bloque annonce de disponibilité et ouverture |
+| 03/04/05/14/18/20 : reprendre les entrées de L1 touchées, sans inventer pays, locale ou origine depuis un segment marketing | Contrats d'admission/locale/permissions et critères de test après arbitrage ; bloque le code dépendant |
+| HQ/17 : normaliser ce delta ciblé et les références A/C, OPEN-001/004, SYN-002 | Traçabilité et arbitrage DEC-0001/0002 restant ouvert ; aucune demande de réaudit des 21 contributions |
+
+**Acceptation documentaire :** README, vision, Produit, Growth, Localisation et dossier HQ portent une audience universelle ; tous les territoires demandés sont présents ; aucune mention historique du premier ciblage n'est présentée comme active ; priorités marketing, langues et disponibilité restent distinctes. Contrôles Git/CI au SHA publié dans la PR ; aucun test applicatif ou avis pays nouvellement exécuté.
 
 ## 5. Décisions ouvertes prioritaires
 
@@ -58,10 +80,10 @@ Chaque fiche suit le même format. Les solutions proposées ci-dessous ne valent
 
 - **Objectif :** définir une promesse que le premier groupe d'utilisateurs peut vérifier.
 - **Problème résolu :** éviter un produit trop général et un MVP dispersé.
-- **Solution proposée :** tester une expérience centrée sur les communautés, les publications et le contrôle du fil auprès d'un ou deux segments de la diaspora.
+- **Solution proposée :** tester une expérience centrée sur les communautés, les publications et le contrôle du fil auprès d'un ou deux segments d'usage définis par leurs besoins et centres d'intérêt dans le cadre universel DIR-012.
 - **Alternatives rejetées :** aucune à ce stade ; les options « vidéo d'abord » et « réseau professionnel d'abord » restent à comparer.
 - **Dépendances :** recherche utilisateur, recrutement de pilotes, positionnement de marque.
-- **Risques :** échantillon non représentatif ; confusion entre niche de lancement et identité permanente.
+- **Risques :** échantillon non représentatif ; confusion entre cohorte de test et public universel du réseau.
 - **Impact business :** acquisition et rétention initiales ; coût des opérations communautaires.
 - **Impact technique :** priorise profils, graphe social, communautés et fil.
 - **Priorité :** P0 ; **classement :** MVP ; **statut :** OUVERT.
@@ -331,3 +353,13 @@ Date : 29 septembre 2026. Autorité : instruction explicite du porteur de projet
 - Priorité : P0 pour le cadre documentaire M0. Classification : préparation du MVP ; fonctionnalités ultérieures classées dans le catalogue.
 
 Le [tableau de coordination](coordination-board.md) et les [mandats](../teams/work-orders.md) étendent la séquence initiale INT-0001 à INT-0010 : toutes les équipes commencent leur analyse documentaire, avec convergence progressive. Les anciennes demandes restent traçables et ne constituent pas une preuve d'envoi. Les réponses spécialisées de cette nouvelle campagne sont NON REÇUES à sa préparation.
+
+## DIR-013 — Délégation à vingt sous-agents et coordination centralisée
+
+Date : 30 septembre 2026. Autorité : demande explicite du porteur de lancer vingt agents pour gérer les contributions et avancer plus vite, avec ses instructions centralisées auprès du HQ. **Statut : APPROUVÉ pour l’organisation du travail.**
+
+Le HQ répartit vingt missions bornées en vagues, avec six sous-agents actifs simultanément au maximum, confronte leurs livrables et publie les résultats revus dans GitHub. Le [dossier de ronde 01](../teams/agent-round-01/README.md) consigne les missions effectivement lancées, les pièces reçues, les contradictions corrigées et les prochaines actions. La publication passe par la branche et la PR HQ existantes, sans vingt nouvelles branches.
+
+Ces exécutants sont nouveaux et distincts des discussions M0 01–21. Leur travail ne signe pas un avis au nom des anciens propriétaires et ne permet pas d’écrire directement dans les autres conversations. Le porteur n’a plus à transmettre manuellement les consignes de cette ronde. Les anciennes mentions À TRANSMETTRE restent historiques lorsqu’aucun envoi réel n’a eu lieu. La délégation est exécutée dans la session et ne promet pas de processus permanent après sa fin.
+
+Cette décision organise la rédaction, la revue et la consolidation ; elle n’adopte pas les propositions de session A/B, une nouvelle stack, des permissions, des durées de conservation, un budget ou un lancement. DIR-010 conserve la revue et les preuves avant fusion ; les gates applicables au premier code restent en vigueur. Le HQ poursuit la coordination des deltas ciblés au lieu de demander vingt-et-un nouveaux relais manuels.

@@ -1,5 +1,7 @@
 # Spécification du MVP candidat — contribution Produit M0
 
+**Delta de positionnement — 30 septembre 2026, par 21 sur instruction du porteur :** [DIR-012](../project-governance/decision-register.md) confirme le public universel et les priorités marketing. Les règles et phases fonctionnelles restent proposées ; cette révision ne prétend pas constituer un nouvel avis de 01.
+
 ## 1. Identification et statut
 
 | Champ | Valeur |
@@ -7,7 +9,7 @@
 | Objectif | Définir une boucle sociale pilote utile, contrôlable et exploitable, et donner à HQ un dossier d'arbitrage |
 | Propriétaire | 01 — Produit / Product Management ; reviewer humain GitHub NON REÇU |
 | Mandat | M0-TEAM-01 ; réponse spécialisée à INT-0001 |
-| Version / date | v0.1 — 29 septembre 2026 |
+| Version / date | v0.2 — 30 septembre 2026 ; delta DIR-012 sur la contribution v0.1 |
 | Référence d'entrée | PR [#2](https://github.com/yyogas/social-network/pull/2), branche `documentation/m0-team-coordination`, commit `dd7db8c7aec3ea9779e3fb9a9aadec7b3a732957` |
 | Statut | PROPOSÉ — avis 02/03/04/08/09/10/13/14/15/16/18/19 et arbitrages HQ attendus |
 | Approbation / implémentation / vérification applicative | NON REÇUES ; aucun code ni résultat applicatif attesté par ce livrable |
@@ -23,7 +25,7 @@ Travaux réutilisés : référentiel Produit et backlog v0.1 (24 fiches, 35 stor
 
 | Élément | Nature | Preuve ou manque |
 | --- | --- | --- |
-| Société en France, audience kabyle et diaspora, ambition universelle, contrôle et respect du temps | CONFIRMÉ | Instructions du porteur reprises dans la vision HQ ; pas preuve d'ouverture par pays |
+| Société en France, public universel dès la conception, peuple kabyle inclus, contrôle et respect du temps | CONFIRMÉ | DIR-012 et vision HQ actualisée ; pas preuve d'ouverture par pays |
 | GitHub central, branches et revue avant fusion, contributions M0 | CONFIRMÉ | DIR-010 / DIR-011 et mandat reçu dans cette discussion |
 | Promesse et besoins ci-dessous, phases et permissions candidates | PROPOSÉ | Analyse Produit ; validation spécialisée et recherche non reçues |
 | Âge, pays, langues, support, effectifs et budget disponibles | À VÉRIFIER | OPEN-001/002/004/006 ; réponses non reçues |
@@ -33,11 +35,11 @@ Travaux réutilisés : référentiel Produit et backlog v0.1 (24 fiches, 35 stor
 
 ## 2. Promesse, besoin récurrent et segments à tester
 
-**Promesse candidate :** retrouver des personnes connues ou pertinentes de la communauté et de la diaspora, partager une nouvelle, lire les réponses, puis revenir volontairement poursuivre l'échange, avec une audience et des protections compréhensibles. Le fil chronologique et la possibilité de terminer sa lecture rendent le contrôle visible. Ces choix ne prouvent pas une différenciation de marché : elle doit être confrontée aux usages existants.
+**Promesse candidate :** retrouver des proches, des créateurs et des personnes partageant ses centres d'intérêt, partager une nouvelle, lire les réponses, puis revenir volontairement poursuivre l'échange, avec une audience et des protections compréhensibles. Le fil chronologique et la possibilité de terminer sa lecture rendent le contrôle visible. Ces choix ne prouvent pas une différenciation de marché : elle doit être confrontée aux usages existants.
 
 | Segment pilote candidat | Besoin hypothétique | Situation concrète | Valeur à vérifier | Recherche attendue de 19/01 |
 | --- | --- | --- | --- | --- |
-| A — personnes de la diaspora liées à des proches, artistes ou créateurs fondateurs | Maintenir un lien et suivre des nouvelles pertinentes malgré la distance | Suivre quelques personnes, publier une image, recevoir une réponse, revenir la lire | Publication simple, fil compréhensible, maîtrise d'audience ; utilité suffisante sans groupe | Entretiens et observation de J01/J02/J03 ; raison du retour et frein à changer d'outil |
+| A — personnes suivant des proches, artistes ou créateurs et partageant des centres d'intérêt | Maintenir un lien et suivre des nouvelles pertinentes malgré la distance | Suivre quelques personnes, publier une image, recevoir une réponse, revenir la lire | Publication simple, fil compréhensible, maîtrise d'audience ; utilité suffisante sans groupe | Entretiens et observation de J01/J02/J03 ; raison du retour et frein à changer d'outil |
 | B — animateurs d'association et membres d'un collectif | Regrouper annonces et échanges avec règles et responsabilité | Rejoindre un espace, lire une annonce, commenter, signaler un incident | Une communauté structurée pourrait être indispensable ; un profil public n'est pas un groupe | Observation de J07 ; besoin de membres/adhésion et capacité réelle de modération |
 
 **Recommandation PROPOSÉE :** tester A avec un noyau de suivi de personnes ; étudier B en parallèle sans engager FEAT-020. Si les entretiens établissent que l'adhésion à un espace fermé est le besoin central, réexaminer cette recommandation avant DEC-0002. Aucun nombre de participants, seuil de rétention ni calendrier n'est inventé. Le groupe concret et les disponibilités humaines restent ouverts.
@@ -364,7 +366,7 @@ Réutiliser DEC-0001 (public/pays) et DEC-0002 (contrat MVP) réservés par HQ. 
 
 ### Dossier DEC-0001 — segment, pays et accès
 
-- **Objectif/problème :** choisir un groupe assez cohérent pour tester utilité et capacité de soutien ; diaspora ne signifie pas ouverture simultanée de tous les pays.
+- **Objectif/problème :** choisir un groupe assez cohérent pour tester utilité et capacité de soutien ; positionnement universel ne signifie pas ouverture simultanée de tous les pays ; sélectionner des besoins communs, sans critère d'origine.
 - **Solution proposée :** segment A, cohorte recrutée par 19, supports web proposés ; pays, langue et âge définis avec 15/16/09, aucune présomption juridique.
 - **Alternatives, non rejetées :** segment B association ; mix A+B ; ouverture large. B peut mieux différencier mais exige adhésion/modération ; mix et large brouillent la mesure et amplifient charge.
 - **Dépendances :** besoin observé 19, faisabilité 05/06, support 09/10/16, budget HQ/14. **Impact business :** coût de recrutement et utilité récurrente ; revenus hors pilote. **Impact technique :** surfaces, audiences et langues.
@@ -439,7 +441,7 @@ Autres constats à enregistrer par HQ si nécessaires : fil vide empêchant preu
 Ce livrable couvre les deux segments demandés par INT-0001, les 34 FEAT du catalogue, les parcours nominaux/erreurs du pilote, les permissions/données/interfaces candidates, les alternatives et les critères complémentaires. Les contrats manquants indiquent leur owner et le lot bloqué. Il ne remplace pas les spécifications UX/API/Media/Privacy/Trust et ne les approuve pas.
 
 1. **Décisions prises / à valider :** localement, réutilisation FEAT/J/AC et séparation suivi social/abonnements payants ; propositions DEC-0001/0002, public/privé et interfaces encore en revue. Aucun choix de stack, fournisseur, permission ou phase approuvé par Produit.
-2. **Livrable / publication :** `documentation/product/mvp-specification.md` v0.1, réponse M0-TEAM-01. Référence d'entrée exacte en §1 ; publication par branche/PR à documenter dans le compte rendu de livraison, aucune fusion annoncée par ce texte.
+2. **Livrable / publication :** `documentation/product/mvp-specification.md` v0.2, delta DIR-012 sur la réponse M0-TEAM-01. Référence d'entrée exacte en §1 ; publication par branche/PR à documenter dans le compte rendu de livraison, aucune fusion annoncée par ce texte.
 3. **Vérification :** critères AC-J/AC-PROD PLANNED ; aucun test applicatif exécuté. Contrôles documentaires et éventuelle CI rapportés avec leurs preuves dans la PR ; ils ne prouvent pas les parcours.
 4. **Questions :** OPEN-001 à OPEN-007 ; segment/recrutement, âge/pays/langues, web/mobile, communautés, moyens, audience et cycle des données ; reviewers OPEN-008 à nommer par HQ.
 5. **Dépendances :** §9 ; toutes transmissions vers autres discussions À TRANSMETTRE. Publication GitHub n'établit pas lecture/acceptation par chaque équipe.

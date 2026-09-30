@@ -40,7 +40,7 @@ Les deux brouillons déjà rédigés dans la discussion 11 sont des entrées his
 - Les anciens identifiants locaux ADS-01 à ADS-10 ne sont pas une deuxième numérotation FEAT. Les capacités ci-dessous sont toutes rattachées à FEAT-030 ; FEAT-028 reste une présence professionnelle distincte, propriétaire 01, en Phase 2 proposée.
 - Les plafonds précédemment illustrés (2 vues par annonceur/24 h, 6 publicités par personne/24 h) ne sont pas validés. Ils deviennent des paramètres à tester avec 01/02/13/15 ; aucun compteur n'est demandé au MVP.
 - Le recours possible à Redis, PostgreSQL ou un moteur séparé évoqué dans le brouillon ne fige pas la stack. 03/04 décideront du mécanisme de cohérence après arbitrage ; aucune migration ou service Ads n'est requis en M0.
-- Le ciblage par « communauté » est ambigu : espace de diffusion contextuel et appartenance des membres sont distincts. Recommandation : ne jamais convertir automatiquement une appartenance communautaire, une langue ou l'audience kabyle initiale en segment ethnique.
+- Le ciblage par « communauté » est ambigu : espace de diffusion contextuel et appartenance des membres sont distincts. Recommandation : ne jamais convertir automatiquement une appartenance communautaire, une langue ou un périmètre marketing de DIR-012 en segment ethnique.
 
 ### Options comparées
 

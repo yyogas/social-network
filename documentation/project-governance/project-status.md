@@ -1,5 +1,17 @@
 # État du projet
 
+## État courant — coordination déléguée, 30 septembre 2026
+
+Sur instruction du porteur (DIR-013), le HQ a lancé vingt missions de sous-agents, avec six simultanées au maximum. Le [dossier de ronde 01](../teams/agent-round-01/README.md) centralise leurs avis, sources, corrections et cinq actions suivantes. Ces nouveaux exécutants ne sont pas les auteurs des vingt-et-une discussions spécialisées ; aucune transmission à ces conversations n’est supposée. Le porteur peut donner ses instructions ici, sans relayer manuellement cette ronde.
+
+Backend PR 28 est relu à v0.3 `0a7fcd54b996cc292bfe98c61a835613837def32`, Architecture PR 33 à `a7901fc87e79975d8963e909a89fc8150410e40a`. Les avis propriétaires PR 29–32 portaient sur v0.2. La revue croisée a corrigé une clôture QA trop large : continuation F/T puis logout reste ouverte. Le choix de reprise A/continuité ordinaire et la portée entre racines restent non adoptés. **L1 demeure BLOQUÉ POUR CODE.** La prochaine pièce attendue est un delta contractuel consommable, pas une nouvelle campagne générale.
+
+Publication documentaire sur la PR 27 ; [preuves et limites](../quality/agent-round-01-validation.md). DIR-012 reste applicable au positionnement universel ; MVP, pays ouverts, langues, stack, permissions et budget restent à arbitrer. Les sections suivantes conservent les états antérieurs à cette ronde.
+
+## Préparation des arbitrages — 30 septembre 2026
+
+Le [dossier d’arbitrage pilote/MVP](m0-mvp-arbitration.md) prépare trois choix HQ : public/admission, suivi ou communautés, surface/langues. **DIR-012 confirme le public universel et les priorités marketing sur instruction du porteur du 30 septembre 2026** ; le périmètre pilote, la stack, les données et les permissions restent à arbitrer. Les recommandations par défaut France/français sont retirées pour réexamen dans ce cadre mondial. Base relue : `main` à `ba26729aa10dc497338a960ae78ba904a72216b2`, 26 PR fusionnées et aucune ouverte avant cette nouvelle proposition ; [preuves finales #24](https://github.com/yyogas/social-network/pull/24). Les demandes ciblées restent À TRANSMETTRE.
+
 ## État courant — consolidation documentaire v0.2
 
 Complément factuel de 21, 29 septembre 2026. Phase **Fondation / M0**. Les 21 réponses spécialisées #3–23 sont reçues et **intégrées dans main** au SHA `8b2e75da39d9d4ceadbefc71690e233939fb9515` ; le bilan HQ est #24. Les CI PR et push ont été vérifiées pour chacune. La fusion documentaire conserve leurs statuts PROPOSÉ. Les fondations #26/#25/#1/#2 sont intégrées dans `main` au SHA `71d7fd16be174381b7d937182979cdf7225cecb9`. Le [bilan de réception](m0-reception-report.md) et l'[état d'intégration](../quality/m0-branch-integration-status.md) consignent la progression suivante et ses preuves exactes.
@@ -10,7 +22,7 @@ FIND-21-01/03/04 sont corrigés et vérifiés dans la fondation ; FIND-21-02 (pr
 
 ## Archive — préparation et réception initiale DIR-009/010/011
 
-Les états « collecter », « en revue », « à recevoir » et « corrections avant intégration » ci-dessous sont historiques. Consulter l'état courant et les preuves de fusion, sans réattribuer les anciennes preuves à de nouveaux SHA.
+Les états « collecter », « en revue », « à recevoir » et « corrections avant intégration » ci-dessous sont historiques. L'ancienne audience de départ est remplacée par DIR-012 ; sa mention dans cette archive ne porte aucune orientation active. Consulter l'état courant et les preuves de fusion, sans réattribuer les anciennes preuves à de nouveaux SHA.
 
 **Date :** 29 septembre 2026
 **Phase :** Fondation / M0
