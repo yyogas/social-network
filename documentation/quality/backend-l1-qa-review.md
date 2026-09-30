@@ -119,7 +119,7 @@ Après restriction confirmée, une mutation interdite préparée sur l'ancien DT
 
 Pour A puis B, inverser indépendamment l'ordre des réponses 049, profil, requête protégée, 401 ancien et erreur réseau ancienne. Observer texte visible, arbre d'accessibilité, actions disponibles et prochaine requête : aucune donnée privée A ni action envoyée sous une identité A présentée comme B.
 
-Après logout confirmé : retour arrière/avant, rechargement, restauration d'onglet et retour de BFCache. Avant vérification fraîche, vue privée masquée et état VERIFYING. Aucune donnée privée persistée dans localStorage, sessionStorage, cache partagé ou cache du service worker pour ce contrat ; inspecter aussi les chemins d'erreur et HTML privés.
+Après logout confirmé : retour arrière/avant, rechargement, restauration d'onglet et retour de BFCache. Avant vérification fraîche, vue privée masquée et état VERIFYING. La projection 049 reste en mémoire seulement, sans persistance localStorage/sessionStorage ni cache partagé/service worker. Inspecter aussi les données de profil, chemins d'erreur et HTML privés pour démontrer l'absence de réapparition de A ; cet avis n'étend pas silencieusement les règles de stockage à tous les autres contrats produit.
 
 Répéter avec deux onglets du même profil navigateur et avec deux réponses A de part et d'autre d'une restriction connue. Les lecteurs obsolètes ne redonnent ni vue privée ni capacité. Le mécanisme d'invalidation inter-onglets relève de 05 ; un test unitaire de store client ne remplace pas ce parcours.
 
