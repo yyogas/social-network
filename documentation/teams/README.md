@@ -25,3 +25,7 @@ Chaque équipe propose dans son mandat ; MASTER arbitre les impacts transversaux
 - [Tableau de réception et arbitrages HQ](../project-governance/coordination-board.md)
 
 Le HQ a préparé ces mandats. La transmission et les réponses des discussions sont suivies séparément ; leur présence dans GitHub ne déclenche pas automatiquement les discussions.
+
+## Délégation active dans la session — DIR-013
+
+Le HQ coordonne désormais les missions de sous-agents autorisées par le porteur. Le [dossier de ronde 01](agent-round-01/README.md) réunit vingt contributions nouvelles, leurs corrections et les prochaines actions. Leurs numéros ne remplacent pas les IDs d’équipes ci-dessus. La centralisation évite au porteur les relais manuels de cette ronde ; elle ne permet pas d’écrire automatiquement dans les autres discussions ChatGPT.

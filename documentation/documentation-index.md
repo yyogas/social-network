@@ -1,5 +1,9 @@
 # Index documentaire canonique — Fondation / M0
 
+## Complément reçu — vingt sous-agents, ronde 01
+
+Le [dossier de coordination déléguée](teams/agent-round-01/README.md) indexe vingt avis nouveaux et leur revue croisée sur Backend v0.3 / Architecture PR 33. Autorité d’organisation : DIR-013 ; propriétaire de la consolidation : HQ. Les contributions techniques restent PROPOSÉES et distinctes des avis des équipes M0. [Preuves documentaires et limites](quality/agent-round-01-validation.md). Ce complément ne renouvelle pas les acceptations historiques sur un autre SHA et ne ferme aucun gate de code.
+
 ## Index courant des réponses — complément de traçabilité v0.2
 
 Complément de 21 pour intégration, 29 septembre 2026, sans substitution à l'autorité documentaire de 17. Les 21 réponses sont **REÇUES** dans les PR indiquées. Leurs fichiers sont présents dans cette composition documentaire ; les SHA ci-dessous identifient les contributions reçues avant synchronisation. La présence dans `main` se vérifie par le statut de fusion et le commit de chaque PR, pas par le mot REÇU.

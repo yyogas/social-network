@@ -353,3 +353,13 @@ Date : 29 septembre 2026. Autorité : instruction explicite du porteur de projet
 - Priorité : P0 pour le cadre documentaire M0. Classification : préparation du MVP ; fonctionnalités ultérieures classées dans le catalogue.
 
 Le [tableau de coordination](coordination-board.md) et les [mandats](../teams/work-orders.md) étendent la séquence initiale INT-0001 à INT-0010 : toutes les équipes commencent leur analyse documentaire, avec convergence progressive. Les anciennes demandes restent traçables et ne constituent pas une preuve d'envoi. Les réponses spécialisées de cette nouvelle campagne sont NON REÇUES à sa préparation.
+
+## DIR-013 — Délégation à vingt sous-agents et coordination centralisée
+
+Date : 30 septembre 2026. Autorité : demande explicite du porteur de lancer vingt agents pour gérer les contributions et avancer plus vite, avec ses instructions centralisées auprès du HQ. **Statut : APPROUVÉ pour l’organisation du travail.**
+
+Le HQ répartit vingt missions bornées en vagues, avec six sous-agents actifs simultanément au maximum, confronte leurs livrables et publie les résultats revus dans GitHub. Le [dossier de ronde 01](../teams/agent-round-01/README.md) consigne les missions effectivement lancées, les pièces reçues, les contradictions corrigées et les prochaines actions. La publication passe par la branche et la PR HQ existantes, sans vingt nouvelles branches.
+
+Ces exécutants sont nouveaux et distincts des discussions M0 01–21. Leur travail ne signe pas un avis au nom des anciens propriétaires et ne permet pas d’écrire directement dans les autres conversations. Le porteur n’a plus à transmettre manuellement les consignes de cette ronde. Les anciennes mentions À TRANSMETTRE restent historiques lorsqu’aucun envoi réel n’a eu lieu. La délégation est exécutée dans la session et ne promet pas de processus permanent après sa fin.
+
+Cette décision organise la rédaction, la revue et la consolidation ; elle n’adopte pas les propositions de session A/B, une nouvelle stack, des permissions, des durées de conservation, un budget ou un lancement. DIR-010 conserve la revue et les preuves avant fusion ; les gates applicables au premier code restent en vigueur. Le HQ poursuit la coordination des deltas ciblés au lieu de demander vingt-et-un nouveaux relais manuels.

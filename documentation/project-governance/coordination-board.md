@@ -1,5 +1,11 @@
 # Pilotage des 21 équipes — Fondation / M0
 
+## Ronde déléguée 01 — état du 30 septembre 2026
+
+DIR-013 autorise vingt missions nouvelles de sous-agents, coordonnées dans cette session par le HQ. Le [manifeste unique](../teams/agent-round-01/README.md) donne les livrables réellement reçus, la distinction avec les propriétaires M0, les divergences et cinq actions dépendantes. La [validation](../quality/agent-round-01-validation.md) distingue relecture, contrôles documentaires et preuves applicatives absentes. Aucun nouveau handoff manuel au porteur n’est nécessaire pour cette ronde ; aucune écriture dans les autres discussions n’est déclarée. L1 reste BLOQUÉ POUR CODE.
+
+Les tableaux antérieurs ci-dessous conservent leur date et leur portée ; le nouveau mandat ne transforme pas une ancienne demande À TRANSMETTRE en message effectivement envoyé.
+
 **Orientation actualisée — 30 septembre 2026 :** [DIR-012](decision-register.md) confirme le public universel et les priorités marketing ; le ciblage initial DIR-002 est remplacé. Transmissions ciblées 01/19/16/15/09/10 et dépendances L1 dans le registre, toutes **À TRANSMETTRE**. OPEN-001/004 portent désormais sur les modalités effectives de pilote, sans remettre en attente le positionnement décidé par le porteur.
 
 Date : 29 septembre 2026. Responsable : 00 MASTER. Instruction source : « fait travailler toute les discussions, et bien construire la documentation, les grandes lignes, les fonctionnalités ».
